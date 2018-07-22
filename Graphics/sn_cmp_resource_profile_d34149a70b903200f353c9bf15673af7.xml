@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-07-12 13:46:13">
+<sn_cmp_resource_profile action="INSERT_OR_UPDATE">
+<profile_mapping_table_name>sn_cmp_app_profile_mapping</profile_mapping_table_name>
+<profile_name>Application Profile</profile_name>
+<profile_table_name>sn_cmp_application_profile</profile_table_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2017-01-19 18:04:31</sys_created_on>
+<sys_id>d34149a70b903200f353c9bf15673af7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2017-01-19 18:04:31</sys_updated_on>
+<template_name>Application Template</template_name>
+<template_table_name>sn_cmp_application_template</template_table_name>
+</sn_cmp_resource_profile>
+</unload>

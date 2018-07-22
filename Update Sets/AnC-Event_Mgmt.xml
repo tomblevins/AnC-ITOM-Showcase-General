@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-03-05 17:14:24">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Nagios MIBs
+Event Management Alert Rules</description>
+<inserted/>
+<name>AnC-Event_Mgmt</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>c320dce3dba817c0aaa8f9361d9619b7</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>5122902bdba817c0aaa8f9361d961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_match_rule_188ac5c8dbb44f406247fd131d96191b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_match_rule"><em_match_rule action="INSERT_OR_UPDATE"><active>true</active><additional_info_filter>{"conditions":[{"row":{"key":"nSvcDesc","operator":"is not","value":"Check Apache"},"key":"@@EventRule@@_1"},{"row":{"key":"nSvcDesc","operator":"is not","value":"Check MySQL"},"key":"@@EventRule@@_2"}]}</additional_info_filter><bind>false</bind><bind_type>1</bind_type><ci_type>cmdb_ci</ci_type><close_alert_freq>1</close_alert_freq><close_alert_int>120</close_alert_int><close_alert_op/><close_alert_value/><create_alert_freq>1</create_alert_freq><create_alert_int>120</create_alert_int><create_alert_op>NULL</create_alert_op><create_alert_value/><description>Standard Nagios Event Rule</description><event_class>Trap From Enterprise 20006</event_class><event_data>{"hasChanged":true,"additionalInfoFields":[{"regex":"","label":"nSvcHostname","simpleMode":"","mapping":[],"name":"nSvcHostname","value":"ip-172-31-1-183"},{"regex":"","label":"nSvcStateID","simpleMode":"","mapping":[],"name":"nSvcStateID","value":"2"},{"regex":"","label":"sysUpTime","simpleMode":"","mapping":[],"name":"sysUpTime","value":"1:23:30.52"},{"regex":"","label":"nSvcDesc","simpleMode":"","mapping":[],"name":"nSvcDesc","value":"Check Apache"},{"regex":"(.*)","label":"int_ev_type","simpleMode":"active","mapping":[{"fieldToMap":{"label":"Message key","name":"message_key"},"start":0,"end":3}],"name":"int_ev_type","value":"SNMP"},{"regex":"","label":"nSvcOutput","simpleMode":"","mapping":[],"name":"nSvcOutput","value":"connect to address 172.31.1.183 and port 80: Connection refused"},{"regex":"","label":"snmpTrapOID","simpleMode":"","mapping":[],"name":"snmpTrapOID","value":"iso.org.dod.internet.private.enterprises.nagios.nagiosNotify.nSvcEvent"},{"regex":"","label":"nHostAlias","simpleMode":"","mapping":[],"name":"nHostAlias","value":"Check Apache"}],"rawFields":[{"regex":"","label":"Description","simpleMode":"","mapping":[],"name":"description","value":"int_ev_type = SNMP , nHostAlias = Check Apache , nSvcDesc = Check Apache , nSvcHostname = ip-172-31-1-183 , nSvcOutput = connect to address 172.31.1.183 and port 80: Connection refused , nSvcStateID = 2 , snmpTrapOID = iso.org.dod.internet.private.enterprises.nagios.nagiosNotify.nSvcEvent , sysUpTime = 1:23:30.52"},{"regex":"","label":"Node","simpleMode":"","mapping":[],"name":"node","value":"172.31.251.73"},{"regex":"","label":"Type","simpleMode":"","mapping":[],"name":"type","value":""},{"regex":"","label":"Resource","simpleMode":"","mapping":[],"name":"resource","value":""},{"regex":"","label":"Message key","simpleMode":"","mapping":[],"name":"message_key","value":""},{"regex":"","label":"Severity","simpleMode":"","mapping":[],"name":"severity","value":""},{"regex":"","label":"Metric Name","simpleMode":"","mapping":[],"name":"metric_name","value":""},{"regex":"","label":"Source instance","simpleMode":"","mapping":[],"name":"event_class","value":"Trap From Enterprise 20006"},{"regex":"","label":"Source","simpleMode":"","mapping":[],"name":"source","value":"Trap From Enterprise 20006"},{"regex":"","label":"Resolution state","simpleMode":"","mapping":[],"name":"resolution_state","value":"New"},{"regex":"","label":"CI type","simpleMode":"","mapping":[],"name":"ci_type","value":""},{"regex":"","label":"Classification","simpleMode":"","mapping":[],"name":"classification","value":"0"}],"expressions":[{"label":"Message key","mapping":[],"name":"message_key","value":"SNMP"}]}</event_data><filter table="em_event">@@EventRule@@_1^OR@@EventRule@@_2^EQ<item endquery="false" field="" goto="false" newquery="false" operator="=" or="false" value=""/><item endquery="false" field="" goto="false" newquery="false" operator="=" or="true" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><identification_rules>[]</identification_rules><ignore_event>false</ignore_event><metric/><name>Nagios - Events</name><order>109</order><rule_mapping_counter>0</rule_mapping_counter><rule_version>jakarta</rule_version><simple_filter>{"compound_type":"or","subpredicates":[{"compound_type":"and","subpredicates":[{"subpredicates":[{"operator":{"advancedEditor":"string","label":"is not","editor":"string","name":"!="},"field":{"label":"nSvcDesc","choices":[],"name":"nSvcDesc","value":"Check Apache"},"fieldType":"additonal_info"},{"operator":{"advancedEditor":"string","label":"is not","editor":"string","name":"!="},"field":{"label":"nSvcDesc","choices":[],"name":"nSvcDesc","value":"Check MySQL"},"fieldType":"additonal_info"}],"compound_type":"or"}]}]}</simple_filter><sys_created_by>admin</sys_created_by><sys_created_on>2017-08-20 14:26:27</sys_created_on><sys_domain>global</sys_domain><sys_id>188ac5c8dbb44f406247fd131d96191b</sys_id><sys_mod_count>12</sys_mod_count><sys_overrides/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-04 14:57:54</sys_updated_on><table>em_event</table><threshold>false</threshold><threshold_alert_template/><transform>true</transform></em_match_rule></record_update>]]></payload>
+<payload_hash>-328811633</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>1922902bdba817c0aaa8f9361d961947</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f72374540000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table>em_event</table>
+<target_name>Nagios - Events</target_name>
+<type>Event Rule</type>
+<update_domain>global</update_domain>
+<update_guid>f0f0dc6754a817c0490f951ed24aaf02</update_guid>
+<update_guid_history>f0f0dc6754a817c0490f951ed24aaf02:-328811633,198166b86589c700ebde558fa39d7135:-328811633,41255c582bc54700f565c8a9751a134f:1822143781,95c8041c8c0d8700463094ff2ac9969a:-334453361,30b8401c780d87001a7c10a9e5bef1e7:-334453361,22c8936875bccf40e21d9b1f5d20ac6c:919640177,0bc8d50c06f44f4038649e30eae56888:-1982282178,ef955148baf44f40bb6e61ef92b00235:502455229,8c8b09c8edb44f409697db36d7fb4348:932778986,1c8ac5c83ab44f4058cd28dfead9061c:805655384</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ecc_agent_mib_c5c8087913bd3200da6253c32244b0b9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_mib"><ecc_agent_mib action="INSERT_OR_UPDATE"><active>true</active><description>NAGIOS-ROOT-MIB</description><directory>false</directory><name>NAGIOS-ROOT-MIB</name><parent/><source>NAGIOS-ROOT-MIB</source><sys_class_name>ecc_agent_mib</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:00:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c5c8087913bd3200da6253c32244b0b9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NAGIOS-ROOT-MIB</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ecc_agent_mib_c5c8087913bd3200da6253c32244b0b9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-29 17:00:59</sys_updated_on><version/></ecc_agent_mib><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>application/octet-stream</content_type><encryption_context/><file_name>NAGIOS-ROOT-MIB</file_name><image_height/><image_width/><size_bytes>1982</size_bytes><size_compressed>938</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:00:52</sys_created_on><sys_id>2ae8847913bd3200da6253c32244b0b1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-29 17:00:52</sys_updated_on><table_name>ecc_agent_mib</table_name><table_sys_id>c5c8087913bd3200da6253c32244b0b9</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="NAGIOS-ROOT-MIB" sys_id="2ae8847913bd3200da6253c32244b0b1">2ae8847913bd3200da6253c32244b0b1</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:00:52</sys_created_on><sys_id>6ae8847913bd3200da6253c32244b0b1</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>xVRtb9pIEP5c/4oRn0CHKZC2unJCOgc7xBdYI9skbb8tZsG+2LvW7hqKqvvvnbUNiZrmdNKddBGRYV6emXnmGRNn7geRHQZBbC/9a3C9G5/4sR+QCCaTKVx7c59Y/nIVhHFkASwDd73wbN/1SOzHn/sAjGsmS5kppgADAG7CYAkRWa4OYzta+miLvU/x2lnYs4Dcm7yAvAiMZ79ZlsXpPhPqxyJ18MKJYnu9cp3Yc6EzHg7fD6+GH4f496UDtg1LKpMUPvbBuOqMIJw7xP/imHrQITV0p/ZgH7Ezi22f3AS1AaADUbVJGd9WME+FSltz+4hZzspUcDaBX0ZYAf+vxjD+9f2oDfAKmuUTUHuT+3ulmFQDJSqZsJ2QezbgTFttaNMI+Bw9BdWZ4JPWA5BqXU7evj0ej4OGigFmnzusn64XzUJ/deEQ7cHmT5ZoBYjXgnd10QOyjJqU0Lv3o5qDf8LaTwpEJctzSFKWPHasN29+wBuNhxe8PyivqDwh2t8j+jzTGc3hHnlCApo+jdy+PVeTAf7wl2XZNn5wB191hTkzwQ8YhWnKeCwidLY7xaeS1Qg/1VoUO/E6gqSSElOtlz11HFBaZnwP2daA707mu04ZaAMsdsBNmSypF4YOqiFTsGEmTGFGo5TuKgyuF96yj6TPgnsvxANxZnckeFh47txbYkN9uFk4q5VP5thUGAMu7ckQrHoD67zs6DOq9BP4JPbmXgjfakcpxSZnRXfY69e/JUvEgclTd9QaaPLIxTFn2z0rsK/uuLXvclqW2K3SVOru1QurKLvverUNGb8VSkeaaua7/45UXhUbJhu+EoGBqhR8q0CLmtw2F7nHWoZlY8QT0hMYTterPoymbvBA+g274+mahJ4zu3WQ48GrFFXlhZ2tOPILMxWXjCYpRf5w/nbU8+U9jfzfKYlva720QmpmrOVkLvX5+Gbi5r6ge+uErhFFDRYFN3FvAJHYtRwpEAlmwRFfVc/SFOpAV5IDRZ1yO7iDrnmuV722bCMNvgUqGTZWV0cpJUwpQ3ujY8SQGdsO4JbK7bkerqzK9bOCNVRbNaUHhsnoqg0M8UGVLMFLwe8F/ZoVVXEWgVlvVjD1+uZSrHvZncKhcXdnSUZMHrKE/W+qVE19I8zgrhXkaPrghAQvF992UywS+zNn0Ycr1Km5efLaLTfTisfLrEcqOW7gItVE4vsxofnleiturpo/6dayPOJa3wFCDR8rvgcAAA==</data><length>1240</length><position>1</position><sys_attachment display_value="NAGIOS-ROOT-MIB" sys_id="2ae8847913bd3200da6253c32244b0b1">2ae8847913bd3200da6253c32244b0b1</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:00:52</sys_created_on><sys_id>eae8847913bd3200da6253c32244b0b1</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash>1657068022</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>1d22902bdba817c0aaa8f9361d961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f72761a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table/>
+<target_name>NAGIOS-ROOT-MIB</target_name>
+<type>MID Server MIB File</type>
+<update_domain>global</update_domain>
+<update_guid>63e198e7d6a817c0fa2b1fa34d1878c8</update_guid>
+<update_guid_history>63e198e7d6a817c0fa2b1fa34d1878c8:1657068022,bb2ea3bb04f4070059910046346277de:0</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>ecc_agent_mib_5688cc3913bd3200da6253c32244b0b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_mib"><ecc_agent_mib action="INSERT_OR_UPDATE"><active>true</active><description>NAGIOS-NOTIFY-MIB</description><directory>false</directory><name>NAGIOS-NOTIFY-MIB</name><parent/><source>NAGIOS-NOTIFY-MIB</source><sys_class_name>ecc_agent_mib</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:00:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5688cc3913bd3200da6253c32244b0b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NAGIOS-NOTIFY-MIB</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>ecc_agent_mib_5688cc3913bd3200da6253c32244b0b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-29 17:00:07</sys_updated_on><version/></ecc_agent_mib><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><compressed>true</compressed><content_type>application/octet-stream</content_type><encryption_context/><file_name>NAGIOS-NOTIFY-MIB</file_name><image_height/><image_width/><size_bytes>19112</size_bytes><size_compressed>3502</size_compressed><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 16:59:56</sys_created_on><sys_id>b0b8807913bd3200da6253c32244b0b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-29 16:59:56</sys_updated_on><table_name>ecc_agent_mib</table_name><table_sys_id>5688cc3913bd3200da6253c32244b0b5</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="NAGIOS-NOTIFY-MIB" sys_id="b0b8807913bd3200da6253c32244b0b7">b0b8807913bd3200da6253c32244b0b7</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 16:59:56</sys_created_on><sys_id>f0b8047913bd3200da6253c32244b05e</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>3736</length><position>1</position><sys_attachment display_value="NAGIOS-NOTIFY-MIB" sys_id="b0b8807913bd3200da6253c32244b0b7">b0b8807913bd3200da6253c32244b0b7</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 16:59:56</sys_created_on><sys_id>b4b8047913bd3200da6253c32244b05e</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>ep+AAEBvFaCkyiypTKukWUCeohtV0TOQX1vrGND2zHfFw86yzoH6rgEt6DwSolPzpRr1LarUPUxqz1Cz07oIhAB2aCTQMDtWMRNp5D8IMxmfHboLNHzaMj5ZJv0PwkepA+cUqaoUDHDshOGJjGF24fCDY0iJ8fhsNxxfKWc1vZv5P44IieB2NyBPZSCze6wfHEjR30FTg92AfJ1lCNqt3wuFS+XtHmqiUNPxobH5RuiLdnH5Uonxg3tAJts0FcqDU4cGzRL0eofaB0KrHunLO7WC5Moe5b0I973s3LHykeOflz74zY+6teLqR2VPSDpe0hKSKxDUdIOwGTs0g2g7rxLF08BfhXpBQwjROx/fxlHWEELpOPfqCKm9oFf6QaiouWmTpFmBWVmTQ8VR36Wuyu/it6l5f97ekCJjoPeGNDSVrgAp7Q2R9fwx8Brfsw8E6V0g8s3OnTtBUK4PhJK7Ry9IcSNIg3mOOzSDFHSCMA7v3g2CintBlKswpR+kUnHSxGqXbpBqb/qg83WvnhD5klntSuCuede2EAaeamMyEju2hGjInkjICq/wN0D2Lh0hAplaCWToV8KfU3m5KeSR4WdhArgO3iZrpv9jQy5Iakif8C34X0Ea4kSMREcj0U5D+fy5oX3W3FA+V87KAOJL/3iXoX2G3NA+MG7oHxE3UJ4ej/u/SxpSY6bpJ4Dj0Fmnbitz36R+SQxcsozJKRSeHG28OGtU51kPD+JAHsXx2qnW07kLwFKopjXvGlpnrqG34RZg/dLiKpXWU4srxH8mXiiqG4qvkbojZREWSvC10idx/xPCS5qG3NBjyJ07GlJqBcRQu3QMtSXH0Jpw8qSe+YTIvqkW4Tdq+FaHsGIpDTWVMdRcxdASk12Px48gq9rjkZYi6+THcnHT6v0P3/FP6ahKAAA=</data><length>924</length><position>2</position><sys_attachment display_value="NAGIOS-NOTIFY-MIB" sys_id="b0b8807913bd3200da6253c32244b0b7">b0b8807913bd3200da6253c32244b0b7</sys_attachment><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 16:59:56</sys_created_on><sys_id>38b8047913bd3200da6253c32244b05e</sys_id></sys_attachment_doc></record_update>]]></payload>
+<payload_hash>-167006160</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>5522902bdba817c0aaa8f9361d961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f72761470000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table/>
+<target_name>NAGIOS-NOTIFY-MIB</target_name>
+<type>MID Server MIB File</type>
+<update_domain>global</update_domain>
+<update_guid>63e198e7f0a817c0861f269c74e09ec6</update_guid>
+<update_guid_history>63e198e7f0a817c0861f269c74e09ec6:-167006160,3b2ea3bb30f40700708fde11d14d35db:0</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_alert_rule_eecf0c9bdbb8c3006247fd131d9619cd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_alert_rule"><em_alert_rule action="INSERT_OR_UPDATE"><active>true</active><alert_filter table="em_alert">group_source=2^ORgroup_source=1^ORgroup_source=4^correlation_group=1^EQ<item endquery="false" field="group_source" goto="false" newquery="false" operator="=" or="false" value="2"/><item endquery="false" field="group_source" goto="false" newquery="false" operator="=" or="true" value="1"/><item endquery="false" field="group_source" goto="false" newquery="false" operator="=" or="true" value="4"/><item endquery="false" field="correlation_group" goto="false" newquery="false" operator="=" or="false" value="1"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></alert_filter><alert_table>em_alert</alert_table><auto_ack>true</auto_ack><auto_open>true</auto_open><display_name/><enable_remediation>false</enable_remediation><enable_tool_definition>false</enable_tool_definition><execution>2</execution><incident_template display_value="Incident Template for Event Management">ff372363eb2311004d7763fba206fe17</incident_template><kb/><name>Create Incident from Grouped Critical Alerts</name><order>100</order><overwrite_template/><sys_class_name>em_alert_rule</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-08-30 12:34:33</sys_created_on><sys_domain>global</sys_domain><sys_id>eecf0c9bdbb8c3006247fd131d9619cd</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Create Incident from Grouped Critical Alerts</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>em_alert_rule_eecf0c9bdbb8c3006247fd131d9619cd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-14 01:16:52</sys_updated_on><type>incident</type><url>http://${source}.com:${port}/${cmdb_ci.name}</url><workflow display_value="">Remediation workflow</workflow></em_alert_rule></record_update>]]></payload>
+<payload_hash>-340248659</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>5522902bdba817c0aaa8f9361d961947</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f7261c250000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table/>
+<target_name>Create Incident from Grouped Critical Alerts</target_name>
+<type>Alert Action Rule</type>
+<update_domain>global</update_domain>
+<update_guid>1f91d0e7a2a817c09359eac5784aa9b1</update_guid>
+<update_guid_history>1f91d0e7a2a817c09359eac5784aa9b1:-340248659,8a850f33d9414700b72d02cae97b7d7e:-340248659,8ed47a336a01470074d7a1a4c9111bed:1872690048,8e2f643f97814300f2b699d18ebc7303:-1269454025,a5dfd2380e89c70022a2e08264b19b0c:1872690048,620b8c5cfd0d87003b079fb02b322571:-1634822826,540b049c420d87003bd80a4946e92f2e:591664249,62c09c9bfab8c300afc591c3d76ff27b:-1634822826</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_alert_rule_dc780a70dbb803806247fd131d9619b8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_alert_rule"><em_alert_rule action="INSERT_OR_UPDATE"><active>true</active><alert_filter table="em_alert">cmdb_ci.nameSTARTSWITHMySQL Server@^EQ<item endquery="false" field="cmdb_ci.name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="MySQL Server@"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></alert_filter><alert_table>em_alert</alert_table><auto_ack>true</auto_ack><auto_open>false</auto_open><display_name/><enable_remediation>true</enable_remediation><enable_tool_definition>false</enable_tool_definition><execution>2</execution><incident_template/><kb/><name>MySQL Service</name><order>100</order><overwrite_template/><sys_class_name>em_alert_rule</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-08-23 02:52:31</sys_created_on><sys_domain>global</sys_domain><sys_id>dc780a70dbb803806247fd131d9619b8</sys_id><sys_mod_count>2</sys_mod_count><sys_name>MySQL Service</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>em_alert_rule_dc780a70dbb803806247fd131d9619b8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 14:41:08</sys_updated_on><type>em_remediation_task</type><url>http://${source}.com:${port}/${cmdb_ci.name}</url><workflow display_value="Restart MySQL Service">f5e4027cdb7803806247fd131d9619a0</workflow></em_alert_rule></record_update>]]></payload>
+<payload_hash>-1472281269</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>9122902bdba817c0aaa8f9361d961947</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f7261bed0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table/>
+<target_name>MySQL Service</target_name>
+<type>Alert Action Rule</type>
+<update_domain>global</update_domain>
+<update_guid>db91d0e7bca817c04f49bb6726a598b0</update_guid>
+<update_guid_history>db91d0e7bca817c04f49bb6726a598b0:-1472281269,468a4c5ce90d87002f081b372fc55e6e:-1472281269,e609c2b0b0b80380299027cec7905134:-390219414,dc780a70c9b803808c050f513e71e1b9:-438985611</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_match_rule_bab7317bdb280f406247fd131d96193d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_match_rule"><em_match_rule action="INSERT_OR_UPDATE"><active>true</active><additional_info_filter>{"conditions":[{"key":"@@EventRule@@_1","row":{"key":"nSvcDesc","operator":"is","value":"Check Apache"}}]}</additional_info_filter><bind>true</bind><bind_type>1</bind_type><ci_type>cmdb_ci</ci_type><close_alert_freq>1</close_alert_freq><close_alert_int>120</close_alert_int><close_alert_op/><close_alert_value/><create_alert_freq>1</create_alert_freq><create_alert_int>120</create_alert_int><create_alert_op>NULL</create_alert_op><create_alert_value/><description>Nagios Event Rule for Apache</description><event_class>Trap From Enterprise 20006</event_class><event_data>{"hasChanged":true,"additionalInfoFields":[{"regex":"","label":"nSvcHostname","simpleMode":"","mapping":[],"name":"nSvcHostname","value":"ip-172-31-1-183"},{"regex":"","label":"nSvcStateID","simpleMode":"","mapping":[],"name":"nSvcStateID","value":"2"},{"regex":"","label":"sysUpTime","simpleMode":"","mapping":[],"name":"sysUpTime","value":"1:23:30.52"},{"regex":"Check (.*)","label":"nSvcDesc","simpleMode":"active","mapping":[{"fieldToMap":{"label":"Metric Name","name":"metric_name"},"start":6,"end":11}],"name":"nSvcDesc","value":"Check Apache"},{"regex":"","label":"int_ev_type","simpleMode":"","mapping":[],"name":"int_ev_type","value":"SNMP"},{"regex":"","label":"nSvcOutput","simpleMode":"","mapping":[],"name":"nSvcOutput","value":"connect to address 172.31.1.183 and port 80: Connection refused"},{"regex":"","label":"snmpTrapOID","simpleMode":"","mapping":[],"name":"snmpTrapOID","value":"iso.org.dod.internet.private.enterprises.nagios.nagiosNotify.nSvcEvent"},{"regex":"","label":"nHostAlias","simpleMode":"","mapping":[],"name":"nHostAlias","value":"Check Apache"}],"rawFields":[{"regex":"","label":"Description","simpleMode":"","mapping":[],"name":"description","value":"int_ev_type = SNMP , nHostAlias = Check Apache , nSvcDesc = Check Apache , nSvcHostname = ip-172-31-1-183 , nSvcOutput = connect to address 172.31.1.183 and port 80: Connection refused , nSvcStateID = 2 , snmpTrapOID = iso.org.dod.internet.private.enterprises.nagios.nagiosNotify.nSvcEvent , sysUpTime = 1:23:30.52"},{"regex":"","label":"Node","simpleMode":"","mapping":[],"name":"node","value":"172.31.251.73"},{"regex":"","label":"Type","simpleMode":"","mapping":[],"name":"type","value":""},{"regex":"","label":"Resource","simpleMode":"","mapping":[],"name":"resource","value":""},{"regex":"","label":"Message key","simpleMode":"","mapping":[],"name":"message_key","value":""},{"regex":"","label":"Severity","simpleMode":"","mapping":[],"name":"severity","value":""},{"regex":"","label":"Metric Name","simpleMode":"","mapping":[],"name":"metric_name","value":""},{"regex":"","label":"Source instance","simpleMode":"","mapping":[],"name":"event_class","value":"Trap From Enterprise 20006"},{"regex":"","label":"Source","simpleMode":"","mapping":[],"name":"source","value":"Trap From Enterprise 20006"},{"regex":"","label":"Resolution state","simpleMode":"","mapping":[],"name":"resolution_state","value":"New"},{"regex":"","label":"CI type","simpleMode":"","mapping":[],"name":"ci_type","value":""},{"regex":"","label":"Classification","simpleMode":"","mapping":[],"name":"classification","value":"0"}],"expressions":[{"label":"Metric Name","mapping":[],"name":"metric_name","value":"Apache"}]}</event_data><filter table="em_event">@@EventRule@@_1^EQ<item endquery="false" field="" goto="false" newquery="false" operator="=" or="false" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><identification_rules>[{"relationship":"Runs on::Runs","ciType":"cmdb_ci_apache_web_server","role":"parent","attributes":[{"ruleName":"config_file and sys_class_name and version","ciType":"cmdb_ci_apache_web_server","attribute":"config_file","value":"nHostAlias"},{"ruleName":"config_file and sys_class_name and version","ciType":"cmdb_ci_apache_web_server","attribute":"sys_class_name","value":"cmdb_ci_apache_web_server"},{"ruleName":"config_file and sys_class_name and version","ciType":"cmdb_ci_apache_web_server","attribute":"version","value":"nHostAlias"}]},{"ciType":"cmdb_ci_server","attributes":[]}]</identification_rules><ignore_event>false</ignore_event><metric/><name>Nagios - Apache</name><order>100</order><rule_mapping_counter>0</rule_mapping_counter><rule_version>jakarta</rule_version><simple_filter>{"compound_type":"or","subpredicates":[{"compound_type":"and","subpredicates":[{"subpredicates":[{"operator":{"advancedEditor":"string","editor":"string","label":"is","name":"="},"fieldType":"additonal_info","field":{"choices":[],"label":"nSvcDesc","name":"nSvcDesc","value":"Check Apache"}}],"compound_type":"and"}]}]}</simple_filter><sys_created_by>admin</sys_created_by><sys_created_on>2017-08-19 23:05:34</sys_created_on><sys_domain>global</sys_domain><sys_id>bab7317bdb280f406247fd131d96193d</sys_id><sys_mod_count>23</sys_mod_count><sys_overrides/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-14 01:13:07</sys_updated_on><table>em_event</table><threshold>false</threshold><threshold_alert_template/><transform>true</transform></em_match_rule></record_update>]]></payload>
+<payload_hash>1335395383</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>9d22902bdba817c0aaa8f9361d961947</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f72374010000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table>em_event</table>
+<target_name>Nagios - Apache</target_name>
+<type>Event Rule</type>
+<update_domain>global</update_domain>
+<update_guid>b4f0dc67c0a817c0f819d25affceb400</update_guid>
+<update_guid_history>b4f0dc67c0a817c0f819d25affceb400:1335395383,bda4cfffe701470001099d84fa08e0c7:1335395383,dcf43630c40dc700919ed6bcc32e8598:-249652917,a3831818f3c5470014772907c771624f:-2077927051,1909041cf40d870007fb6ecb899567af:-1564983305,663859c8c7f44f40c965bf44dfe686f9:267621103,4a6a01c811b44f4025b51f8f37f323b7:325554069,d07cb04888744f40b5b484153c35cd09:947060284,b22cb0489f744f406dcdc7a29fdd3b05:-1457188823,a1cae4841c344f405f63305377fa6a08:-886405387,f6b7317b73280f4070d0725ede29f63f:-1883996717</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_match_rule_875489c0dbb44f406247fd131d9619ce</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="em_match_rule"><em_match_rule action="INSERT_OR_UPDATE"><active>true</active><additional_info_filter>{"conditions":[{"row":{"key":"nSvcDesc","operator":"is","value":"Check MySQL"},"key":"@@EventRule@@_1"}]}</additional_info_filter><bind>true</bind><bind_type>2</bind_type><ci_type>cmdb_ci_db_mysql_instance</ci_type><close_alert_freq>1</close_alert_freq><close_alert_int>120</close_alert_int><close_alert_op/><close_alert_value/><create_alert_freq>1</create_alert_freq><create_alert_int>120</create_alert_int><create_alert_op>NULL</create_alert_op><create_alert_value/><description>Nagios Event Rule for MySQL</description><event_class>Trap From Enterprise 20006</event_class><event_data>{"hasChanged":true,"additionalInfoFields":[{"regex":"","label":"nSvcHostname","simpleMode":"","mapping":[],"name":"nSvcHostname","value":"ip-172-31-2-186"},{"regex":"","label":"nSvcStateID","simpleMode":"","mapping":[],"name":"nSvcStateID","value":"2"},{"regex":"","label":"sysUpTime","simpleMode":"","mapping":[],"name":"sysUpTime","value":"16:31:38.05"},{"regex":"Check (.*)","label":"nSvcDesc","simpleMode":"active","mapping":[{"fieldToMap":{"label":"Metric Name","name":"metric_name"},"start":6,"end":10}],"name":"nSvcDesc","value":"Check MySQL"},{"regex":"","label":"int_ev_type","simpleMode":"","mapping":[],"name":"int_ev_type","value":"SNMP"},{"regex":"","label":"nSvcOutput","simpleMode":"","mapping":[],"name":"nSvcOutput","value":"connect to address 172.31.2.186 and port 3306: Connection refused"},{"regex":"","label":"snmpTrapOID","simpleMode":"","mapping":[],"name":"snmpTrapOID","value":"iso.org.dod.internet.private.enterprises.nagios.nagiosNotify.nSvcEvent"},{"regex":"","label":"nHostAlias","simpleMode":"","mapping":[],"name":"nHostAlias","value":""}],"rawFields":[{"regex":"","label":"Description","simpleMode":"","mapping":[],"name":"description","value":"int_ev_type = SNMP , nHostAlias = , nSvcDesc = Check MySQL , nSvcHostname = ip-172-31-2-186 , nSvcOutput = connect to address 172.31.2.186 and port 3306: Connection refused , nSvcStateID = 2 , snmpTrapOID = iso.org.dod.internet.private.enterprises.nagios.nagiosNotify.nSvcEvent , sysUpTime = 16:31:38.05"},{"regex":"","label":"Node","simpleMode":"","mapping":[],"name":"node","value":"172.31.251.73"},{"regex":"","label":"Type","simpleMode":"","mapping":[],"name":"type","value":""},{"regex":"","label":"Resource","simpleMode":"","mapping":[],"name":"resource","value":""},{"regex":"","label":"Message key","simpleMode":"","mapping":[],"name":"message_key","value":""},{"regex":"","label":"Severity","simpleMode":"","mapping":[],"name":"severity","value":""},{"regex":"","label":"Metric Name","simpleMode":"","mapping":[],"name":"metric_name","value":""},{"regex":"","label":"Source instance","simpleMode":"","mapping":[],"name":"event_class","value":"Trap From Enterprise 20006"},{"regex":"","label":"Source","simpleMode":"","mapping":[],"name":"source","value":"Trap From Enterprise 20006"},{"regex":"","label":"Resolution state","simpleMode":"","mapping":[],"name":"resolution_state","value":"New"},{"regex":"","label":"CI type","simpleMode":"","mapping":[],"name":"ci_type","value":""},{"regex":"","label":"Classification","simpleMode":"","mapping":[],"name":"classification","value":"0"}],"expressions":[{"label":"Metric Name","mapping":[],"name":"metric_name","value":"MySQL"}]}</event_data><filter table="em_event">@@EventRule@@_1^EQ<item endquery="false" field="" goto="false" newquery="false" operator="=" or="false" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><identification_rules>[]</identification_rules><ignore_event>false</ignore_event><metric/><name>Nagios - MySQL</name><order>102</order><rule_mapping_counter>0</rule_mapping_counter><rule_version>jakarta</rule_version><simple_filter>{"compound_type":"or","subpredicates":[{"compound_type":"and","subpredicates":[{"subpredicates":[{"operator":{"advancedEditor":"string","label":"is","editor":"string","name":"="},"field":{"label":"nSvcDesc","choices":[],"name":"nSvcDesc","value":"Check MySQL"},"fieldType":"additonal_info"}],"compound_type":"and"}]}]}</simple_filter><sys_created_by>admin</sys_created_by><sys_created_on>2017-08-20 13:59:36</sys_created_on><sys_domain>global</sys_domain><sys_id>875489c0dbb44f406247fd131d9619ce</sys_id><sys_mod_count>14</sys_mod_count><sys_overrides/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-04 16:46:17</sys_updated_on><table>em_event</table><threshold>false</threshold><threshold_alert_template/><transform>true</transform></em_match_rule></record_update>]]></payload>
+<payload_hash>-1158752620</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>d922902bdba817c0aaa8f9361d961947</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f723742d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table>em_event</table>
+<target_name>Nagios - MySQL</target_name>
+<type>Event Rule</type>
+<update_domain>global</update_domain>
+<update_guid>74f0dc676da817c0d5e276c960721a01</update_guid>
+<update_guid_history>74f0dc676da817c0d5e276c960721a01:-1158752620,50c4b2305d0dc7006d0a45f791085c59:-1158752620,ea045058b5c547005b63c9bddfb905fe:-133949648,38e8041c530d87006f9cfa1fba29b618:1365124396,2d88910ce6f44f405571968ef66c39b5:1965966690,2b9b490c44b44f401f57ed2bdd2c3ead:171704294,b715cd0488b44f4014bf36e08d47e085:1789766979,2e940504fab44f403a92dace1e3f8639:1380774550,b87489c05cb44f40ccfa01f446744db5:1789766979,cb5489c0e9b44f409672b4f7903a51cf:-580826340</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>em_alert_correlation_rule_67c6b670db0dc700704df9b61d961918</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="em_alert_correlation_rule"&gt;&lt;em_alert_correlation_rule action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;advanced_filter/&gt;&lt;description/&gt;&lt;filter_child table="em_alert"&gt;cmdb_ciSTARTSWITHApache server@^EQ&lt;item endquery="false" field="cmdb_ci" goto="false" newquery="false" operator="STARTSWITH" or="false" value="Apache server@"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_child&gt;&lt;filter_parent table="em_alert"&gt;cmdb_ciSTARTSWITHMySQL Server@^EQ&lt;item endquery="false" field="cmdb_ci" goto="false" newquery="false" operator="STARTSWITH" or="false" value="MySQL Server@"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_parent&gt;&lt;name&gt;Correlate Apache to MySQL Alarms&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;relationship display_value="Depends on::Used by"&gt;1a9cb166f1571100a92eb60da2bce5c5&lt;/relationship&gt;&lt;relationship_type&gt;1&lt;/relationship_type&gt;&lt;script&gt;&lt;![CDATA[/* The function needs to return a JSON- {correlationType:[correlatedAlerts]}
+ for example: if your filter matches the alert, set the alert as the primary alert and set alerts 1, 2 and 3 each as secondary alerts.
+ 
+ You can use both multiple primary alerts and multiple secondary alerts.
+ The correlationType can be PRIMARY or SECONDARY, and the alerts ID must be in an array. 
+ CurrentAlert is the GlideRecord of the currentAlert on which that rule runs.  
+ The system supports only one primary per alert, so: 
+   Do not correlate more than one alert under the PRIMARY array. 
+   Do not correlate alerts that already has a primary under the SECONDARY array. 
+  The system supports open alerts only, so do not correlate alerts that have been closed under either one of the arrays. 
+  */
+ 
+ (function findCorrelatedAlerts(currentAlert){
+ 
+       var result = {};   //Insert your code here
+       result = {'SECONDARY':['alertID1','alertID2','alertID3']};         
+       return JSON.stringify(result);  
+ 
+ })(currentAlert);]]&gt;&lt;/script&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-09-04 16:33:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;67c6b670db0dc700704df9b61d961918&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-09-25 14:53:14&lt;/sys_updated_on&gt;&lt;table&gt;em_alert&lt;/table&gt;&lt;time_difference&gt;60&lt;/time_difference&gt;&lt;/em_alert_correlation_rule&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-652636643</payload_hash>
+<remote_update_set display_value="AnC-Event_Mgmt">5122902bdba817c0aaa8f9361d961946</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 17:14:24</sys_created_on>
+<sys_id>dd22902bdba817c0aaa8f9361d961946</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f724e29d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 17:14:24</sys_updated_on>
+<table>em_alert</table>
+<target_name>Correlate Apache to MySQL Alarms</target_name>
+<type>Alert Correlation Rule</type>
+<update_domain>global</update_domain>
+<update_guid>e74190e77aa817c0298097c627d96169</update_guid>
+<update_guid_history>e74190e77aa817c0298097c627d96169:-652636643,3fd96ee76f5d0b0054881b0ebecab3c5:-652636643,1fe7dae34d1d0b0018dc16c43f4003e7:135528018,e1f34bbf3801470037c93188a6c43711:-652636643,352eb6f722014700141d818f1fd74957:-578553888,818736f34c014700cb7fb8476a5c4b49:239562475,3856b2b3550147003d47dcd074a3c538:1695912492,b28436338f0147002212844d004c511f:946462650,2f54f233130147004f0471b5ad9851b6:-2000663673,0c1fe03f83814300985143b95d1ac306:1481570684,02883af0630dc700f2a5c209805ff5ed:-2000663673,d358b6f0ee0dc700d6998742156c264a:383594590,d587f6b0ca0dc700be85e53e39819dd8:457677345</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

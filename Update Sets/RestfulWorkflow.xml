@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-07-11 20:13:59">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>RestfulWorkflow</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5af584fcdbdf1b8083e477421f9619d1</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-07-11 20:13:58</sys_created_on>
+<sys_id>7bb6c030db135b8083e477421f96199b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-07-11 20:13:58</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_operation_9bb51e07dbf493808015f1351d96191f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ws_operation"&gt;&lt;sys_ws_operation action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;consumes&gt;application/json,application/xml,text/xml&lt;/consumes&gt;&lt;consumes_customized&gt;false&lt;/consumes_customized&gt;&lt;default_operation_uri/&gt;&lt;enforce_acl&gt;cf9d01d3e73003009d6247e603f6a990&lt;/enforce_acl&gt;&lt;http_method&gt;POST&lt;/http_method&gt;&lt;name&gt;Execute&lt;/name&gt;&lt;operation_script&gt;&lt;![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	try {
+		var workflowname = request.pathParams.workflow;
+		var wf = new Workflow();
+		var wfId = wf.getWorkflowFromName(workflowname);
+		if(JSUtil.nil(wfId)) {
+			return new sn_ws_err.BadRequestError("Invalid workflow request");
+		}
+
+		var vars = request.queryParams;	
+		var json = new JSON();
+		gs.info("variables = " + JSON.stringify(vars));
+		wf.startFlow(wfId, null, workflowname, vars);
+	} catch (err) {
+		return new sn_ws_err.BadRequestError(err);
+	}
+
+})(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/restfulworkflow/{workflow}&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/{workflow}&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description&gt;Execute a workflow&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-16 23:48:54&lt;/sys_created_on&gt;&lt;sys_id&gt;9bb51e07dbf493808015f1351d96191f&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Execute&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_9bb51e07dbf493808015f1351d96191f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-23 19:52:40&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="RestfulWorkflow"&gt;5ef4d207dbf493808015f1351d9619b3&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-372840688</payload_hash>
+<remote_update_set display_value="RestfulWorkflow">7bb6c030db135b8083e477421f96199b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-07-11 20:13:58</sys_created_on>
+<sys_id>3bb6c030db135b8083e477421f96199c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1648af911460000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-07-11 20:13:58</sys_updated_on>
+<table/>
+<target_name>Execute</target_name>
+<type>Scripted REST Resource</type>
+<update_domain>global</update_domain>
+<update_guid>ba56c8fc50df1b80fe0ef2c34183e924</update_guid>
+<update_guid_history>ba56c8fc50df1b80fe0ef2c34183e924:-372840688,39fbe3f8a31e5f001275b835ad6c940b:-372840688,2dcbefb83e1e5f00d4847bce24f44364:-490715013,89ab6bb84a1e5f0010c6bbddb1e5b113:2075134050,454be3b8591e5f003be6c53fd0c1ea6e:189837982,fbc8aff4641e5f003a6975267e6636aa:580232841,67ca03145089d300447cb4a3383d9f9c:1382275945,32f843908e89d30005bc98da581b7932:-1110169087,96778710c589d30082f42e70b1080b8c:1382275945,8127cfdcee49d300e60eca4cfef93eaf:-1167140462,4d07c3107a89d300ec9c33fed8a0d4e0:-205323571,bcb60fdc1849d300cd9009a0a7aefbb5:145108712,e72647dc8249d300d7f32381fae8ae2c:894918094,5cb58f9cf349d300e4bc6c7d37d4cf12:-1603659139,a655c39c1649d300f4415d95a25b3a83:-852219287,655a16c72ef4938059e53f0c1e4b2289:935048573,1be51e0755f4938057c3b97b78bd4f25:-2089684</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_5ef4d207dbf493808015f1351d9619b3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/restfulworkflow</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>RestfulWorkflow</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>restfulworkflow</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-03-16 23:44:53</sys_created_on><sys_id>5ef4d207dbf493808015f1351d9619b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>RestfulWorkflow</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_5ef4d207dbf493808015f1351d9619b3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-03-16 23:44:53</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>-827434234</payload_hash>
+<remote_update_set display_value="RestfulWorkflow">7bb6c030db135b8083e477421f96199b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-07-11 20:13:58</sys_created_on>
+<sys_id>ffb6c030db135b8083e477421f96199b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1648af8e74d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-07-11 20:13:58</sys_updated_on>
+<table/>
+<target_name>RestfulWorkflow</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>4c5648fc1adf1b80e34fb7ae36413313</update_guid>
+<update_guid_history>4c5648fc1adf1b80e34fb7ae36413313:-827434234,1005d20720f4938097e2cdc7ebb41060:-208584514</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

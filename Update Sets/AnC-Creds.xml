@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-03-05 15:14:11">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Credentials for SC Lab and VMs
+</description>
+<inserted/>
+<name>AnC-Creds</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>0ace1f9fdba417c0aaa8f9361d961901</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>88a67b9bdb2817c0aaa8f9361d9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_3629c9cedbc40b00b28b7bfdae961903</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><basic_auth_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>basic_auth</classification><mid_list/><name>EC2VM_Login</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>basic_auth_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-20 12:41:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3629c9cedbc40b00b28b7bfdae961903</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:56:59</sys_updated_on><tag/><type>basic_auth</type><user_name>ec2-user</user_name></basic_auth_credentials></record_update>]]></payload>
+<payload_hash>1221590031</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>00a67b9bdb2817c0aaa8f9361d9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa58e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>EC2VM_Login</target_name>
+<type>Basic Auth Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>f3f3e317fce417c0d95e558407c92996</update_guid>
+<update_guid_history>f3f3e317fce417c0d95e558407c92996:1221590031</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_a8568fc1db088700b28b7bfdae96193b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><aws_credentials action="INSERT_OR_UPDATE"><access_key>AKIAI734NKX4PZ5Q3TSQ</access_key><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><aws_account/><classification>aws</classification><mid_list/><name>SC Lab on AWS</name><order>200</order><password/><privacy_key/><privacy_protocol/><secret_key>V2iSd4Wxu6t4XD3hENVyzF4hF9IbAG3K863xHb/mWOLnT7aCcELtAnsxpJr4TKMY</secret_key><ssh_passphrase/><ssh_private_key/><sys_class_name>aws_credentials</sys_class_name><sys_created_by>zack.sargent@snc</sys_created_by><sys_created_on>2017-07-17 19:16:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a8568fc1db088700b28b7bfdae96193b</sys_id><sys_mod_count>6</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>aws</type><user_name/></aws_credentials></record_update>]]></payload>
+<payload_hash>690508043</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>00a67b9bdb2817c0aaa8f9361d9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa7f20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>SC Lab on AWS</target_name>
+<type>AWS Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>c00427179ae417c0c66eb79d49484bde</update_guid>
+<update_guid_history>c00427179ae417c0c66eb79d49484bde:690508043</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_17bcbb28dbdcc300b28b7bfdae9619c1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_node_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>cmp_node_credential</classification><mid_list/><name>showcase02-newday0004</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><sys_class_name>sn_cmp_node_credentials</sys_class_name><sys_created_by>mid.azure01</sys_created_by><sys_created_on>2017-07-28 20:10:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>17bcbb28dbdcc300b28b7bfdae9619c1</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:56:59</sys_updated_on><tag/><type>cmp_node_credential</type><user_name>azureuser</user_name></sn_cmp_node_credentials></record_update>]]></payload>
+<payload_hash>-1929945018</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>04a67b9bdb2817c0aaa8f9361d9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa4fb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>showcase02-newday0004</target_name>
+<type>CMP Node Credential</type>
+<update_domain>global</update_domain>
+<update_guid>fff3e31752e417c010a5b5ecac305791</update_guid>
+<update_guid_history>fff3e31752e417c010a5b5ecac305791:-1929945018</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_8b5ca5c6db480b00b28b7bfdae9619c3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><basic_auth_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>basic_auth</classification><mid_list/><name>AzureVMLogin</name><order>200</order><password>NSMiDjdblYA8SS0z//EhZWj+u4ukask9</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>basic_auth_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-20 15:15:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8b5ca5c6db480b00b28b7bfdae9619c3</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>basic_auth</type><user_name>azureuser</user_name></basic_auth_credentials></record_update>]]></payload>
+<payload_hash>1813407167</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>04a67b9bdb2817c0aaa8f9361d9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa76c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>AzureVMLogin</target_name>
+<type>Basic Auth Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>7bf3271745e417c0f7ca1183ea2cf1cd</update_guid>
+<update_guid_history>7bf3271745e417c0f7ca1183ea2cf1cd:1813407167</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_febbbfa4dbdcc300b28b7bfdae961999</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="Zack Sargent">0ceda7d6db6b7600b28b7bfdae961960</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>zack.sargent-default</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCJjPrtYsDDUS8xsf4bMQc9UgIyyU8QR2ToVM/PlhUXpNUBk4VS8biC1gYaIKxLaoxbq34E1eryujtIW4Qs9IzYnva4eKRljUk2OQOL+2uZujHdKX/zsk2tpBiRVmIKPMoU6PYDygOUrQ9UrNPXpyffBXIXdArFm2fnZke0AXvQYllfdHiCt9Y43QGhjyZPRNz5wwtmx08ObotKaT0npmrnH3q414mYRWcKTblLcvP5xJDDmbklDgJxSKyVWzx43IGqFNva/IB6bbXMofaSTA7k9tdLPQqLLs2NJkWb/qT7Pwf9LxSnONL+wTZ9PPGim2nHkwiXJgSUDYESWIi8opWx zack.sargent-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-28 20:06:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>febbbfa4dbdcc300b28b7bfdae961999</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:01</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name/></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>-636055851</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:11</sys_created_on>
+<sys_id>04a6bb9bdb2817c0aaa8f9361d96194a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa9760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:11</sys_updated_on>
+<table/>
+<target_name>zack.sargent-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>c004271740e417c0d9cf2862aaf595e9</update_guid>
+<update_guid_history>c004271740e417c0d9cf2862aaf595e9:-636055851</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_7782b6bdeb22020045e1a5115206fe9d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><azure_service_principal action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><auth_method>Client Secret</auth_method><authentication_key/><authentication_protocol/><cert_alias/><certificate/><classification>azure</classification><client_id>31129ff2-5384-4872-be2a-cb12db9df1af</client_id><mid_list/><name>TB LAB on Azure</name><order>200</order><password/><privacy_key/><privacy_protocol/><realm/><secret_key>7Fba69hDpXg/0sM7UPXFOu6L+1SPd34Hr4C4zvzYETXvjO7tPSMySu7yGEUktrwl</secret_key><ssh_passphrase/><ssh_private_key/><sys_class_name>azure_service_principal</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-09-17 23:36:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7782b6bdeb22020045e1a5115206fe9d</sys_id><sys_mod_count>11</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><tenant_id>c744b54a-d4cc-42b0-82d9-16c6588d7c31</tenant_id><type>azure</type><user_name/></azure_service_principal></record_update>]]></payload>
+<payload_hash>-1004916339</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>08a67b9bdb2817c0aaa8f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa6d80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>TB LAB on Azure</target_name>
+<type>Azure Service Principal</type>
+<update_domain>global</update_domain>
+<update_guid>37f32717c6e417c0ec04c5cc1a67ddc9</update_guid>
+<update_guid_history>37f32717c6e417c0ec04c5cc1a67ddc9:-1004916339</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_fa8e4fccdbe3b200a5d179daae961922</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to/><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>sn-8a8e4fccdbe3b200a5d179daae961922-mgt</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpUaTFfjpvyl9xy/QWxGteJv7hGAHA3JS0CiHls/uYfW/uB2Iif/PZKnHSO4XZrFmEMsMqu9ZBqZ3cRgTLC3ueZc2yNofmtU+zww62IAmPh/zHEv8vHTCRpBmt3qkEU54oXIpf8yC7jH09a0SvDd57iREqDZY1goe04fqAuljvvzDOGmh4u8bqqWIN+tEtoOHN9hvgCBSHQK0gxDrna5dN3UClBWj8Jvj2L4yougjeuaIG087ScIJpHBBcdP/qz8x+tsQYmKumaySjDBaSRACmJNKUXEQPtjfPccRxPsYQJ89q13Az+ndFcgzMIjPgQDc5aC1XiCAPKZYCYcs9fCSJ sn-8a8e4fccdbe3b200a5d179daae961922-mgt
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2017-06-19 20:44:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fa8e4fccdbe3b200a5d179daae961922</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:01</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name/></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>1027122504</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>08a67b9bdb2817c0aaa8f9361d9619cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa9290000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>sn-8a8e4fccdbe3b200a5d179daae961922-mgt</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>cc042717d9e417c0c2addfc874d9f2e6</update_guid>
+<update_guid_history>cc042717d9e417c0c2addfc874d9f2e6:1027122504</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_602b4cb113fd3200da6253c32244b0b6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><windows_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>windows</classification><mid_list/><name>LAB Windows Cred</name><order>200</order><password>hx+yQ1zAmcx7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>windows_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:11:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>602b4cb113fd3200da6253c32244b0b6</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>windows</type><user_name>mid.server</user_name></windows_credentials></record_update>]]></payload>
+<payload_hash>1135234669</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>0ca67b9bdb2817c0aaa8f9361d9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa62e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>LAB Windows Cred</target_name>
+<type>Windows Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>33f3271762e417c0f3edd9ea3c214bc5</update_guid>
+<update_guid_history>33f3271762e417c0f3edd9ea3c214bc5:1135234669</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_d46f003d13317200da6253c32244b09c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>ssh</classification><mid_list/><name>LAB Linux Cred2</name><order>100</order><password>hx+yQ1zAmcx7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>ssh_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:29:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d46f003d13317200da6253c32244b09c</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 22:00:49</sys_updated_on><tag/><type>ssh</type><user_name>mid.server</user_name></ssh_credentials></record_update>]]></payload>
+<payload_hash>1844772908</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>0ca67b9bdb2817c0aaa8f9361d9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa88c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>LAB Linux Cred2</target_name>
+<type>SSH Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>480427175ae417c095a4cbdad631d0e2</update_guid>
+<update_guid_history>480427175ae417c095a4cbdad631d0e2:1844772908</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_127f6502db4c0700a5d179daae9619f4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_node_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>cmp_node_credential</classification><mid_list/><name>showcase01-CMPQANode</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><sys_class_name>sn_cmp_node_credentials</sys_class_name><sys_created_by>mid.azure01</sys_created_by><sys_created_on>2017-07-20 15:28:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>127f6502db4c0700a5d179daae9619f4</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:56:59</sys_updated_on><tag/><type>cmp_node_credential</type><user_name>azureuser</user_name></sn_cmp_node_credentials></record_update>]]></payload>
+<payload_hash>1646174787</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>40a67b9bdb2817c0aaa8f9361d9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa4cb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>showcase01-CMPQANode</target_name>
+<type>CMP Node Credential</type>
+<update_domain>global</update_domain>
+<update_guid>bff3e317eee417c07edcd6df5b01ae90</update_guid>
+<update_guid_history>bff3e317eee417c07edcd6df5b01ae90:1646174787</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_85fac4b113fd3200da6253c32244b062</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>ssh</classification><mid_list/><name>LAB Linux Cred</name><order>200</order><password>hx+yQ1zAmcx7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>ssh_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 17:10:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>85fac4b113fd3200da6253c32244b062</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>ssh</type><user_name>root</user_name></ssh_credentials></record_update>]]></payload>
+<payload_hash>-785488998</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>40a67b9bdb2817c0aaa8f9361d9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa74a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>LAB Linux Cred</target_name>
+<type>SSH Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>3bf327172fe417c023e97b028ecd71cc</update_guid>
+<update_guid_history>3bf327172fe417c023e97b028ecd71cc:-785488998</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_fc55d3d7db004300b28b7bfdae961991</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="Greg Pietro">a65b3e5bdbcc0300b28b7bfdae96192e</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>greg.pietro-default</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCi8ArTob7GZiwjQPG8Ful0c3g3Mnk1wZ5zl4+fFwfwNmOqRjIXvnNOs7mpOBoZIygmbPGr+2awvGchdeDq6OJg4mQaoO60XFTG0QPIA6BC1vJHVHWGoVrks2SZ0hU+RuhjmzMsZEHu09i3N2CgkKLQYvvX7fuqXglFBLzr+g23gxL2VquKsiZzGcLRjmNSsmiz2fqoOIrk2Cyxinivm/uMo2ntexSV/ag41lL4pr6YXehh75jjF3RQ7jqj/GgvSLUpBs+tCWF/giD1jR8gWFhrzS8Ed5mOIvEFVqeq08AHg3Sv0FegaI1RnELQzE7LQ3W2jmQdlNeQ0aFagvNJF45p greg.pietro-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>greg.pietro</sys_created_by><sys_created_on>2017-07-24 20:06:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fc55d3d7db004300b28b7bfdae961991</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:01</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name/></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>1683093442</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:11</sys_created_on>
+<sys_id>40a6bb9bdb2817c0aaa8f9361d96194a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa94e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:11</sys_updated_on>
+<table/>
+<target_name>greg.pietro-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>400427177ae417c0ea26dd23cd0cdfe8</update_guid>
+<update_guid_history>400427177ae417c0ea26dd23cd0cdfe8:1683093442</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_6eef5cb113b57200da6253c32244b037</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><windows_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>windows</classification><mid_list/><name>MSPMidserver2</name><order>200</order><password>vL8oHX2mbKpE5X5lUmVisqpQ/LpCJH3ulF+V46MJ+oF7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>windows_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 18:42:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6eef5cb113b57200da6253c32244b037</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>windows</type><user_name>Administrator</user_name></windows_credentials></record_update>]]></payload>
+<payload_hash>557618131</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>44a67b9bdb2817c0aaa8f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa6b70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>MSPMidserver2</target_name>
+<type>Windows Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>f3f32717c8e417c0769f864a06a86cc8</update_guid>
+<update_guid_history>f3f32717c8e417c0769f864a06a86cc8:557618131</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_f3bf5cb113b57200da6253c32244b034</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><windows_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>windows</classification><mid_list/><name>MSPJumpHost</name><order>120</order><password>tViwVGgp68SMaeePFcYhnpDrYl5QXH2w/5txWERn4at7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>windows_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 18:41:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f3bf5cb113b57200da6253c32244b034</sys_id><sys_mod_count>6</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 22:00:59</sys_updated_on><tag>MSPJumpHost</tag><type>windows</type><user_name>Administrator</user_name></windows_credentials></record_update>]]></payload>
+<payload_hash>-1748138303</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>44a67b9bdb2817c0aaa8f9361d9619cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa90d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>MSPJumpHost</target_name>
+<type>Windows Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>8c04271740e417c0f6cee09e3c9048e5</update_guid>
+<update_guid_history>8c04271740e417c0f6cee09e3c9048e5:-1748138303</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_477faf26dbfd83004aa9d311ce9619bd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="Pat Administrator">6816f79cc0a8016401c5a33be04be441</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>admin-azure</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzv1K2lew8ahr7Nf6ZCu2xNtenY4AhitYt1/SsZBms64g/UdxbZxkrZI8jGGaIaJyAxmYapC3QnFOH2LAoxDyjn1RI7hVti6iKOgzHhqc6uvVrtoK8iITzWMEJwyK9DBNJ1jr9GjtGbICXE0q/gqJeLyO+r/6OnMwZh2+yG6oP3BUrzSbppziXJW9cPlIN2USormUbPBO5ZdHQgfO3BlvD/f5rEIiYcIWsA85Q7ahN0c0WYd8Eh8kkqAWgmSDENrqpWN66l7qSFghnti6Q0Vt6wSAaS6ps1FV/s1DrEg919SPukBp8DUPRgSWs50bZQQHPYt1pRysMtmVmJwT2R6cT admin-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-17 13:54:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>477faf26dbfd83004aa9d311ce9619bd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 13:54:52</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name>tom.blevins</user_name></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>-1181236738</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>48a67b9bdb2817c0aaa8f9361d9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa6060000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>admin-azure</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>fff32717d6e417c0167bba9b26e38dc3</update_guid>
+<update_guid_history>fff32717d6e417c0167bba9b26e38dc3:-1181236738</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_d2c1ddd4dbac8b00b28b7bfdae961968</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="Aleck Lin">f615d7f4dbb1b200e99852f4ce961943</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>aleck.lin-default</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>3fcT/xFPQYs9MYkmmbwyHsLSqCFkOSZHsPMjQdpYMh2qxRY1ORuYvIjlwUfTlpUOfcf69APl82vMX19p0ZxH3rGJvTb0n8FN+X0RNeJvfjpYvRcoR5CRqF9t+Yv9OYTJLJfS4uWpP/PsWAQ4oZqGjtnO7zT41ADijv7aRrvPiGsw6c8H1RLa2XZJnUoIMpVSyCA28BbFFdNayz1j+3tEqi71Kczp05LtQ3E5PB+VXLuf1ZmECOI5Soal91W2Jeg9HmDWe7eI9aYP2MeVkqmt5p/o5drrT5VLWc5qHy1w8bES8s6LFmc1aPoI9v0SFdpV+LipVVJUMbo6FLQyHEt24neap3V6RNa6ALt5mTyu19uf2oAPgLqAfzt6ixoAUNrDPLVN7QQlRizR2Xq73+wBZml6TOLWJJ3+oLgqqGSAkdBrpstySWhbEqjA0q5KY1pHkJll04IOzApuN60H9PFuzVYL/259jqRv6uCjhglcvnvY0Uux/BRoIavzoBSMURj42RToC3Sko6T7LCRzZHoSRN6kE7g8+ezO9zowj4KF5xM2xWJmA0eppkgsX+U9gqcanNvi43oQBsuOsozkI5gzLDYC4B1UGlO/Box5frWq1a1IsO6/kS+7ESw5/X7kHAfjiOBRrB4qkwDUFlwmE+PdFASbjLMaoeAKdfaFDH6vOfDqqq+8llpBkiIaGmVnjWlXmf0vUA2FvvzNDOJzQVQ3SxtAWikm8c8sarn8PzMQWSZkL8E7KVRcK9LW0uc1qIEoqBWE9QrjiyiNk0bdQU3s6/lLSB2sU40SuKUuAospmn2ctKtPt3MWeVF2VHaCs/NGt/UB5TnHZ1wBItwNkXRmR0vDXDFMzKE4C5JeN92a2nwxgJylTUe6jyyUFaMBchbMjYH9xXRNkxnR+MCM1a5P99BYUMefF0ZEiWA69cqfC3kfhck+DQ1r0nSw+bgsBAdL6GGP88L5FsdrjLI5+BDrRHrFWkHG3V75pb2f/LcFzLe+EOmCmjazHjvWv/gYGFsKNwnVYWBatn2ah2QytSAd9rQ31DM0IkMUVBmVR4V7seyd3R6hfvTOpxPF6aKnEC8naNQ7SuBsEci6oe2E/d8+JwbfJV8SHs/QAF7xur8olsXNhGZYSkh3WP2JInqYh5eNl7eSW06R4r3GDBIyw918WMS0DZPh+HUcuNMDL9Fo60+jGbbzVNBq/FMyXBS0U4BZtr5flCdjPeQu7tMNv1bAB+nB9WJ4MNnC2fC0qbiQPiAKiJUmKOxtySH8XRA2Z/vZdSTG/bhG0CB7BH716O9TXu2qnzmgOupx6gug8S6J/KUw97rJh6C521l9J3cpTaDR2CtSIuCdOE04+ltDbo8QfOUbpI5SY8FHf5fqyNKyg2XEevBPZDtRlDO+9LxwOoTQoalbXFX6guWxGH7HzvYQY3YqkRjruxF4m9s70IewxgMQChL7tK4WG6EZ7/9oKFVXvJGFyv8GTkqc70SKDP79a0rSlziHBFAwnbYP42G3c0792JYTFG1zs2jAofOSeA5nmoMnwepMvnrJQDs0ONAuULkSEbTu+xKNQbKbu4r93kHgj535La+qrNLcfbOgWJTh2vyB5k1+RF0s/cQIpxKaC7X3Kwzaifok9Ox2V/Y1RAjiOI8awkdMf0M03Lz5bIOskKweYua735k7G2N86Ek3SNySuFlk6TBRYNfBFAWhPknU7AidtN3glo7yB7156Cz48E4uvrmvvPM8A4ftMoTKQZjTf8ZQ0zCC9sXrQUPwYM0lOqLbF0JdzFYKv1B8lmp0aDbER+Pe65B2y62q8m+gFytHVtRmFi038QOehzuHCahAji6yOV+ZVxMiv9jbandiK/sK10y4drQtqT8CENrK9/NDHyYIM8uGNziwou50l+Z7gI+zaJE1e6HUa6qDyvN6QfgLu9H+ViOAs4R7EdT+ggYXbhrrraqkzEIujxJJD9qiuBxwhP/GprGchke4p6uoDsZZzGGK3MAHmVlpHaPQsxMMZrCHvMjyCaajY9lTJms/MC0kFgNjTzdO8NEumZ8AB0ezjZv3SZUGNzO2cUh27gbHeHoMtaVWJ0DS7zmNP/sfKpeALXZ+rUQUN2A7/ip9rj9B01t4bH6EMFdMor/H6LFZ7p3smBwv1vmTAc7MlCbrWDmHwJ+ZdD5le6HLEKGQabC/OP/HZvB2oUVmyOcl26g3I7PK5m1fBDq3/Q19RLRRc+61FKmb4EwrjTQyDFI1</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCXYVgADMAmYy7xnvc1krQ/w94CB7a3VaJbEUhglbiP0lXDQzzXYxLfzhuQAWZhrf3TTpvkPN75ejYesyC0DJw/O3Qbx/FDROFJf7I3fwogJlkvDDX90V9+fIZnk46kKUsoA2mN6SZSS+mH7wP2KDmW1L5DtYJbYQUGQhTwxWlUdL3IS1cdWT0GA/8t9kzXCao9jfL2fdr4JqLeq2344N1OeeBFOqGL6n4Nb+34oZSIklYDQ7StrpCq8LgFkge+J9haYLxFIxK9Cxru596+wK2w+ZU/NfYvoR37S6oiXVU/vrpQ8Vv97W5OaSivqG40Geju1w71Bzy4MUnQjHgVCEQB aleck.lin-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>aleck.lin</sys_created_by><sys_created_on>2017-08-08 23:21:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d2c1ddd4dbac8b00b28b7bfdae961968</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:01</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name/></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>354508129</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>48a67b9bdb2817c0aaa8f9361d9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa8700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>aleck.lin-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>08042717fce417c0a1179edecfee3ee1</update_guid>
+<update_guid_history>08042717fce417c0a1179edecfee3ee1:354508129</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_2cf4683113797200da6253c32244b06b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><basic_auth_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>basic_auth</classification><mid_list/><name>Zabbix Cred</name><order>180</order><password>hx+yQ1zAmcx7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>basic_auth_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 19:03:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2cf4683113797200da6253c32244b06b</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:32</sys_updated_on><tag/><type>basic_auth</type><user_name>admin</user_name></basic_auth_credentials></record_update>]]></payload>
+<payload_hash>2091496934</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>4ca67b9bdb2817c0aaa8f9361d9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa5700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>Zabbix Cred</target_name>
+<type>Basic Auth Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>b3f3e31702e417c0e26fab6eb02b0995</update_guid>
+<update_guid_history>b3f3e31702e417c0e26fab6eb02b0995:2091496934</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_97ca06a0d72321008de76ccf6e6103f8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><discovery_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>ssh</classification><mid_list/><name>solarwinds cred</name><order>100</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>discovery_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-10-01 00:10:17</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>97ca06a0d72321008de76ccf6e6103f8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2014-10-01 00:10:17</sys_updated_on><tag/><type>ssh</type><user_name>admin</user_name></discovery_credentials></record_update>]]></payload>
+<payload_hash>-1395551705</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>4ca67b9bdb2817c0aaa8f9361d9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa7d80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>solarwinds cred</target_name>
+<type>Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>8004271767e417c045b19dedfe6fc6dd</update_guid>
+<update_guid_history>8004271767e417c045b19dedfe6fc6dd:-1395551705</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_6640e43513b57200da6253c32244b054</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><windows_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>windows</classification><mid_list/><name>MSPMidserver1</name><order>120</order><password>eZYbY1sPfu6NkG1PeSH3FmzQj7AU0ZWrwi30soZEFhp7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>windows_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 18:43:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6640e43513b57200da6253c32244b054</sys_id><sys_mod_count>6</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:59:34</sys_updated_on><tag/><type>windows</type><user_name>Administrator</user_name></windows_credentials></record_update>]]></payload>
+<payload_hash>909896063</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>80a67b9bdb2817c0aaa8f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa6890000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>MSPMidserver1</target_name>
+<type>Windows Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>b3f3271743e417c02ba93d8c01e1f9c7</update_guid>
+<update_guid_history>b3f3271743e417c02ba93d8c01e1f9c7:909896063</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_e42f53e4db9cc300b28b7bfdae961939</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="">brian.walter@snc</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>brian.walter@snc-default</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChALd1aZ5C93VNKgRAJ2tBGYFB9mmtj4NFiMOCqwiSgnNXfLOWLYGyODfLGJ1TMF91K/K73Nzn4kb0CX1T1rCRlhNxCh6v2j7G8buQBavRaChFpRVkg34I10gVjYfALqwDMlnSIN0V3FfIPLDqzfm19iamFH5QGPKFzxodlRnJ4Xdk6s4KUGS1mCcb2YeLPhcqJC4AmwBKDnZt8ARSrmRsJ565y0T2Eh6z5J8tLxi8QDLd117lEglP1euotwvBpXfvsqqxOfBsvkrRNjAq59AlnbqgXYb1ZOonseLgz/RjGXB5CzflKTNV+3mJmFW89IyZtnHwN1XwvqjAuyOiZVst brian.walter@snc-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>brian.walter@snc</sys_created_by><sys_created_on>2017-07-28 18:01:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e42f53e4db9cc300b28b7bfdae961939</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:01</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name/></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>1797961456</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>80a67b9bdb2817c0aaa8f9361d9619cd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa8e70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>brian.walter@snc-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>4c042717b2e417c0fd3e274fa2fccae4</update_guid>
+<update_guid_history>4c042717b2e417c0fd3e274fa2fccae4:1797961456</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_401c2d5013c63a00da6253c32244b0c8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><ssh_private_key_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>ssh</classification><mid_list/><name>TB LAB AWS EC2</name><order>100</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><sys_class_name>ssh_private_key_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-04-06 18:41:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>401c2d5013c63a00da6253c32244b0c8</sys_id><sys_mod_count>7</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 22:00:23</sys_updated_on><tag/><type>ssh_private_key</type><user_name>ec2-user</user_name></ssh_private_key_credentials></record_update>]]></payload>
+<payload_hash>1985935061</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>84a67b9bdb2817c0aaa8f9361d9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa5db0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>TB LAB AWS EC2</target_name>
+<type>SSH Private Key Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>7ff3271726e417c07f9957f06245bbc2</update_guid>
+<update_guid_history>7ff3271726e417c07f9957f06245bbc2:1985935061</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_d16bdc5edb4c0b00b28b7bfdae961933</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="Alfonso Griglen">12826bf03710200044e0bfc8bcbe5db1</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>alfonso.griglen-default</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCW5Rpu/S73b7u8gRsaePqqnKgt357DlS4EwngDfB7IMGQHmi9aOfmwTRIhGDVdhuBGeGPr4h3hXPX1bd13pSHSct1ciq9D3E8T2EKmsjrsq0deYHJEoDRE7Hb8jpTF50BRY8Xn2A3Nal346yv2VyB6WEqgDGgfZdAy6RmK29qwX1pzS0VDzXi5CBKcpplZIjzwA0MYOUBzlaWx9LtBhvvm6OhsQ3EkqYwdsh+j8tcJ9ns+KI84FwKyWxUhWHvjoNBEV0lIR70Q3fGhI2V0aHdFbD0dtecoTPlLEt6lwWw7hmTJCR28VFc7gMbpAYNUXuMjNIB5tGf0nq8zWQ1xG0EN alfonso.griglen-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>alfonso.griglen</sys_created_by><sys_created_on>2017-07-21 03:59:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d16bdc5edb4c0b00b28b7bfdae961933</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name/></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>-1383659929</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>84a67b9bdb2817c0aaa8f9361d9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa8420000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>alfonso.griglen-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>8404271725e417c0c7ff6fcc2a4bfce0</update_guid>
+<update_guid_history>8404271725e417c0c7ff6fcc2a4bfce0:-1383659929</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_29f8d9b5db8cc700b28b7bfdae96196a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><azure_service_principal action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><auth_method>Client Secret</auth_method><authentication_key/><authentication_protocol/><cert_alias/><certificate/><classification>azure</classification><client_id>e68e2439-e5c5-428a-b50c-7ea6203de82d</client_id><mid_list/><name>SC Lab on Azure</name><order>200</order><password/><privacy_key/><privacy_protocol/><realm/><secret_key>OWRteP5118fF8pju0Y16u3oyHFPBEpUnEESU08RscOn/8dOGYcwsF1fJG0S74wdz</secret_key><ssh_passphrase/><ssh_private_key/><sys_class_name>azure_service_principal</sys_class_name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-19 19:14:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>29f8d9b5db8cc700b28b7bfdae96196a</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:56:59</sys_updated_on><tag/><tenant_id>8bcff170-9979-491e-8683-d8ced0850bad</tenant_id><type>azure</type><user_name/></azure_service_principal></record_update>]]></payload>
+<payload_hash>1002040984</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>88a67b9bdb2817c0aaa8f9361d9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa55b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>SC Lab on Azure</target_name>
+<type>Azure Service Principal</type>
+<update_domain>global</update_domain>
+<update_guid>73f3e3172ee417c053299713e752c594</update_guid>
+<update_guid_history>73f3e3172ee417c053299713e752c594:1002040984</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_9325e982db480b00b28b7bfdae961953</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><basic_auth_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>basic_auth</classification><mid_list/><name>UbuntuVMLogin</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>basic_auth_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-20 14:43:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9325e982db480b00b28b7bfdae961953</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>basic_auth</type><user_name>ubuntu</user_name></basic_auth_credentials></record_update>]]></payload>
+<payload_hash>-1883609418</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>88a67b9bdb2817c0aaa8f9361d9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa7bf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>UbuntuVMLogin</target_name>
+<type>Basic Auth Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>80042717e4e417c0c8305ed74a0babdc</update_guid>
+<update_guid_history>80042717e4e417c0c8305ed74a0babdc:-1883609418</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_111a06a0d72321008de76ccf6e6103a4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><discovery_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>ssh</classification><mid_list/><name>netcool cred</name><order>100</order><password>g47XiRqzIN0=</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>discovery_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-10-01 00:07:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>111a06a0d72321008de76ccf6e6103a4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2014-10-01 00:07:09</sys_updated_on><tag/><type>ssh</type><user_name>root</user_name></discovery_credentials></record_update>]]></payload>
+<payload_hash>-548807139</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>8ca67b9bdb2817c0aaa8f9361d9619c7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa4a90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>netcool cred</target_name>
+<type>Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>7ff3e317bbe417c048016bdf87aab78f</update_guid>
+<update_guid_history>7ff3e317bbe417c048016bdf87aab78f:-548807139</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_83c6cdecdb458700704df9b61d9619fe</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="John Depot">b8d40528db058700704df9b61d961911</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>sd.itil-default</name><order>100</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDvA2Xsu/2oFBUXUM8qTz7mBh3BomnyC0ALuwg8J1R6xzywbflDtVdxKEP7oWFNloLT9tvdXmq2le66CVkru+ijDA6AK9ljiFt7E13j0jz+gtkmAcAXtlPSVA5xWEFV48/rVH46tOefrPQsIZSnmYDDG7S+fhUbeurFbglLxGa1FRZTx0VyOFY4vBjeg7X2uqgOgxHZ8LrIkPWKO6iD9A5HqXdUSFE93SltA7RicTDXcjEmwevEj1e3IW5GwKDO4BuBT89TvjClHoN1fy28rGPM9MtVVbf9xFz8F96t8xLRzk6151VcAZgwtOTGcTuU7f1WiukiB+nok4bSlmjyQ7v sd.itil-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>sd.itil</sys_created_by><sys_created_on>2017-09-03 13:42:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>83c6cdecdb458700704df9b61d9619fe</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-03 15:40:17</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name>ec2-user</user_name></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>-1267102954</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>8ca67b9bdb2817c0aaa8f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa7160000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>sd.itil-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>f7f327177fe417c0828b9190191c46cb</update_guid>
+<update_guid_history>f7f327177fe417c0828b9190191c46cb:-1267102954</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_3acd9c34db94c300a5d179daae9619b2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_node_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>cmp_node_credential</classification><mid_list/><name>showcase02-newday0017</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><sys_class_name>sn_cmp_node_credentials</sys_class_name><sys_created_by>mid.azure01</sys_created_by><sys_created_on>2017-07-28 22:35:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3acd9c34db94c300a5d179daae9619b2</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>cmp_node_credential</type><user_name>azureuser</user_name></sn_cmp_node_credentials></record_update>]]></payload>
+<payload_hash>1873737576</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>c0a67b9bdb2817c0aaa8f9361d9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa5b00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>showcase02-newday0017</target_name>
+<type>CMP Node Credential</type>
+<update_domain>global</update_domain>
+<update_guid>37f3e31786e417c04a3145f174f97a97</update_guid>
+<update_guid_history>37f3e31786e417c04a3145f174f97a97:1873737576</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_ab1ad5f5db8cc700b28b7bfdae96190c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_azure_ea_credential action="INSERT_OR_UPDATE"><access_key>waZ/WObgSg6B+t01eV5Df/noTwGlfKwXPpqK1e3Uo4bI1dNNI85GPVVmaTStUMmkcEpWu2wObVTzZ7/afbo9Tpq+PrKJsl+GqC53WehtLJFsXP+y3AILiYvwWKXU65Tac4K9teiuCh3of8zuQRs1kvV4QxbASyyl1WN3iwWHLTWbmsFIU6lUUPXBgZPJcXRYxEcAZ4jWqz0oThOS9pV8AOA5t5H99svF3EOf4H+OpxWGz3rCzvAOFTpUN0xfEZIRPjcPCe5s/fae18zYzZ9XWfWG8urHHfkX2Qqx/sg4r3lF32ZxQ9E7KLC1aOvvwh4ps+FCrvqM/bpDYjZkeOdbjWzBrL9SCcLcTxS/Skdyk89/VaIbDTtjL+t2Vennth7sTNyFSkNA61AUOBkCS2/8H/6cvnAlfvvcbu+8S5jmWLdeOnH91MkleY41zi6Ai2p+cL4GCRYYCZy1nXEfiPW4ZVOHh4/BpTwWVPcU4tPQJvZANKS8bO1wqa7RwpmlXoUl7EJ1lBeG/BAvP1umXKcNiCTVtUa8aOuvlK2kHlHk4jQvKVpgUb4+RXecF4rMqsX3F/4pggkdIH/n9d/LFBsL7D0TN60XykK6/r8GfdnSni7Y8SV1feCFBnff9oE8higqi6MhOo8+HP701BQGmkQMUvMJAvhLHEwX0p83lHGjFDv0Mr+txmtK42Onp6yg7SJfYEqwwkS5As+RzUy0uLrTKIbEtCiBkgsHIRm4bgWvZE2944mx90EwdXu2MM7E6+ZGYrTVQ/KWzfZyidFbNwbxbFdxmwWoZrr+2dPkp1NT1gDNnDjSC0zL5gQYdDREbfmWLTCSmfmJmLSaVIuHkR7Sfy/19IE40sKlRJQg3Fh+H0q71zqkcatRqPP3+VqiaReeisZaSBWabCj1hP2uTMlBeqITpCqn6HZNKtOgSBJwxWcnBWHzci14OFWE3RG1etj+5aPH6AbUc9MqYVRiA/GVQhqbHuIaEf6S/6Ny6qZoXNdqdQflkgSBrUIxvV3o7pnMezGkmvhMoxg=</access_key><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>azure_ea</classification><enrollment_number>69145730</enrollment_number><mid_list/><name>SC Lab on Azure EA</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>sn_cmp_azure_ea_credential</sys_class_name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-19 19:25:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ab1ad5f5db8cc700b28b7bfdae96190c</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>azure_ea</type><user_name/></sn_cmp_azure_ea_credential></record_update>]]></payload>
+<payload_hash>1597832463</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>c0a67b9bdb2817c0aaa8f9361d9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa8210000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>SC Lab on Azure EA</target_name>
+<type>Azure Enterprise Agreement Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>0404271733e417c0ccb99c095555cbdf</update_guid>
+<update_guid_history>0404271733e417c0ccb99c095555cbdf:1597832463</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_1c07ef08db0547004aa9d311ce9619d9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><aws_credentials action="INSERT_OR_UPDATE"><access_key>AKIAJJAWZU6KJ2BM7QHA</access_key><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><aws_account/><classification>aws</classification><mid_list/><name>TB AWS LAB Creds</name><order>190</order><password/><privacy_key/><privacy_protocol/><secret_key>1qcvcLSyT2zcaJYMsflKjGUO9goPZEFT45a/tGwj/t6np3KYbNBXwXsxpJr4TKMY</secret_key><ssh_passphrase/><ssh_private_key/><sys_class_name>aws_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-02 12:06:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1c07ef08db0547004aa9d311ce9619d9</sys_id><sys_mod_count>6</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:18</sys_updated_on><tag/><type>aws</type><user_name/></aws_credentials></record_update>]]></payload>
+<payload_hash>-511334585</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>c4a67b9bdb2817c0aaa8f9361d9619c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa53a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>TB AWS LAB Creds</target_name>
+<type>AWS Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>33f3e317eee417c04aefab7eb19a1d93</update_guid>
+<update_guid_history>33f3e317eee417c04aefab7eb19a1d93:-511334585</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_92e31afddb000b00b28b7bfdae96192d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="Pat Administrator">6816f79cc0a8016401c5a33be04be441</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>admin-default</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzv1K2lew8ahr7Nf6ZCu2xNtenY4AhitYt1/SsZBms64g/UdxbZxkrZI8jGGaIaJyAxmYapC3QnFOH2LAoxDyjn1RI7hVti6iKOgzHhqc6uvVrtoK8iITzWMEJwyK9DBNJ1jr9GjtGbICXE0q/gqJeLyO+r/6OnMwZh2+yG6oP3BUrzSbppziXJW9cPlIN2USormUbPBO5ZdHQgfO3BlvD/f5rEIiYcIWsA85Q7ahN0c0WYd8Eh8kkqAWgmSDENrqpWN66l7qSFghnti6Q0Vt6wSAaS6ps1FV/s1DrEg919SPukBp8DUPRgSWs50bZQQHPYt1pRysMtmVmJwT2R6cT admin-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-19 23:29:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>92e31afddb000b00b28b7bfdae96192d</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-03 15:39:24</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name>ec2-user</user_name></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>974322092</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>c4a67b9bdb2817c0aaa8f9361d9619cb</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa7920000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>admin-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>bbf327173fe417c05b6355613ce171ce</update_guid>
+<update_guid_history>bbf327173fe417c05b6355613ce171ce:974322092</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_7e10a47113b57200da6253c32244b093</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><windows_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>windows</classification><mid_list/><name>MSPMidServer-Tblevsc2-Trap</name><order>200</order><password>nSvpETkdjEjPmt/KXGPBOkBLGC6AKVyPTk6G+66AtmR7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>windows_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 18:42:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7e10a47113b57200da6253c32244b093</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:00</sys_updated_on><tag/><type>windows</type><user_name>Administrator</user_name></windows_credentials></record_update>]]></payload>
+<payload_hash>1751986019</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>c8a67b9bdb2817c0aaa8f9361d9619ca</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa6f10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>MSPMidServer-Tblevsc2-Trap</target_name>
+<type>Windows Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>77f32717e8e417c0f4b9bb24cf5501ca</update_guid>
+<update_guid_history>77f32717e8e417c0f4b9bb24cf5501ca:1751986019</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_608f947113b57200da6253c32244b034</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><windows_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><authentication_key/><authentication_protocol/><classification>windows</classification><mid_list/><name>SDMidserver1</name><order>120</order><password>tAQrpAb6y5G33fXb3sXhIWwJTjO8utqqwLy3bdOxUBl7MaSa+EyjGA==</password><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key/><sys_class_name>windows_credentials</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-29 18:40:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>608f947113b57200da6253c32244b034</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:45</sys_updated_on><tag/><type>windows</type><user_name>Administrator</user_name></windows_credentials></record_update>]]></payload>
+<payload_hash>1474734662</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>cca67b9bdb2817c0aaa8f9361d9619c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa65b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>SDMidserver1</target_name>
+<type>Windows Credentials</type>
+<update_domain>global</update_domain>
+<update_guid>73f32717e4e417c030316213d9d622c6</update_guid>
+<update_guid_history>73f32717e4e417c030316213d9d622c6:1474734662</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_credentials_da23705edb400300b28b7bfdae961917</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_credentials"><sn_cmp_ssh_credentials action="INSERT_OR_UPDATE"><active>true</active><applies_to>all</applies_to><assigned_to display_value="Jerrod Bennett">5b7c200d0a640069006b3845b5d0fa7c</assigned_to><authentication_key/><authentication_protocol/><classification>cmp_ssh_credentials</classification><mid_list/><name>jerrod.bennett-default</name><order>200</order><password/><privacy_key/><privacy_protocol/><ssh_passphrase/><ssh_private_key>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</ssh_private_key><ssh_public_key>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCSl+nY1cZUoxRDt+HgDE3uLxQCwpF8O5/kNwRf0e6AyU8rNn8mV64ZivnK6Y5fKYAqbgyG18tQ+EBZer/5uGz8gQZMeKJrszDV3/sx0pUsboMPyv7d7O2WiHXFenPrDDsItR/2pfyJLzrNOXIw7EEownXpTCU11wT3dZ53US9upeQrYCt3vzMM6+ytEClBYc4pZshLuJil8FcEimrp43UWTlRJSZ/J1glEPk5Iw3Xnl/xmRQ375/czz0OxMsHfubXDEyBnWnTWWn4acbm0dumg5OulZkJdDLdC7i3C8ltpKQpZsgxneq9L5KvUI963a0qG6PY5sIrC2U/tnBqw9tFl jerrod.bennett-default
+</ssh_public_key><sys_class_name>sn_cmp_ssh_credentials</sys_class_name><sys_created_by>jerrod.bennett</sys_created_by><sys_created_on>2017-07-21 05:43:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>da23705edb400300b28b7bfdae961917</sys_id><sys_mod_count>4</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-02 21:57:01</sys_updated_on><tag/><type>cmp_ssh_credentials</type><user_name/></sn_cmp_ssh_credentials></record_update>]]></payload>
+<payload_hash>1654352268</payload_hash>
+<remote_update_set display_value="AnC-Creds">88a67b9bdb2817c0aaa8f9361d9619c7</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:14:10</sys_created_on>
+<sys_id>cca67b9bdb2817c0aaa8f9361d9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f66fa8b60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:14:10</sys_updated_on>
+<table/>
+<target_name>jerrod.bennett-default</target_name>
+<type>CMP SSH Key Pair</type>
+<update_domain>global</update_domain>
+<update_guid>c804271775e417c0c7d8e33b1bf760e3</update_guid>
+<update_guid_history>c804271775e417c0c7d8e33b1bf760e3:1654352268</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

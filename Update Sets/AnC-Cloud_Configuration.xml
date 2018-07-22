@@ -1,0 +1,2346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-03-05 15:15:51">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>AnC-Cloud Configuration</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>38607793db2817c0aaa8f9361d96194a</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>680733dbdb2817c0aaa8f9361d96196c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cmdb_ci_cloud_service_account_c9464fc1db088700b28b7bfdae961943</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmdb_ci_cloud_service_account"><cmdb_ci_cloud_service_account action="INSERT_OR_UPDATE"><account_id>128416897356</account_id><asset/><asset_tag/><assigned/><assigned_to/><assignment_group/><attributes/><can_print>false</can_print><category/><cfg_auto_change/><cfg_auto_management_server/><cfg_auto_provider/><change_control/><change_request/><checked_in/><checked_out/><comments/><company/><correlation_id/><cost/><cost_cc>USD</cost_cc><cost_center/><created_by_qualys>false</created_by_qualys><datacenter_discovery_status>2017-11-02 06:01:47: Completed....Reload this form to see an updated datacenter list.</datacenter_discovery_status><datacenter_type>cmdb_ci_aws_datacenter</datacenter_type><datacenter_url/><delivery_date/><department/><discovery_credentials display_value="SC Lab on AWS">a8568fc1db088700b28b7bfdae96193b</discovery_credentials><discovery_source>ServiceNow</discovery_source><dns_domain/><due/><due_in/><fault_count>0</fault_count><first_discovered/><fqdn/><gl_account/><install_date/><install_status>1</install_status><invoice_number/><ip_address/><justification/><last_discovered>2018-03-05 00:42:50</last_discovered><lease_id/><location/><mac_address/><maintenance_schedule/><managed_by/><manufacturer/><model_id/><model_number/><monitor>false</monitor><name>AWS - SC Lab</name><ng_assignment_flag>ready</ng_assignment_flag><object_id>128416897356</object_id><operational_status>1</operational_status><order_date/><owned_by/><po_number/><purchase_date/><schedule/><serial_number/><server/><short_description/><skip_sync>false</skip_sync><sn_vul_qualys_host_id/><sn_vul_qualys_host_tags/><sn_vul_qualys_id/><start_date/><subcategory/><support_group/><supported_by/><sys_class_name>cmdb_ci_cloud_service_account</sys_class_name><sys_class_path>/!!/!)/#.</sys_class_path><sys_created_by>zack.sargent@snc</sys_created_by><sys_created_on>2017-07-17 19:22:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c9464fc1db088700b28b7bfdae961943</sys_id><sys_mod_count>2133</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-03-05 00:42:50</sys_updated_on><unverified>false</unverified><vendor/><warranty_expiration/></cmdb_ci_cloud_service_account></record_update>]]></payload>
+<payload_hash>-1404130412</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>200733dbdb2817c0aaa8f9361d96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a2273b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>AWS - SC Lab</target_name>
+<type>Cloud Service Account</type>
+<update_domain>global</update_domain>
+<update_guid>b390fb93f92817c04ceb0a570187e823</update_guid>
+<update_guid_history>b390fb93f92817c04ceb0a570187e823:-1404130412</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_com_profile_mapping_daa03ddbdbfd07004aa9d311ce9619e2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_com_profile_mapping"><sn_cmp_com_profile_mapping action="INSERT_OR_UPDATE"><cloud_account display_value="SC Lab">e62ca9f4dbf94b40704df9b61d9619d0</cloud_account><location display_value="us-west-2">d2c94385db088700b28b7bfdae961961</location><price/><profile display_value="Small">6f02617ddb8cc700b28b7bfdae961959</profile><sys_class_name>sn_cmp_com_profile_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-19 12:36:46</sys_created_on><sys_id>daa03ddbdbfd07004aa9d311ce9619e2</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_com_profile_mapping_daa03ddbdbfd07004aa9d311ce9619e2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-19 12:36:46</sys_updated_on><template display_value="t2.micro">348e36d2dbc40300b28b7bfdae9619d3</template></sn_cmp_com_profile_mapping></record_update>]]></payload>
+<payload_hash>1752873571</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>200733dbdb2817c0aaa8f9361d961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a40ab00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name/>
+<type>Compute Profile Mapping</type>
+<update_domain>global</update_domain>
+<update_guid>46113f172a2817c0ecd0f868567c5ba2</update_guid>
+<update_guid_history>46113f172a2817c0ecd0f868567c5ba2:1752873571,bac07ddb4dfd0700ec4fb2d121dc30dc:1752873571</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_mapping_8507dadbdb7147004aa9d311ce961936</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile_mapping"><sn_cmp_os_profile_mapping action="INSERT_OR_UPDATE"><cloud_account display_value="SC Lab">e62ca9f4dbf94b40704df9b61d9619d0</cloud_account><location display_value="us-west-2">d2c94385db088700b28b7bfdae961961</location><price/><profile display_value="WINDOWS w TRAP MID">88e168a4dbcd4700704df9b61d9619a4</profile><sys_class_name>sn_cmp_os_profile_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-19 15:24:01</sys_created_on><sys_id>8507dadbdb7147004aa9d311ce961936</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_os_profile_mapping_8507dadbdb7147004aa9d311ce961936</sys_update_name><sys_updated_by>sddepot</sys_updated_by><sys_updated_on>2018-02-13 23:08:05</sys_updated_on><template display_value="AnC-MID-Trap-TEMPLATE">3a9f3807db330300aaa8f9361d961939</template></sn_cmp_os_profile_mapping></record_update>]]></payload>
+<payload_hash>-1828362173</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>200733dbdb2817c0aaa8f9361d961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5e6c00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name/>
+<type>OS Profile Mapping</type>
+<update_domain>global</update_domain>
+<update_guid>3781b757bf2817c005f7eaa5feca8c01</update_guid>
+<update_guid_history>3781b757bf2817c005f7eaa5feca8c01:-1828362173,0b43a241dd585b40d10d555808b9af72:-1828362173,58179edb66714700d18106c374d5f01e:2123626663</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_compute_profile_6f02617ddb8cc700b28b7bfdae961959</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_compute_profile"><sn_cmp_compute_profile action="INSERT_OR_UPDATE"><description>Default "Small" profile</description><name>Small</name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-19 19:51:57</sys_created_on><sys_id>6f02617ddb8cc700b28b7bfdae961959</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2017-07-19 19:51:57</sys_updated_on></sn_cmp_compute_profile></record_update>]]></payload>
+<payload_hash>1594810984</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>240733dbdb2817c0aaa8f9361d96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a36fdb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Small</target_name>
+<type>Compute Profile</type>
+<update_domain>global</update_domain>
+<update_guid>60f07b17892817c02cb68edd73e28b01</update_guid>
+<update_guid_history>60f07b17892817c02cb68edd73e28b01:1594810984</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_b7769a71db400b00b28b7bfdae961943</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>LINUX</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-19 23:40:47</sys_created_on><sys_id>b7769a71db400b00b28b7bfdae961943</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-19 23:40:47</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>927066919</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>240733dbdb2817c0aaa8f9361d961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c61a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>LINUX</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7581f3575f2817c09f793cb69fa9789c</update_guid>
+<update_guid_history>7581f3575f2817c09f793cb69fa9789c:927066919</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_cloud_template_fd2e5064dbd4c300b28b7bfdae961980</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmp_cloud_template"><sn_cmp_cloud_template action="INSERT_OR_UPDATE"><body>{&#13;
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",&#13;
+  "contentVersion": "1.0.0.0",&#13;
+  "parameters": {&#13;
+    "vmDnsName": {&#13;
+      "type": "string",&#13;
+      "metadata": {&#13;
+        "description": "This is the unique DNS name of the for the public IP for your VM",&#13;
+        "SNC::Parameter::Metadata": {&#13;
+          "allowedPattern": "[0-9a-z]{1,11}"&#13;
+        } &#13;
+      }&#13;
+    },&#13;
+    "adminUsername": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "someAdmin",&#13;
+      "metadata": {&#13;
+        "description": "This is the username you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "adminPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "someP@ssw0rd",&#13;
+      "metadata": {&#13;
+        "description": "This is the password you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "vmSize": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "Standard_DS1_v2",&#13;
+      "allowedValues": [&#13;
+        "Standard_DS1_v2",&#13;
+        "Standard_DS2_v2",&#13;
+        "Standard_DS3_v2"&#13;
+      ],&#13;
+      "metadata": {&#13;
+        "description": "Size of VM"&#13;
+      }&#13;
+    }&#13;
+  },&#13;
+  "variables": {&#13;
+    "vmName": "[parameters('vmDnsName')]",&#13;
+    "virtualNetworkName": "ephemeral-home",&#13;
+    "subnetName": "ephemeral-sub",&#13;
+    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",&#13;
+    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",&#13;
+    "publicIPAddressName": "[concat(parameters('vmDnsName'),'-pub')]",&#13;
+    "publicIPAddressType": "Dynamic",&#13;
+    "nicName": "[concat(parameters('vmDnsName'),'-nic')]",&#13;
+    "imagePublisher": "Canonical",&#13;
+    "imageVersion": "latest",&#13;
+    "imageSKU": "14.04.2-LTS",&#13;
+    "imageOffer": "UbuntuServer",&#13;
+    "storageAccountType": "Standard_LRS",&#13;
+    "vmStorageAccountContainerName": "vhds",&#13;
+    "newStorageAccountName":"[take(concat(parameters('vmDnsName'),uniqueString(parameters('vmDnsName'))),24)]",&#13;
+    "mySqlPassword":"[concat(parameters('adminUsername'),'4sql')]"&#13;
+  },&#13;
+  "resources": [&#13;
+    {&#13;
+      "type": "Microsoft.Storage/storageAccounts",&#13;
+      "name": "[variables('newStorageAccountName')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "accountType": "[variables('storageAccountType')]"&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/publicIPAddresses",&#13;
+      "name": "[variables('publicIPAddressName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "publicIPAllocationMethod": "[variables('publicIPAddressType')]",&#13;
+        "dnsSettings": {&#13;
+          "domainNameLabel": "[parameters('vmDnsName')]"&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/networkInterfaces",&#13;
+      "name": "[variables('nicName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [ "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]" ],&#13;
+      "properties": {&#13;
+        "ipConfigurations": [&#13;
+          {&#13;
+            "name": "ipconfig1",&#13;
+            "properties": {&#13;
+              "privateIPAllocationMethod": "Dynamic",&#13;
+              "publicIPAddress": {&#13;
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"&#13;
+              },&#13;
+              "subnet": {&#13;
+                "id": "[variables('subnetRef')]"&#13;
+              }&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Compute/virtualMachines",&#13;
+      "name": "[variables('vmName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Storage/storageAccounts/', variables('newStorageAccountName'))]",&#13;
+        "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "hardwareProfile": {&#13;
+          "vmSize": "[parameters('vmSize')]"&#13;
+        },&#13;
+        "osProfile": {&#13;
+          "computername": "[variables('vmName')]",&#13;
+          "adminUsername": "[parameters('adminUsername')]",&#13;
+          "adminPassword": "[parameters('adminPassword')]"&#13;
+        },&#13;
+        "storageProfile": {&#13;
+          "imageReference": {&#13;
+            "publisher": "[variables('imagePublisher')]",&#13;
+            "offer": "[variables('imageOffer')]",&#13;
+            "sku": "[variables('imageSKU')]",&#13;
+            "version": "[variables('imageVersion')]"&#13;
+          },&#13;
+          "osDisk": {&#13;
+            "name": "osdisk1",&#13;
+            "vhd": {&#13;
+              "uri": "[concat('http://',variables('newStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/','osdisk1.vhd')]"&#13;
+            },&#13;
+            "caching": "ReadWrite",&#13;
+            "createOption": "FromImage"&#13;
+          }&#13;
+        },&#13;
+        "networkProfile": {&#13;
+          "networkInterfaces": [&#13;
+            {&#13;
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"&#13;
+            }&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "type": "Microsoft.Compute/virtualMachines/extensions",&#13;
+      "name": "[concat(variables('vmName'),'/newuserscript')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "publisher": "Microsoft.Azure.Extensions",&#13;
+        "type": "CustomScript",&#13;
+        "typeHandlerVersion": "2.0",&#13;
+        "autoUpgradeMinorVersion": true,&#13;
+        "settings": {&#13;
+          "fileUris": [&#13;
+            "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/wordpress-single-vm-ubuntu/install_wordpress.sh"&#13;
+          ]&#13;
+        },&#13;
+        "protectedSettings": {&#13;
+          "commandToExecute": "[concat('sh install_wordpress.sh ', variables('mySqlPassword'))]"&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  ]&#13;
+}</body><name>Azure Wordpress v6</name><short_description>Wordpress on Ubuntu (ARM)</short_description><sys_class_name>sn_cmp_cloud_template</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-28 03:58:45</sys_created_on><sys_domain>global</sys_domain><sys_id>fd2e5064dbd4c300b28b7bfdae961980</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Azure Wordpress v6</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_cloud_template_fd2e5064dbd4c300b28b7bfdae961980</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-28 23:58:51</sys_updated_on><type display_value="ARM Template">612f41e49f00320048111f80a57fcf82</type></sn_cmp_cloud_template></record_update>]]></payload>
+<payload_hash>1629544968</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>280733dbdb2817c0aaa8f9361d96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a66ea20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Azure Wordpress v6</target_name>
+<type>ServiceNow Cloud Templates</type>
+<update_domain>global</update_domain>
+<update_guid>58b13b57262817c06d0c64b0ebf1feec</update_guid>
+<update_guid_history>58b13b57262817c06d0c64b0ebf1feec:1629544968,3cf0707ce094c3001f37a0de126e9f81:1629544968,454edc244cd4c300d2fe31dfe0ad5e30:-175863445</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_88e168a4dbcd4700704df9b61d9619a4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>WINDOWS w TRAP MID</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-03 11:02:02</sys_created_on><sys_id>88e168a4dbcd4700704df9b61d9619a4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-03 11:02:02</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-481712854</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>280733dbdb2817c0aaa8f9361d961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6e00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>WINDOWS w TRAP MID</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d8177576c2817c0e23bbb6a79541996</update_guid>
+<update_guid_history>7d8177576c2817c0e23bbb6a79541996:-481712854</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_rp_filter_value_447cf8c9db505b40aaa8f9361d9619ca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rp_filter_value"><sn_cmp_rp_filter_value action="INSERT_OR_UPDATE"><field>name</field><filter display_value="UserPub">af5cb8c9db505b40aaa8f9361d961986</filter><mr_name/><operator>and</operator><order>100</order><sys_class_name>sn_cmp_rp_filter_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-02-13 15:39:19</sys_created_on><sys_id>447cf8c9db505b40aaa8f9361d9619ca</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_rp_filter_value_447cf8c9db505b40aaa8f9361d9619ca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-02-13 20:04:14</sys_updated_on><type>query</type><value>AnC</value></sn_cmp_rp_filter_value></record_update>]]></payload>
+<payload_hash>1175117183</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>280733dbdb2817c0aaa8f9361d961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6ad0cdd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name/>
+<type>Resource Pool Filter Value</type>
+<update_domain>global</update_domain>
+<update_guid>125337d79e2817c01ce19eb70cc23eab</update_guid>
+<update_guid_history>125337d79e2817c01ce19eb70cc23eab:1175117183,8a39354106945b408a43e68189a372f9:1175117183,a99cf8c952505b40675e557b8938cfd9:2087880877</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_cloud_template_124e02f9db000b00b28b7bfdae961987</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmp_cloud_template"><sn_cmp_cloud_template action="INSERT_OR_UPDATE"><body>ServiceNowCloudTemplate:&#13;
+  name: Network with Subnets&#13;
+  category: Network&#13;
+  deploymentModel:&#13;
+    resources:&#13;
+    - resource: App Subnet&#13;
+      resourceblock: ServiceNow::Subnet&#13;
+      host: Network&#13;
+    - resource: Network&#13;
+      resourceblock: ServiceNow::Network&#13;
+      host: Logical Datacenter&#13;
+    - resource: Web Subnet&#13;
+      resourceblock: ServiceNow::Subnet&#13;
+      host: Network&#13;
+    - resource: Logical Datacenter&#13;
+      resourceblock: ServiceNow::Resource::HostConstraints::Logical Datacenter&#13;
+      constraints: Azure Datacenter,AWS Datacenter&#13;
+  operations:&#13;
+  - operation: Provision&#13;
+    steps:&#13;
+    - step: Blueprint Container Resource::Provision::StackProvisionParameterSet&#13;
+    - step: Network::Provision::NetworkProvisionParameterSet&#13;
+    - step: Web Subnet::Provision::WebSubnetProvisionParameterSet&#13;
+    - step: App Subnet::Provision::AppSubnetProvisionParameterSet&#13;
+  - operation: Deprovision&#13;
+    steps:&#13;
+    - step: Network::Deprovision::NetworkDeprovisionParameterSet&#13;
+  parameterSets:&#13;
+  - parameterSet: StackProvisionParameterSet&#13;
+    resource: ServiceNow::Resource::Network with Subnets Blueprint Resource::Provision&#13;
+    parameters:&#13;
+    - parameter: Logical_Datacenter&#13;
+      value: ${parameter.Logical_Datacenter}&#13;
+      visibleInForm: true&#13;
+    - parameter: UserGroup&#13;
+      datasource: ServiceNow::Pools::UserGroupPool.GroupsUserBelongsTo&#13;
+      value: ${parameter.UserGroup}&#13;
+      visibleInForm: true&#13;
+    - parameter: CloudAccount&#13;
+      datasource: ServiceNow::Pools::CloudAccountPool.All&#13;
+      value: ${parameter.CloudAccount}&#13;
+      visibleInForm: true&#13;
+    - parameter: ResourceGroupName&#13;
+      value: ${parameter.ResourceGroupName}&#13;
+      visibleInForm: true&#13;
+    - parameter: CreateResourceGroup&#13;
+      value: ${parameter.CreateResourceGroup}&#13;
+      visibleInForm: true&#13;
+    - parameter: SubscriptionId&#13;
+      value: ${parameter.SubscriptionId}&#13;
+      visibleInForm: true&#13;
+    - parameter: Location&#13;
+      datasource: ServiceNow::Pools::CloudLocationPool.All&#13;
+      value: ${parameter.Location}&#13;
+      visibleInForm: true&#13;
+    - parameter: Logical_Datacenter&#13;
+      value: ${parameter.Logical_Datacenter}&#13;
+      visibleInForm: true&#13;
+    - parameter: ResourceGroup&#13;
+      datasource: ServiceNow::Pools::ResourceGroupPool.getByLDC&#13;
+      value: ${parameter.ResourceGroup}&#13;
+      visibleInForm: true&#13;
+    - parameter: StackName&#13;
+      value: ${parameter.StackName}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: NetworkProvisionParameterSet&#13;
+    resource: ServiceNow::Resource::Network::Provision&#13;
+    parameters:&#13;
+    - parameter: NetworkName&#13;
+      value: ${parameter.NetworkName}&#13;
+      visibleInForm: true&#13;
+    - parameter: CidrBlock&#13;
+      value: ${parameter.CidrBlock}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: WebSubnetProvisionParameterSet&#13;
+    resource: ServiceNow::Resource::Subnet::Provision&#13;
+    parameters:&#13;
+    - parameter: SubnetName&#13;
+      value: ${parameter.SubnetName}&#13;
+      visibleInForm: true&#13;
+    - parameter: SubnetCidrBlock&#13;
+      value: ${parameter.SubnetCidrBlock}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: AppSubnetProvisionParameterSet&#13;
+    resource: ServiceNow::Resource::Subnet::Provision&#13;
+    parameters:&#13;
+    - parameter: SubnetCidrBlock&#13;
+      value: ${parameter.SubnetCidrBlock}&#13;
+      visibleInForm: true&#13;
+    - parameter: SubnetName&#13;
+      value: ${parameter.SubnetName}&#13;
+      visibleInForm: true&#13;
+  - parameterSet: NetworkDeprovisionParameterSet&#13;
+    resource: ServiceNow::Resource::Network::Deprovision&#13;
+    parameters:&#13;
+    - parameter: NetworkID&#13;
+      value: ${Stack.items[Network].attributes[object_id]}&#13;
+      visibleInForm: true&#13;
+</body><name>Network with Subnets</name><short_description>Provision a network and two subnets</short_description><sys_class_name>sn_cmp_cloud_template</sys_class_name><sys_created_by>alfonso.griglen</sys_created_by><sys_created_on>2017-07-19 23:05:45</sys_created_on><sys_domain>global</sys_domain><sys_id>124e02f9db000b00b28b7bfdae961987</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Network with Subnets</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_cloud_template_124e02f9db000b00b28b7bfdae961987</sys_update_name><sys_updated_by>alfonso.griglen</sys_updated_by><sys_updated_on>2017-07-19 23:05:45</sys_updated_on><type display_value="ServiceNow Blueprint">ab1f81e49f00320048111f80a57fcf30</type></sn_cmp_cloud_template></record_update>]]></payload>
+<payload_hash>-1729290327</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>2c0733dbdb2817c0aaa8f9361d96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a66d670000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Network with Subnets</target_name>
+<type>ServiceNow Cloud Templates</type>
+<update_domain>global</update_domain>
+<update_guid>58b1b757be2817c031e9cf8158c3af87</update_guid>
+<update_guid_history>58b1b757be2817c031e9cf8158c3af87:-1729290327,a37e82f939000b003e1ee735613ab45e:-1729290327</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_45b0065bdb3147004aa9d311ce96197c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>HTTP Nagios</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-19 13:46:24</sys_created_on><sys_id>45b0065bdb3147004aa9d311ce96197c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-19 13:46:24</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-1900152214</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>2c0733dbdb2817c0aaa8f9361d961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c5e10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>HTTP Nagios</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7581f357eb2817c0ebb597a1de8c519a</update_guid>
+<update_guid_history>7581f357eb2817c0ebb597a1de8c519a:-1900152214</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_rp_filter_0adfe178dbc5c700704df9b61d96198d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rp_filter"><sn_cmp_rp_filter action="INSERT_OR_UPDATE"><name>sdPub</name><resource_pool display_value="SubnetPool-TB">ea9f2178dbc5c700704df9b61d961933</resource_pool><script/><sys_class_name>sn_cmp_rp_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-04 11:22:15</sys_created_on><sys_id>0adfe178dbc5c700704df9b61d96198d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sdPub</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_rp_filter_0adfe178dbc5c700704df9b61d96198d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-04 11:22:15</sys_updated_on><type>query</type></sn_cmp_rp_filter></record_update>]]></payload>
+<payload_hash>-1936274789</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>2c0733dbdb2817c0aaa8f9361d961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6acdfcd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>sdPub</target_name>
+<type>Resource Pool Filter</type>
+<update_domain>global</update_domain>
+<update_guid>6f4337d74c2817c0ed6550c4f7baa65d</update_guid>
+<update_guid_history>6f4337d74c2817c0ed6550c4f7baa65d:-1936274789,5c30317844c5c700e76f41ca2863e732:-1936274789</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_compute_profile_6e092d06db480b00b28b7bfdae961913</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_compute_profile"><sn_cmp_compute_profile action="INSERT_OR_UPDATE"><description>"Micro" and often "free" tier</description><name>Micro</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-20 15:00:48</sys_created_on><sys_id>6e092d06db480b00b28b7bfdae961913</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-28 20:57:27</sys_updated_on></sn_cmp_compute_profile></record_update>]]></payload>
+<payload_hash>-418518719</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>600733dbdb2817c0aaa8f9361d96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a36fc50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Micro</target_name>
+<type>Compute Profile</type>
+<update_domain>global</update_domain>
+<update_guid>60f07b17182817c0d229bcd3094bb800</update_guid>
+<update_guid_history>60f07b17182817c0d229bcd3094bb800:-418518719</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_b1961e71db400b00b28b7bfdae961974</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>WINDOWS 2008 R2</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-19 23:41:14</sys_created_on><sys_id>b1961e71db400b00b28b7bfdae961974</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-19 23:41:14</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>1429092254</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>600733dbdb2817c0aaa8f9361d961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>WINDOWS 2008 R2</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d817757692817c02e960f1b4d801f91</update_guid>
+<update_guid_history>7d817757692817c02e960f1b4d801f91:1429092254</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_cloud_template_e01b7ad4dbd0c300b28b7bfdae9619dd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmp_cloud_template"><sn_cmp_cloud_template action="INSERT_OR_UPDATE"><body>{&#13;
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",&#13;
+  "contentVersion": "1.0.0.0",&#13;
+  "parameters": {&#13;
+    "vmDnsName": {&#13;
+      "type": "string",&#13;
+      "metadata": {&#13;
+        "description": "This is the unique DNS name of the for the public IP for your VM",&#13;
+        "SNC::Parameter::Metadata": {&#13;
+          "allowedPattern": "[0-9a-z]{1,11}"&#13;
+        } &#13;
+      }&#13;
+    },&#13;
+    "adminUsername": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "someAdmin",&#13;
+      "metadata": {&#13;
+        "description": "This is the username you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "adminPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "someP@ssw0rd",&#13;
+      "metadata": {&#13;
+        "description": "This is the password you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "mySqlPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "someP@ssw0rd",&#13;
+      "metadata": {&#13;
+        "description": "Password for your mySQL account"&#13;
+      }&#13;
+    },&#13;
+    "vmSize": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "Standard_DS1_v2",&#13;
+      "allowedValues": [&#13;
+        "Standard_DS1_v2",&#13;
+        "Standard_DS2_v2",&#13;
+        "Standard_DS3_v2"&#13;
+      ],&#13;
+      "metadata": {&#13;
+        "description": "Size of VM"&#13;
+      }&#13;
+    }&#13;
+  },&#13;
+  "variables": {&#13;
+    "vmName": "[parameters('vmDnsName')]",&#13;
+    "virtualNetworkName": "ephemeral-home",&#13;
+    "subnetName": "ephemeral-sub",&#13;
+    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",&#13;
+    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",&#13;
+    "publicIPAddressName": "publicIP",&#13;
+    "publicIPAddressType": "Dynamic",&#13;
+    "nicName": "[concat(parameters('vmDnsName'),'-nic')]",&#13;
+    "imagePublisher": "Canonical",&#13;
+    "imageVersion": "latest",&#13;
+    "imageSKU": "14.04.2-LTS",&#13;
+    "imageOffer": "UbuntuServer",&#13;
+    "storageAccountType": "Standard_LRS",&#13;
+    "vmStorageAccountContainerName": "vhds",&#13;
+    "newStorageAccountName":"[take(concat(parameters('vmDnsName'),uniqueString(parameters('vmDnsName'))),24)]"&#13;
+  },&#13;
+  "resources": [&#13;
+    {&#13;
+      "type": "Microsoft.Storage/storageAccounts",&#13;
+      "name": "[variables('newStorageAccountName')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "accountType": "[variables('storageAccountType')]"&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/publicIPAddresses",&#13;
+      "name": "[variables('publicIPAddressName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "publicIPAllocationMethod": "[variables('publicIPAddressType')]",&#13;
+        "dnsSettings": {&#13;
+          "domainNameLabel": "[parameters('vmDnsName')]"&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/networkInterfaces",&#13;
+      "name": "[variables('nicName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [ "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]" ],&#13;
+      "properties": {&#13;
+        "ipConfigurations": [&#13;
+          {&#13;
+            "name": "ipconfig1",&#13;
+            "properties": {&#13;
+              "privateIPAllocationMethod": "Dynamic",&#13;
+              "publicIPAddress": {&#13;
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"&#13;
+              },&#13;
+              "subnet": {&#13;
+                "id": "[variables('subnetRef')]"&#13;
+              }&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Compute/virtualMachines",&#13;
+      "name": "[variables('vmName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Storage/storageAccounts/', variables('newStorageAccountName'))]",&#13;
+        "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "hardwareProfile": {&#13;
+          "vmSize": "[parameters('vmSize')]"&#13;
+        },&#13;
+        "osProfile": {&#13;
+          "computername": "[variables('vmName')]",&#13;
+          "adminUsername": "[parameters('adminUsername')]",&#13;
+          "adminPassword": "[parameters('adminPassword')]"&#13;
+        },&#13;
+        "storageProfile": {&#13;
+          "imageReference": {&#13;
+            "publisher": "[variables('imagePublisher')]",&#13;
+            "offer": "[variables('imageOffer')]",&#13;
+            "sku": "[variables('imageSKU')]",&#13;
+            "version": "[variables('imageVersion')]"&#13;
+          },&#13;
+          "osDisk": {&#13;
+            "name": "osdisk1",&#13;
+            "vhd": {&#13;
+              "uri": "[concat('http://',variables('newStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/','osdisk1.vhd')]"&#13;
+            },&#13;
+            "caching": "ReadWrite",&#13;
+            "createOption": "FromImage"&#13;
+          }&#13;
+        },&#13;
+        "networkProfile": {&#13;
+          "networkInterfaces": [&#13;
+            {&#13;
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"&#13;
+            }&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "type": "Microsoft.Compute/virtualMachines/extensions",&#13;
+      "name": "[concat(variables('vmName'),'/newuserscript')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "publisher": "Microsoft.Azure.Extensions",&#13;
+        "type": "CustomScript",&#13;
+        "typeHandlerVersion": "2.0",&#13;
+        "autoUpgradeMinorVersion": true,&#13;
+        "settings": {&#13;
+          "fileUris": [&#13;
+            "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/wordpress-single-vm-ubuntu/install_wordpress.sh"&#13;
+          ]&#13;
+        },&#13;
+        "protectedSettings": {&#13;
+          "commandToExecute": "[concat('sh install_wordpress.sh ', parameters('mySqlPassword'))]"&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  ]&#13;
+}</body><name>Azure Wordpress v4</name><short_description>Wordpress on Azure</short_description><sys_class_name>sn_cmp_cloud_template</sys_class_name><sys_created_by>alfonso.griglen</sys_created_by><sys_created_on>2017-07-27 20:48:14</sys_created_on><sys_domain>global</sys_domain><sys_id>e01b7ad4dbd0c300b28b7bfdae9619dd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Azure Wordpress v4</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_cloud_template_e01b7ad4dbd0c300b28b7bfdae9619dd</sys_update_name><sys_updated_by>alfonso.griglen</sys_updated_by><sys_updated_on>2017-07-27 20:48:14</sys_updated_on><type display_value="ARM Template">612f41e49f00320048111f80a57fcf82</type></sn_cmp_cloud_template></record_update>]]></payload>
+<payload_hash>-121853982</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>640733dbdb2817c0aaa8f9361d96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a66e460000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Azure Wordpress v4</target_name>
+<type>ServiceNow Cloud Templates</type>
+<update_domain>global</update_domain>
+<update_guid>d8b13b57bd2817c05532822d4dcdb8eb</update_guid>
+<update_guid_history>d8b13b57bd2817c05532822d4dcdb8eb:-121853982,7ebbba1802d0c3008ba3a13a6d830e35:-121853982</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_88a5e1fddb8cc700b28b7bfdae9619af</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description>Amazon Linux AMI to use in deployments requiring a version of Amazon Linux</description><name>AMAZON LINUX</name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-19 20:07:47</sys_created_on><sys_id>88a5e1fddb8cc700b28b7bfdae9619af</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2017-07-19 20:07:47</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-1004459247</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>640733dbdb2817c0aaa8f9361d961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c5940000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>AMAZON LINUX</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7581f357102817c0d7303d3f8dd36a97</update_guid>
+<update_guid_history>7581f357102817c0d7303d3f8dd36a97:-1004459247</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_rp_filter_value_0bee3978db09c700704df9b61d9619ed</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rp_filter_value"><sn_cmp_rp_filter_value action="INSERT_OR_UPDATE"><field>name</field><filter display_value="sdPub">0adfe178dbc5c700704df9b61d96198d</filter><mr_name/><operator>and</operator><order>100</order><sys_class_name>sn_cmp_rp_filter_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-04 12:26:48</sys_created_on><sys_id>0bee3978db09c700704df9b61d9619ed</sys_id><sys_mod_count>6</sys_mod_count><sys_name/><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_rp_filter_value_0bee3978db09c700704df9b61d9619ed</sys_update_name><sys_updated_by>sd.itil</sys_updated_by><sys_updated_on>2018-01-26 14:47:59</sys_updated_on><type>query</type><value>subnet-7528923d</value></sn_cmp_rp_filter_value></record_update>]]></payload>
+<payload_hash>1463401093</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>640733dbdb2817c0aaa8f9361d961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6ad87d10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name/>
+<type>Resource Pool Filter Value</type>
+<update_domain>global</update_domain>
+<update_guid>4e73f7d7c82817c0b57f8db44e5d683b</update_guid>
+<update_guid_history>4e73f7d7c82817c0b57f8db44e5d683b:1463401093,3934005718734300e07e9fbe56311412:1463401093,1c344057b873430086fbce4398e6bf6a:-1188212405,f578a28dec890b008239c4513efe0c3e:-1975504429,cf38a28de6890b00c3e9582bdfc3d135:-841346920,00a72a4da3890b00db086dbf42a3aaa4:443618130,2266e5c13e850b0048e3b07fe64ef72e:676109069,8afe39788b09c70077658d47cf0b0a92:443618130</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_cloud_template_03991860dbd4c300b28b7bfdae9619d7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmp_cloud_template"><sn_cmp_cloud_template action="INSERT_OR_UPDATE"><body>{&#13;
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",&#13;
+  "contentVersion": "1.0.0.0",&#13;
+  "parameters": {&#13;
+    "vmDnsName": {&#13;
+      "type": "string",&#13;
+      "metadata": {&#13;
+        "description": "This is the unique DNS name of the for the public IP for your VM",&#13;
+        "SNC::Parameter::Metadata": {&#13;
+          "allowedPattern": "[0-9a-z]{1,11}"&#13;
+        } &#13;
+      }&#13;
+    },&#13;
+    "adminUsername": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "someAdmin",&#13;
+      "metadata": {&#13;
+        "description": "This is the username you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "adminPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "someP@ssw0rd",&#13;
+      "metadata": {&#13;
+        "description": "This is the password you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "vmSize": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "Standard_DS1_v2",&#13;
+      "allowedValues": [&#13;
+        "Standard_DS1_v2",&#13;
+        "Standard_DS2_v2",&#13;
+        "Standard_DS3_v2"&#13;
+      ],&#13;
+      "metadata": {&#13;
+        "description": "Size of VM"&#13;
+      }&#13;
+    }&#13;
+  },&#13;
+  "variables": {&#13;
+    "vmName": "[parameters('vmDnsName')]",&#13;
+    "virtualNetworkName": "ephemeral-home",&#13;
+    "subnetName": "ephemeral-sub",&#13;
+    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",&#13;
+    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",&#13;
+    "publicIPAddressName": "publicIP",&#13;
+    "publicIPAddressType": "Dynamic",&#13;
+    "nicName": "[concat(parameters('vmDnsName'),'-nic')]",&#13;
+    "imagePublisher": "Canonical",&#13;
+    "imageVersion": "latest",&#13;
+    "imageSKU": "14.04.2-LTS",&#13;
+    "imageOffer": "UbuntuServer",&#13;
+    "storageAccountType": "Standard_LRS",&#13;
+    "vmStorageAccountContainerName": "vhds",&#13;
+    "newStorageAccountName":"[take(concat(parameters('vmDnsName'),uniqueString(parameters('vmDnsName'))),24)]",&#13;
+    "mySqlPassword":"[concat(parameters('adminUsername'),'4sql')]"&#13;
+  },&#13;
+  "resources": [&#13;
+    {&#13;
+      "type": "Microsoft.Storage/storageAccounts",&#13;
+      "name": "[variables('newStorageAccountName')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "accountType": "[variables('storageAccountType')]"&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/publicIPAddresses",&#13;
+      "name": "[variables('publicIPAddressName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "publicIPAllocationMethod": "[variables('publicIPAddressType')]",&#13;
+        "dnsSettings": {&#13;
+          "domainNameLabel": "[parameters('vmDnsName')]"&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/networkInterfaces",&#13;
+      "name": "[variables('nicName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [ "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]" ],&#13;
+      "properties": {&#13;
+        "ipConfigurations": [&#13;
+          {&#13;
+            "name": "ipconfig1",&#13;
+            "properties": {&#13;
+              "privateIPAllocationMethod": "Dynamic",&#13;
+              "publicIPAddress": {&#13;
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"&#13;
+              },&#13;
+              "subnet": {&#13;
+                "id": "[variables('subnetRef')]"&#13;
+              }&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Compute/virtualMachines",&#13;
+      "name": "[variables('vmName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Storage/storageAccounts/', variables('newStorageAccountName'))]",&#13;
+        "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "hardwareProfile": {&#13;
+          "vmSize": "[parameters('vmSize')]"&#13;
+        },&#13;
+        "osProfile": {&#13;
+          "computername": "[variables('vmName')]",&#13;
+          "adminUsername": "[parameters('adminUsername')]",&#13;
+          "adminPassword": "[parameters('adminPassword')]"&#13;
+        },&#13;
+        "storageProfile": {&#13;
+          "imageReference": {&#13;
+            "publisher": "[variables('imagePublisher')]",&#13;
+            "offer": "[variables('imageOffer')]",&#13;
+            "sku": "[variables('imageSKU')]",&#13;
+            "version": "[variables('imageVersion')]"&#13;
+          },&#13;
+          "osDisk": {&#13;
+            "name": "osdisk1",&#13;
+            "vhd": {&#13;
+              "uri": "[concat('http://',variables('newStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/','osdisk1.vhd')]"&#13;
+            },&#13;
+            "caching": "ReadWrite",&#13;
+            "createOption": "FromImage"&#13;
+          }&#13;
+        },&#13;
+        "networkProfile": {&#13;
+          "networkInterfaces": [&#13;
+            {&#13;
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"&#13;
+            }&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "type": "Microsoft.Compute/virtualMachines/extensions",&#13;
+      "name": "[concat(variables('vmName'),'/newuserscript')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "publisher": "Microsoft.Azure.Extensions",&#13;
+        "type": "CustomScript",&#13;
+        "typeHandlerVersion": "2.0",&#13;
+        "autoUpgradeMinorVersion": true,&#13;
+        "settings": {&#13;
+          "fileUris": [&#13;
+            "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/wordpress-single-vm-ubuntu/install_wordpress.sh"&#13;
+          ]&#13;
+        },&#13;
+        "protectedSettings": {&#13;
+          "commandToExecute": "[concat('sh install_wordpress.sh ', variables('mySqlPassword'))]"&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  ]&#13;
+}</body><name>Azure Wordpress v5</name><short_description>5th version of ARM template to deploy  Wordpress on Ubuntu</short_description><sys_class_name>sn_cmp_cloud_template</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-28 03:40:35</sys_created_on><sys_domain>global</sys_domain><sys_id>03991860dbd4c300b28b7bfdae9619d7</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Azure Wordpress v5</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_cloud_template_03991860dbd4c300b28b7bfdae9619d7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-28 03:55:13</sys_updated_on><type display_value="ARM Template">612f41e49f00320048111f80a57fcf82</type></sn_cmp_cloud_template></record_update>]]></payload>
+<payload_hash>87736822</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>680733dbdb2817c0aaa8f9361d96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a66d150000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Azure Wordpress v5</target_name>
+<type>ServiceNow Cloud Templates</type>
+<update_domain>global</update_domain>
+<update_guid>98b1b757b52817c09be754a9ed933d86</update_guid>
+<update_guid_history>98b1b757b52817c09be754a9ed933d86:87736822,957d542474d4c300699ce88fd354b2cf:87736822,0b1a906091d4c300f795712f7a8edf56:-401128963</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_3f51e4a4dbcd4700704df9b61d9619e4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>WINDOWS w MID</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-03 11:01:36</sys_created_on><sys_id>3f51e4a4dbcd4700704df9b61d9619e4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-03 11:01:36</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>1844697401</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>680733dbdb2817c0aaa8f9361d961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6cd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>WINDOWS w MID</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d817757052817c0e8ef4fc7ce9db395</update_guid>
+<update_guid_history>7d817757052817c0e8ef4fc7ce9db395:1844697401</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_resource_pool_ea9f2178dbc5c700704df9b61d961933</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_resource_pool"><sn_cmp_resource_pool action="INSERT_OR_UPDATE"><lookup_label>name</lookup_label><lookup_table>cmdb_ci_cloud_subnet</lookup_table><lookup_value>sys_id</lookup_value><name>SubnetPool-TB</name><sys_class_name>sn_cmp_resource_pool</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-04 11:20:24</sys_created_on><sys_id>ea9f2178dbc5c700704df9b61d961933</sys_id><sys_mod_count>2</sys_mod_count><sys_name>SubnetPool-TB</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_resource_pool_ea9f2178dbc5c700704df9b61d961933</sys_update_name><sys_updated_by>sd.itil</sys_updated_by><sys_updated_on>2018-01-26 14:45:52</sys_updated_on><type>static</type></sn_cmp_resource_pool></record_update>]]></payload>
+<payload_hash>-1600983192</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>680733dbdb2817c0aaa8f9361d961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6ac88170000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>SubnetPool-TB</target_name>
+<type>Resource Pool</type>
+<update_domain>global</update_domain>
+<update_guid>ce33b3d79f2817c0a1ee82d76164ca16</update_guid>
+<update_guid_history>ce33b3d79f2817c0a1ee82d76164ca16:-1600983192,03b30c1700734300128626ac573976cf:-1600983192,c438aa4d7d890b0037c0f9250b77ea2a:1554790396,11cfa1789dc5c7001be7b284742de47d:-1600983192</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cmdb_ci_cloud_service_account_637b2df4dbf94b40704df9b61d96197e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmdb_ci_cloud_service_account"><cmdb_ci_cloud_service_account action="INSERT_OR_UPDATE"><account_id>48c3ee89-06d2-4f41-bedb-22603be48a43</account_id><asset/><asset_tag/><assigned/><assigned_to/><assignment_group/><attributes/><can_print>false</can_print><category/><cfg_auto_change/><cfg_auto_management_server/><cfg_auto_provider/><change_control/><change_request/><checked_in/><checked_out/><comments/><company/><correlation_id/><cost/><cost_cc>USD</cost_cc><cost_center/><created_by_qualys>false</created_by_qualys><datacenter_discovery_status>2017-11-02 06:01:40: Completed....Reload this form to see an updated datacenter list.</datacenter_discovery_status><datacenter_type>cmdb_ci_azure_datacenter</datacenter_type><datacenter_url/><delivery_date/><department/><discovery_credentials display_value="SC Lab on Azure">29f8d9b5db8cc700b28b7bfdae96196a</discovery_credentials><discovery_source/><dns_domain/><due/><due_in/><fault_count>0</fault_count><first_discovered/><fqdn/><gl_account/><install_date/><install_status>1</install_status><invoice_number/><ip_address/><justification/><last_discovered/><lease_id/><location/><mac_address/><maintenance_schedule/><managed_by/><manufacturer/><model_id/><model_number/><monitor>false</monitor><name>Azure - SC Lab</name><ng_assignment_flag>ready</ng_assignment_flag><object_id>48c3ee89-06d2-4f41-bedb-22603be48a43</object_id><operational_status>1</operational_status><order_date/><owned_by/><po_number/><purchase_date/><schedule/><serial_number/><server/><short_description/><skip_sync>false</skip_sync><sn_vul_qualys_host_id/><sn_vul_qualys_host_tags/><sn_vul_qualys_id/><start_date/><subcategory/><support_group/><supported_by/><sys_class_name>cmdb_ci_cloud_service_account</sys_class_name><sys_class_path>/!!/!)/#.</sys_class_path><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-11 17:49:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>637b2df4dbf94b40704df9b61d96197e</sys_id><sys_mod_count>13</sys_mod_count><sys_updated_by>mid.server</sys_updated_by><sys_updated_on>2017-11-02 13:01:40</sys_updated_on><unverified>false</unverified><vendor/><warranty_expiration/></cmdb_ci_cloud_service_account></record_update>]]></payload>
+<payload_hash>-565525042</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>6c0733dbdb2817c0aaa8f9361d96196c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a227650000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Azure - SC Lab</target_name>
+<type>Cloud Service Account</type>
+<update_domain>global</update_domain>
+<update_guid>f390fb93ed2817c00c8ff2d058f7f824</update_guid>
+<update_guid_history>f390fb93ed2817c00c8ff2d058f7f824:-565525042</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_com_profile_mapping_6b185322dbbd83004aa9d311ce961982</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_com_profile_mapping"><sn_cmp_com_profile_mapping action="INSERT_OR_UPDATE"><cloud_account display_value="SC Lab">e62ca9f4dbf94b40704df9b61d9619d0</cloud_account><location display_value="West US 2">604416b0dbf547004aa9d311ce96193b</location><price/><profile display_value="Small">6f02617ddb8cc700b28b7bfdae961959</profile><sys_class_name>sn_cmp_com_profile_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-17 12:13:19</sys_created_on><sys_id>6b185322dbbd83004aa9d311ce961982</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_com_profile_mapping_6b185322dbbd83004aa9d311ce961982</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 12:13:19</sys_updated_on><template display_value="Standard_D2_v2">5b16d234dbbd4b40704df9b61d961952</template></sn_cmp_com_profile_mapping></record_update>]]></payload>
+<payload_hash>-1153732489</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>6c0733dbdb2817c0aaa8f9361d96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a461320000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name/>
+<type>Compute Profile Mapping</type>
+<update_domain>global</update_domain>
+<update_guid>2f217f172c2817c08efe37af18318ab7</update_guid>
+<update_guid_history>2f217f172c2817c08efe37af18318ab7:-1153732489,67381722f6bd8300ba4405e317481b37:-1153732489</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_f8822c28dbcd4700704df9b61d96199e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>HTTP PROXY LINUX</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-03 11:04:47</sys_created_on><sys_id>f8822c28dbcd4700704df9b61d96199e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-03 11:04:47</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-1626722245</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>6c0733dbdb2817c0aaa8f9361d961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6010000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>HTTP PROXY LINUX</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7581f3576f2817c048c15a71b76f329b</update_guid>
+<update_guid_history>7581f3576f2817c048c15a71b76f329b:-1626722245</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_cloud_template_9af26248db588300b28b7bfdae961983</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmp_cloud_template"><sn_cmp_cloud_template action="INSERT_OR_UPDATE"><body>{&#13;
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",&#13;
+  "contentVersion": "1.0.0.0",&#13;
+  "parameters": {&#13;
+    "vmDnsName": {&#13;
+      "type": "string",&#13;
+      "metadata": {&#13;
+        "description": "This is the unique DNS name of the for the public IP for your VM"&#13;
+      }&#13;
+    },&#13;
+    "adminUsername": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "someAdmin",&#13;
+      "metadata": {&#13;
+        "description": "This is the username you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "adminPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "someP@ssw0rd",&#13;
+      "metadata": {&#13;
+        "description": "This is the password you wish to assign to your VMs admin account"&#13;
+      }&#13;
+    },&#13;
+    "mySqlPassword": {&#13;
+      "type": "securestring",&#13;
+      "defaultValue": "someP@ssw0rd",&#13;
+      "metadata": {&#13;
+        "description": "Password for your mySQL account"&#13;
+      }&#13;
+    },&#13;
+    "vmSize": {&#13;
+      "type": "string",&#13;
+      "defaultValue": "Standard_DS1_v2",&#13;
+      "allowedValues": [&#13;
+        "Standard_DS1_v2",&#13;
+        "Standard_DS2_v2",&#13;
+        "Standard_DS3_v2"&#13;
+      ],&#13;
+      "metadata": {&#13;
+        "description": "Size of VM"&#13;
+      }&#13;
+    }&#13;
+  },&#13;
+  "variables": {&#13;
+    "vmName": "[parameters('vmDnsName')]",&#13;
+    "virtualNetworkName": "ephemeral-home",&#13;
+    "subnetName": "ephemeral-sub",&#13;
+    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",&#13;
+    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",&#13;
+    "publicIPAddressName": "publicIP",&#13;
+    "publicIPAddressType": "Dynamic",&#13;
+    "nicName": "[concat(parameters('vmDnsName'),'-nic')]",&#13;
+    "imagePublisher": "Canonical",&#13;
+    "imageVersion": "latest",&#13;
+    "imageSKU": "14.04.2-LTS",&#13;
+    "imageOffer": "UbuntuServer",&#13;
+    "storageAccountType": "Standard_LRS",&#13;
+    "vmStorageAccountContainerName": "vhds",&#13;
+    "newStorageAccountName":"[take(concat(parameters('vmDnsName'),uniqueString(parameters('vmDnsName'))),24)]"&#13;
+  },&#13;
+  "resources": [&#13;
+    {&#13;
+      "type": "Microsoft.Storage/storageAccounts",&#13;
+      "name": "[variables('newStorageAccountName')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "accountType": "[variables('storageAccountType')]"&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/publicIPAddresses",&#13;
+      "name": "[variables('publicIPAddressName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "properties": {&#13;
+        "publicIPAllocationMethod": "[variables('publicIPAddressType')]",&#13;
+        "dnsSettings": {&#13;
+          "domainNameLabel": "[parameters('vmDnsName')]"&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Network/networkInterfaces",&#13;
+      "name": "[variables('nicName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [ "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]" ],&#13;
+      "properties": {&#13;
+        "ipConfigurations": [&#13;
+          {&#13;
+            "name": "ipconfig1",&#13;
+            "properties": {&#13;
+              "privateIPAllocationMethod": "Dynamic",&#13;
+              "publicIPAddress": {&#13;
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]"&#13;
+              },&#13;
+              "subnet": {&#13;
+                "id": "[variables('subnetRef')]"&#13;
+              }&#13;
+            }&#13;
+          }&#13;
+        ]&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "type": "Microsoft.Compute/virtualMachines",&#13;
+      "name": "[variables('vmName')]",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Storage/storageAccounts/', variables('newStorageAccountName'))]",&#13;
+        "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "hardwareProfile": {&#13;
+          "vmSize": "[parameters('vmSize')]"&#13;
+        },&#13;
+        "osProfile": {&#13;
+          "computername": "[variables('vmName')]",&#13;
+          "adminUsername": "[parameters('adminUsername')]",&#13;
+          "adminPassword": "[parameters('adminPassword')]"&#13;
+        },&#13;
+        "storageProfile": {&#13;
+          "imageReference": {&#13;
+            "publisher": "[variables('imagePublisher')]",&#13;
+            "offer": "[variables('imageOffer')]",&#13;
+            "sku": "[variables('imageSKU')]",&#13;
+            "version": "[variables('imageVersion')]"&#13;
+          },&#13;
+          "osDisk": {&#13;
+            "name": "osdisk1",&#13;
+            "vhd": {&#13;
+              "uri": "[concat('http://',variables('newStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/','osdisk1.vhd')]"&#13;
+            },&#13;
+            "caching": "ReadWrite",&#13;
+            "createOption": "FromImage"&#13;
+          }&#13;
+        },&#13;
+        "networkProfile": {&#13;
+          "networkInterfaces": [&#13;
+            {&#13;
+              "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"&#13;
+            }&#13;
+          ]&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "type": "Microsoft.Compute/virtualMachines/extensions",&#13;
+      "name": "[concat(variables('vmName'),'/newuserscript')]",&#13;
+      "apiVersion": "2015-05-01-preview",&#13;
+      "location": "[resourceGroup().location]",&#13;
+      "dependsOn": [&#13;
+        "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"&#13;
+      ],&#13;
+      "properties": {&#13;
+        "publisher": "Microsoft.Azure.Extensions",&#13;
+        "type": "CustomScript",&#13;
+        "typeHandlerVersion": "2.0",&#13;
+        "autoUpgradeMinorVersion": true,&#13;
+        "settings": {&#13;
+          "fileUris": [&#13;
+            "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/wordpress-single-vm-ubuntu/install_wordpress.sh"&#13;
+          ]&#13;
+        },&#13;
+        "protectedSettings": {&#13;
+          "commandToExecute": "[concat('sh install_wordpress.sh ', parameters('mySqlPassword'))]"&#13;
+        }&#13;
+      }&#13;
+    }&#13;
+  ]&#13;
+}</body><name>Azure Wordpress v3</name><short_description>Wordpress on Azure</short_description><sys_class_name>sn_cmp_cloud_template</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-27 00:22:18</sys_created_on><sys_domain>global</sys_domain><sys_id>9af26248db588300b28b7bfdae961983</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Azure Wordpress v3</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_cloud_template_9af26248db588300b28b7bfdae961983</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-27 00:22:18</sys_updated_on><type display_value="ARM Template">612f41e49f00320048111f80a57fcf82</type></sn_cmp_cloud_template></record_update>]]></payload>
+<payload_hash>-1746906253</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a00733dbdb2817c0aaa8f9361d96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a66e010000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Azure Wordpress v3</target_name>
+<type>ServiceNow Cloud Templates</type>
+<update_domain>global</update_domain>
+<update_guid>5cb13b570a2817c0a2b7dd47a2d038ea</update_guid>
+<update_guid_history>5cb13b570a2817c0a2b7dd47a2d038ea:-1746906253,a8236e8046588300ae614b5a5e1de9a6:-1746906253</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_81869a71db400b00b28b7bfdae96198a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>UBUNTU</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-19 23:40:53</sys_created_on><sys_id>81869a71db400b00b28b7bfdae96198a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-19 23:40:53</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-286350242</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a00733dbdb2817c0aaa8f9361d961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6480000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>UBUNTU</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d817757632817c017f7414d491ffe8f</update_guid>
+<update_guid_history>7d817757632817c017f7414d491ffe8f:-286350242</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_rp_filter_af5cb8c9db505b40aaa8f9361d961986</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rp_filter"><sn_cmp_rp_filter action="INSERT_OR_UPDATE"><name>UserPub</name><resource_pool display_value="SubnetPool-TB">ea9f2178dbc5c700704df9b61d961933</resource_pool><script/><sys_class_name>sn_cmp_rp_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-02-13 15:38:35</sys_created_on><sys_id>af5cb8c9db505b40aaa8f9361d961986</sys_id><sys_mod_count>0</sys_mod_count><sys_name>UserPub</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_rp_filter_af5cb8c9db505b40aaa8f9361d961986</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-02-13 15:38:35</sys_updated_on><type>query</type></sn_cmp_rp_filter></record_update>]]></payload>
+<payload_hash>-564790757</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a00733dbdb2817c0aaa8f9361d961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6acdfe30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>UserPub</target_name>
+<type>Resource Pool Filter</type>
+<update_domain>global</update_domain>
+<update_guid>eb4337d70a2817c0dbe54f7945c5995e</update_guid>
+<update_guid_history>eb4337d70a2817c0dbe54f7945c5995e:-564790757,ee6cb8c9f8505b40644a2bc34f5ac202:-564790757</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_billing_schedule_66009f49db088700b28b7bfdae961934</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_cmp_billing_schedule"&gt;&lt;sn_cmp_billing_schedule action="INSERT_OR_UPDATE"&gt;&lt;account display_value="AWS - SC Lab"&gt;c9464fc1db088700b28b7bfdae961943&lt;/account&gt;&lt;active&gt;true&lt;/active&gt;&lt;bucket&gt;sclab-billing&lt;/bucket&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;credential display_value="SC Lab on AWS"&gt;a8568fc1db088700b28b7bfdae96193b&lt;/credential&gt;&lt;current_job_details&gt;Import complete&lt;/current_job_details&gt;&lt;current_job_status&gt;Finish&lt;/current_job_status&gt;&lt;last_executed_on&gt;2018-03-05 12:38:12&lt;/last_executed_on&gt;&lt;last_executed_state&gt;success&lt;/last_executed_state&gt;&lt;last_successful_on&gt;2018-03-05 12:38:12&lt;/last_successful_on&gt;&lt;name&gt;SC Lab on AWS&lt;/name&gt;&lt;provider display_value="AWS"&gt;c9df10a0933622004a9032bfa67ffb0f&lt;/provider&gt;&lt;run_as display_value="Pat Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period/&gt;&lt;run_start&gt;2017-07-17 19:56:43&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 12:00:00&lt;/run_time&gt;&lt;run_type&gt;daily&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[var billingUtil = new sn_cmp.CmpBillingJobUtil(); 
+if(!billingUtil.isBillingWorkflowExecuting('66009f49db088700b28b7bfdae961934'));
+    billingUtil.runThisJob('66009f49db088700b28b7bfdae961934');]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sn_cmp_billing_schedule&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-17 19:57:56&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;66009f49db088700b28b7bfdae961934&lt;/sys_id&gt;&lt;sys_mod_count&gt;17139&lt;/sys_mod_count&gt;&lt;sys_name&gt;SC Lab on AWS&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_cmp_billing_schedule_66009f49db088700b28b7bfdae961934&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mid.server&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-05 12:38:13&lt;/sys_updated_on&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sn_cmp_billing_schedule&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1481716231</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a40733dbdb2817c0aaa8f9361d96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a705190000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>SC Lab on AWS</target_name>
+<type>Billing Schedule</type>
+<update_domain>global</update_domain>
+<update_guid>b9d1fb57072817c03111bbd932a0c23b</update_guid>
+<update_guid_history>b9d1fb57072817c03111bbd932a0c23b:1481716231</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_3ac5e17ddb8cc700b28b7bfdae961974</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description>Standard CentOS version to use in deployments calling for CentOS</description><name>CENTOS</name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-19 20:08:06</sys_created_on><sys_id>3ac5e17ddb8cc700b28b7bfdae961974</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2017-07-19 20:08:46</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>1546651096</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a40733dbdb2817c0aaa8f9361d961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c5af0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>CENTOS</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7581f357ce2817c034c00fcd01ceb398</update_guid>
+<update_guid_history>7581f357ce2817c034c00fcd01ceb398:1546651096</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_resource_pool_85dd65f4dbc5c700704df9b61d9619f2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_resource_pool"><sn_cmp_resource_pool action="INSERT_OR_UPDATE"><lookup_label>name</lookup_label><lookup_table>cmdb_ci_network</lookup_table><lookup_value>sys_id</lookup_value><name>NetworkPool-TB</name><sys_class_name>sn_cmp_resource_pool</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-04 11:12:47</sys_created_on><sys_id>85dd65f4dbc5c700704df9b61d9619f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NetworkPool-TB</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_resource_pool_85dd65f4dbc5c700704df9b61d9619f2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-04 11:12:47</sys_updated_on><type>static</type></sn_cmp_resource_pool></record_update>]]></payload>
+<payload_hash>1446055103</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a40733dbdb2817c0aaa8f9361d961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6ac88020000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>NetworkPool-TB</target_name>
+<type>Resource Pool</type>
+<update_domain>global</update_domain>
+<update_guid>4233b3d76b2817c0be4a3cb610935216</update_guid>
+<update_guid_history>4233b3d76b2817c0be4a3cb610935216:1446055103,a90e65f44ec5c70046938c7e79571b1b:1446055103</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_com_profile_mapping_401f3f62db31c3004aa9d311ce961974</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_com_profile_mapping"><sn_cmp_com_profile_mapping action="INSERT_OR_UPDATE"><cloud_account display_value="SC Lab">e62ca9f4dbf94b40704df9b61d9619d0</cloud_account><location display_value="West US 2">604416b0dbf547004aa9d311ce96193b</location><price/><profile display_value="Medium">59c2257ddb8cc700b28b7bfdae96192e</profile><sys_class_name>sn_cmp_com_profile_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-17 15:03:19</sys_created_on><sys_id>401f3f62db31c3004aa9d311ce961974</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_com_profile_mapping_401f3f62db31c3004aa9d311ce961974</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-17 15:03:19</sys_updated_on><template display_value="Standard_D2s_v3">e316d234dbbd4b40704df9b61d961970</template></sn_cmp_com_profile_mapping></record_update>]]></payload>
+<payload_hash>-1724257893</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a80733dbdb2817c0aaa8f9361d96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a542890000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name/>
+<type>Compute Profile Mapping</type>
+<update_domain>global</update_domain>
+<update_guid>2961b3576a2817c01c5164aa999d12cd</update_guid>
+<update_guid_history>2961b3576a2817c01c5164aa999d12cd:-1724257893,0e2fb3621531c3004ae15791c32d44d7:-1724257893</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_edf0fddbdbfd07004aa9d311ce96193c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description>Windows Jumphost</description><name>WINDOWS Jump</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-10-19 12:37:47</sys_created_on><sys_id>edf0fddbdbfd07004aa9d311ce96193c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-10-19 12:37:47</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>2132077677</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>a80733dbdb2817c0aaa8f9361d961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6a90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>WINDOWS Jump</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d817757b22817c09481c1f02aaeb693</update_guid>
+<update_guid_history>7d817757b22817c09481c1f02aaeb693:2132077677</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_compute_profile_59c2257ddb8cc700b28b7bfdae96192e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_compute_profile"><sn_cmp_compute_profile action="INSERT_OR_UPDATE"><description>Default "Medium" profile</description><name>Medium</name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-19 19:54:57</sys_created_on><sys_id>59c2257ddb8cc700b28b7bfdae96192e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2017-07-19 19:54:57</sys_updated_on></sn_cmp_compute_profile></record_update>]]></payload>
+<payload_hash>-962290296</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>ac0733dbdb2817c0aaa8f9361d96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a36faa0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Medium</target_name>
+<type>Compute Profile</type>
+<update_domain>global</update_domain>
+<update_guid>60f03b17912817c0fde91fba74eb86ff</update_guid>
+<update_guid_history>60f03b17912817c0fde91fba74eb86ff:-962290296</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_af861e71db400b00b28b7bfdae961971</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>WINDOWS</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-19 23:41:02</sys_created_on><sys_id>af861e71db400b00b28b7bfdae961971</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-19 23:41:02</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-791185544</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>ac0733dbdb2817c0aaa8f9361d961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6640000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>WINDOWS</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d817757342817c022ed8aa48821dd90</update_guid>
+<update_guid_history>7d817757342817c022ed8aa48821dd90:-791185544</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_billing_schedule_630a95f5db8cc700b28b7bfdae96191d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_cmp_billing_schedule"&gt;&lt;sn_cmp_billing_schedule action="INSERT_OR_UPDATE"&gt;&lt;account/&gt;&lt;active&gt;true&lt;/active&gt;&lt;bucket/&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;credential display_value="SC Lab on Azure EA"&gt;ab1ad5f5db8cc700b28b7bfdae96190c&lt;/credential&gt;&lt;current_job_details&gt;Downloading dataCannot retrieve billing data from https://ea.azure.com/rest/69145730/usage-report?type=detail&amp;amp;month=2018-02.
+Response code 401: Unauthorized
+&lt;/current_job_details&gt;&lt;current_job_status&gt;Finish&lt;/current_job_status&gt;&lt;last_executed_on&gt;2018-03-05 08:03:21&lt;/last_executed_on&gt;&lt;last_executed_state&gt;failure&lt;/last_executed_state&gt;&lt;last_successful_on&gt;2018-02-06 08:04:43&lt;/last_successful_on&gt;&lt;name&gt;SC Lab on Azure&lt;/name&gt;&lt;provider display_value="Azure"&gt;5fff9c20933622004a9032bfa67ffba8&lt;/provider&gt;&lt;run_as display_value="Zack Sargent"&gt;0ceda7d6db6b7600b28b7bfdae961960&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek&gt;1&lt;/run_dayofweek&gt;&lt;run_period/&gt;&lt;run_start&gt;2017-07-19 19:16:40&lt;/run_start&gt;&lt;run_time&gt;1970-01-01 08:00:00&lt;/run_time&gt;&lt;run_type&gt;daily&lt;/run_type&gt;&lt;script&gt;&lt;![CDATA[var billingUtil = new sn_cmp.CmpBillingJobUtil(); 
+if(!billingUtil.isBillingWorkflowExecuting('630a95f5db8cc700b28b7bfdae96191d'));
+    billingUtil.runThisJob('630a95f5db8cc700b28b7bfdae96191d');]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sn_cmp_billing_schedule&lt;/sys_class_name&gt;&lt;sys_created_by&gt;zack.sargent&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-07-19 19:25:49&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;630a95f5db8cc700b28b7bfdae96191d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1486&lt;/sys_mod_count&gt;&lt;sys_name&gt;SC Lab on Azure&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_cmp_billing_schedule_630a95f5db8cc700b28b7bfdae96191d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mid.server&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-05 08:03:21&lt;/sys_updated_on&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;/sn_cmp_billing_schedule&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-564460563</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e00733dbdb2817c0aaa8f9361d96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a704e10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>SC Lab on Azure</target_name>
+<type>Billing Schedule</type>
+<update_domain>global</update_domain>
+<update_guid>b5d1fb57d42817c0d3c1aff18eb3613a</update_guid>
+<update_guid_history>b5d1fb57d42817c0d3c1aff18eb3613a:-564460563</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_0adcba26db018f00704df9b61d961937</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>MYSQL LINUX</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-10 03:26:46</sys_created_on><sys_id>0adcba26db018f00704df9b61d961937</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-10 03:26:46</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>851427013</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e00733dbdb2817c0aaa8f9361d961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6300000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>MYSQL LINUX</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7581f357f12817c09d5a632d1093009d</update_guid>
+<update_guid_history>7581f357f12817c09d5a632d1093009d:851427013</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_resource_pool_2bce6df4dbc5c700704df9b61d961997</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_resource_pool"><sn_cmp_resource_pool action="INSERT_OR_UPDATE"><lookup_label>name</lookup_label><lookup_table>cmdb_ci_compute_security_group</lookup_table><lookup_value>sys_id</lookup_value><name>SecurityGroupPool-TB</name><sys_class_name>sn_cmp_resource_pool</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-04 11:16:54</sys_created_on><sys_id>2bce6df4dbc5c700704df9b61d961997</sys_id><sys_mod_count>0</sys_mod_count><sys_name>SecurityGroupPool-TB</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_resource_pool_2bce6df4dbc5c700704df9b61d961997</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-04 11:16:54</sys_updated_on><type>static</type></sn_cmp_resource_pool></record_update>]]></payload>
+<payload_hash>-722536597</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e00733dbdb2817c0aaa8f9361d961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6ac87e20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>SecurityGroupPool-TB</target_name>
+<type>Resource Pool</type>
+<update_domain>global</update_domain>
+<update_guid>c233b3d79e2817c0d80275c113679515</update_guid>
+<update_guid_history>c233b3d79e2817c0d80275c113679515:-722536597,86fe21384ec5c700046e1f7d67aca35b:-722536597</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_com_profile_mapping_06192d06db480b00b28b7bfdae96199a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_com_profile_mapping"><sn_cmp_com_profile_mapping action="INSERT_OR_UPDATE"><cloud_account/><location display_value="us-west-2">d2c94385db088700b28b7bfdae961961</location><price>5</price><profile display_value="Micro">6e092d06db480b00b28b7bfdae961913</profile><sys_class_name>sn_cmp_com_profile_mapping</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-20 15:01:06</sys_created_on><sys_id>06192d06db480b00b28b7bfdae96199a</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_com_profile_mapping_06192d06db480b00b28b7bfdae96199a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-28 20:57:09</sys_updated_on><template display_value="t2.micro">348e36d2dbc40300b28b7bfdae9619d3</template></sn_cmp_com_profile_mapping></record_update>]]></payload>
+<payload_hash>-1663385837</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e40733dbdb2817c0aaa8f9361d96196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a4c6aa0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name/>
+<type>Compute Profile Mapping</type>
+<update_domain>global</update_domain>
+<update_guid>35413357d72817c0f0efff3b9c41f671</update_guid>
+<update_guid_history>35413357d72817c0f0efff3b9c41f671:-1663385837,c75780b49954c3006496b9afb65c9247:606661758,c75780b49954c3006496b9afb65c9247:606661758,7d292d0617480b002bf33f92c0d590c9:-1356818897</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_c00cb171db81cb00704df9b61d961969</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>Windows VM</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-07 14:47:56</sys_created_on><sys_id>c00cb171db81cb00704df9b61d961969</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-07 14:47:56</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>1431352593</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e40733dbdb2817c0aaa8f9361d961972</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c6bb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Windows VM</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d817757af2817c0f367201707ee9d94</update_guid>
+<update_guid_history>7d817757af2817c0f367201707ee9d94:1431352593</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_compute_profile_2323a57ddb8cc700b28b7bfdae96196f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_compute_profile"><sn_cmp_compute_profile action="INSERT_OR_UPDATE"><description>Default "Large" profile</description><name>Large</name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2017-07-19 19:56:42</sys_created_on><sys_id>2323a57ddb8cc700b28b7bfdae96196f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2017-07-19 19:56:42</sys_updated_on></sn_cmp_compute_profile></record_update>]]></payload>
+<payload_hash>344535504</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e80733dbdb2817c0aaa8f9361d96196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a36f8c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>Large</target_name>
+<type>Compute Profile</type>
+<update_domain>global</update_domain>
+<update_guid>50f03b17bf2817c01063c75253e26cfe</update_guid>
+<update_guid_history>50f03b17bf2817c01063c75253e26cfe:344535504</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_ab96d2b1db400b00b28b7bfdae961916</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>WINDOWS 2012 R2</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-19 23:41:22</sys_created_on><sys_id>ab96d2b1db400b00b28b7bfdae961916</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-19 23:41:22</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-837028873</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e80733dbdb2817c0aaa8f9361d961971</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c68c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>WINDOWS 2012 R2</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7d817757df2817c0ab77f1b4aa95b792</update_guid>
+<update_guid_history>7d817757df2817c0ab77f1b4aa95b792:-837028873</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_tag_name_d3b05349db80c300a5d179daae9619cb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_tag_name"><sn_cmp_tag_name action="INSERT_OR_UPDATE"><active>true</active><label>Company</label><name>u_company</name><order_field/><order_table>sn_cmp_order</order_table><script/><sys_class_name>sn_cmp_tag_name</sys_class_name><sys_created_by>mid.azure01</sys_created_by><sys_created_on>2017-07-17 19:59:46</sys_created_on><sys_id>d3b05349db80c300a5d179daae9619cb</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Company</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_tag_name_d3b05349db80c300a5d179daae9619cb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-04 10:51:57</sys_updated_on><table>core_company</table><tag_type>Custom</tag_type><value_type>Variable</value_type><variable_name>Company</variable_name><visible>true</visible></sn_cmp_tag_name></record_update>]]></payload>
+<payload_hash>796333181</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>e80733dbdb2817c0aaa8f9361d961974</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6abba9e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table>core_company</table>
+<target_name>Company</target_name>
+<type>Tag Definition</type>
+<update_domain>global</update_domain>
+<update_guid>0d03bf97a42817c06de30a5debb915eb</update_guid>
+<update_guid_history>0d03bf97a42817c06de30a5debb915eb:796333181,f049edbc1285c7009109100011f76718:796333181,5fb05349f680c3001eddf7728da93dcb:1664462303</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_cloud_template_91ce158edb080b00b28b7bfdae961900</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cmp_cloud_template"><sn_cmp_cloud_template action="INSERT_OR_UPDATE"><body>{&#13;
+  "AWSTemplateFormatVersion" : "2010-09-09",&#13;
+  &#13;
+  "Description" : "AWS CloudFormation Sample Template LAMP_Single_Instance: Create a LAMP stack using a single EC2 instance and a local MySQL database for storage. This template demonstrates using the AWS CloudFormation bootstrap scripts to install the packages and files necessary to deploy the Apache web server, PHP and MySQL at instance launch time. **WARNING** This template creates an Amazon EC2 instance. You will be billed for the AWS resources used if you create a stack from this template.",&#13;
+  &#13;
+  "Parameters" : {&#13;
+      &#13;
+    "KeyName": {&#13;
+      "Description" : "Name of an existing EC2 KeyPair to enable SSH access to the instance",&#13;
+      "Type": "AWS::EC2::KeyPair::KeyName",&#13;
+      "ConstraintDescription" : "must be the name of an existing EC2 KeyPair."&#13;
+    },    &#13;
+&#13;
+    "DBName": {&#13;
+      "Default": "MyDatabase",&#13;
+      "Description" : "MySQL database name",&#13;
+      "Type": "String",&#13;
+      "MinLength": "1",&#13;
+      "MaxLength": "64",&#13;
+      "AllowedPattern" : "[a-zA-Z][a-zA-Z0-9]*",&#13;
+      "ConstraintDescription" : "must begin with a letter and contain only alphanumeric characters."&#13;
+    },&#13;
+&#13;
+    "DBUser": {&#13;
+      "NoEcho": "true",&#13;
+      "Description" : "Username for MySQL database access",&#13;
+      "Type": "String",&#13;
+      "MinLength": "1",&#13;
+      "MaxLength": "16",&#13;
+      "AllowedPattern" : "[a-zA-Z][a-zA-Z0-9]*",&#13;
+      "ConstraintDescription" : "must begin with a letter and contain only alphanumeric characters."&#13;
+    },&#13;
+&#13;
+    "DBPassword": {&#13;
+      "NoEcho": "true",&#13;
+      "Description" : "Password for MySQL database access",&#13;
+      "Type": "String",&#13;
+      "MinLength": "1",&#13;
+      "MaxLength": "41",&#13;
+      "AllowedPattern" : "[a-zA-Z0-9]*",&#13;
+      "ConstraintDescription" : "must contain only alphanumeric characters."&#13;
+    },&#13;
+&#13;
+    "DBRootPassword": {&#13;
+      "NoEcho": "true",&#13;
+      "Description" : "Root password for MySQL",&#13;
+      "Type": "String",&#13;
+      "MinLength": "1",&#13;
+      "MaxLength": "41",&#13;
+      "AllowedPattern" : "[a-zA-Z0-9]*",&#13;
+      "ConstraintDescription" : "must contain only alphanumeric characters."&#13;
+    },&#13;
+&#13;
+    "InstanceType" : {&#13;
+      "Description" : "WebServer EC2 instance type",&#13;
+      "Type" : "String",&#13;
+      "Default" : "t2.small",&#13;
+      "AllowedValues" : [ "t1.micro", "t2.nano", "t2.micro", "t2.small", "t2.medium", "t2.large", "m1.small", "m1.medium", "m1.large", "m1.xlarge", "m2.xlarge", "m2.2xlarge", "m2.4xlarge", "m3.medium", "m3.large", "m3.xlarge", "m3.2xlarge", "m4.large", "m4.xlarge", "m4.2xlarge", "m4.4xlarge", "m4.10xlarge", "c1.medium", "c1.xlarge", "c3.large", "c3.xlarge", "c3.2xlarge", "c3.4xlarge", "c3.8xlarge", "c4.large", "c4.xlarge", "c4.2xlarge", "c4.4xlarge", "c4.8xlarge", "g2.2xlarge", "g2.8xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge", "r3.8xlarge", "i2.xlarge", "i2.2xlarge", "i2.4xlarge", "i2.8xlarge", "d2.xlarge", "d2.2xlarge", "d2.4xlarge", "d2.8xlarge", "hi1.4xlarge", "hs1.8xlarge", "cr1.8xlarge", "cc2.8xlarge", "cg1.4xlarge"]&#13;
+,&#13;
+      "ConstraintDescription" : "must be a valid EC2 instance type."&#13;
+    },&#13;
+&#13;
+    "SSHLocation" : {&#13;
+      "Description" : " The IP address range that can be used to SSH to the EC2 instances",&#13;
+      "Type": "String",&#13;
+      "MinLength": "9",&#13;
+      "MaxLength": "18",&#13;
+      "Default": "0.0.0.0/0",&#13;
+      "AllowedPattern": "(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})",&#13;
+      "ConstraintDescription": "must be a valid IP CIDR range of the form x.x.x.x/x."&#13;
+    } &#13;
+  },&#13;
+  &#13;
+  "Mappings" : {&#13;
+    "AWSInstanceType2Arch" : {&#13;
+      "t1.micro"    : { "Arch" : "PV64"   },&#13;
+      "t2.nano"     : { "Arch" : "HVM64"  },&#13;
+      "t2.micro"    : { "Arch" : "HVM64"  },&#13;
+      "t2.small"    : { "Arch" : "HVM64"  },&#13;
+      "t2.medium"   : { "Arch" : "HVM64"  },&#13;
+      "t2.large"    : { "Arch" : "HVM64"  },&#13;
+      "m1.small"    : { "Arch" : "PV64"   },&#13;
+      "m1.medium"   : { "Arch" : "PV64"   },&#13;
+      "m1.large"    : { "Arch" : "PV64"   },&#13;
+      "m1.xlarge"   : { "Arch" : "PV64"   },&#13;
+      "m2.xlarge"   : { "Arch" : "PV64"   },&#13;
+      "m2.2xlarge"  : { "Arch" : "PV64"   },&#13;
+      "m2.4xlarge"  : { "Arch" : "PV64"   },&#13;
+      "m3.medium"   : { "Arch" : "HVM64"  },&#13;
+      "m3.large"    : { "Arch" : "HVM64"  },&#13;
+      "m3.xlarge"   : { "Arch" : "HVM64"  },&#13;
+      "m3.2xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "m4.large"    : { "Arch" : "HVM64"  },&#13;
+      "m4.xlarge"   : { "Arch" : "HVM64"  },&#13;
+      "m4.2xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "m4.4xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "m4.10xlarge" : { "Arch" : "HVM64"  },&#13;
+      "c1.medium"   : { "Arch" : "PV64"   },&#13;
+      "c1.xlarge"   : { "Arch" : "PV64"   },&#13;
+      "c3.large"    : { "Arch" : "HVM64"  },&#13;
+      "c3.xlarge"   : { "Arch" : "HVM64"  },&#13;
+      "c3.2xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "c3.4xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "c3.8xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "c4.large"    : { "Arch" : "HVM64"  },&#13;
+      "c4.xlarge"   : { "Arch" : "HVM64"  },&#13;
+      "c4.2xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "c4.4xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "c4.8xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "g2.2xlarge"  : { "Arch" : "HVMG2"  },&#13;
+      "g2.8xlarge"  : { "Arch" : "HVMG2"  },&#13;
+      "r3.large"    : { "Arch" : "HVM64"  },&#13;
+      "r3.xlarge"   : { "Arch" : "HVM64"  },&#13;
+      "r3.2xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "r3.4xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "r3.8xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "i2.xlarge"   : { "Arch" : "HVM64"  },&#13;
+      "i2.2xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "i2.4xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "i2.8xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "d2.xlarge"   : { "Arch" : "HVM64"  },&#13;
+      "d2.2xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "d2.4xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "d2.8xlarge"  : { "Arch" : "HVM64"  },&#13;
+      "hi1.4xlarge" : { "Arch" : "HVM64"  },&#13;
+      "hs1.8xlarge" : { "Arch" : "HVM64"  },&#13;
+      "cr1.8xlarge" : { "Arch" : "HVM64"  },&#13;
+      "cc2.8xlarge" : { "Arch" : "HVM64"  }&#13;
+    },&#13;
+&#13;
+    "AWSInstanceType2NATArch" : {&#13;
+      "t1.micro"    : { "Arch" : "NATPV64"   },&#13;
+      "t2.nano"     : { "Arch" : "NATHVM64"  },&#13;
+      "t2.micro"    : { "Arch" : "NATHVM64"  },&#13;
+      "t2.small"    : { "Arch" : "NATHVM64"  },&#13;
+      "t2.medium"   : { "Arch" : "NATHVM64"  },&#13;
+      "t2.large"    : { "Arch" : "NATHVM64"  },&#13;
+      "m1.small"    : { "Arch" : "NATPV64"   },&#13;
+      "m1.medium"   : { "Arch" : "NATPV64"   },&#13;
+      "m1.large"    : { "Arch" : "NATPV64"   },&#13;
+      "m1.xlarge"   : { "Arch" : "NATPV64"   },&#13;
+      "m2.xlarge"   : { "Arch" : "NATPV64"   },&#13;
+      "m2.2xlarge"  : { "Arch" : "NATPV64"   },&#13;
+      "m2.4xlarge"  : { "Arch" : "NATPV64"   },&#13;
+      "m3.medium"   : { "Arch" : "NATHVM64"  },&#13;
+      "m3.large"    : { "Arch" : "NATHVM64"  },&#13;
+      "m3.xlarge"   : { "Arch" : "NATHVM64"  },&#13;
+      "m3.2xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "m4.large"    : { "Arch" : "NATHVM64"  },&#13;
+      "m4.xlarge"   : { "Arch" : "NATHVM64"  },&#13;
+      "m4.2xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "m4.4xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "m4.10xlarge" : { "Arch" : "NATHVM64"  },&#13;
+      "c1.medium"   : { "Arch" : "NATPV64"   },&#13;
+      "c1.xlarge"   : { "Arch" : "NATPV64"   },&#13;
+      "c3.large"    : { "Arch" : "NATHVM64"  },&#13;
+      "c3.xlarge"   : { "Arch" : "NATHVM64"  },&#13;
+      "c3.2xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "c3.4xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "c3.8xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "c4.large"    : { "Arch" : "NATHVM64"  },&#13;
+      "c4.xlarge"   : { "Arch" : "NATHVM64"  },&#13;
+      "c4.2xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "c4.4xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "c4.8xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "g2.2xlarge"  : { "Arch" : "NATHVMG2"  },&#13;
+      "g2.8xlarge"  : { "Arch" : "NATHVMG2"  },&#13;
+      "r3.large"    : { "Arch" : "NATHVM64"  },&#13;
+      "r3.xlarge"   : { "Arch" : "NATHVM64"  },&#13;
+      "r3.2xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "r3.4xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "r3.8xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "i2.xlarge"   : { "Arch" : "NATHVM64"  },&#13;
+      "i2.2xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "i2.4xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "i2.8xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "d2.xlarge"   : { "Arch" : "NATHVM64"  },&#13;
+      "d2.2xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "d2.4xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "d2.8xlarge"  : { "Arch" : "NATHVM64"  },&#13;
+      "hi1.4xlarge" : { "Arch" : "NATHVM64"  },&#13;
+      "hs1.8xlarge" : { "Arch" : "NATHVM64"  },&#13;
+      "cr1.8xlarge" : { "Arch" : "NATHVM64"  },&#13;
+      "cc2.8xlarge" : { "Arch" : "NATHVM64"  }&#13;
+    }&#13;
+,&#13;
+    "AWSRegionArch2AMI" : {&#13;
+      "us-east-1"        : {"PV64" : "ami-2a69aa47", "HVM64" : "ami-6869aa05", "HVMG2" : "ami-bb18efad"},&#13;
+      "us-west-2"        : {"PV64" : "ami-7f77b31f", "HVM64" : "ami-7172b611", "HVMG2" : "ami-31912f51"},&#13;
+      "us-west-1"        : {"PV64" : "ami-a2490dc2", "HVM64" : "ami-31490d51", "HVMG2" : "ami-0a9dcf6a"},&#13;
+      "eu-west-1"        : {"PV64" : "ami-4cdd453f", "HVM64" : "ami-f9dd458a", "HVMG2" : "ami-873e61e1"},&#13;
+      "eu-west-2"        : {"PV64" : "NOT_SUPPORTED", "HVM64" : "ami-886369ec", "HVMG2" : "NOT_SUPPORTED"},&#13;
+      "eu-central-1"     : {"PV64" : "ami-6527cf0a", "HVM64" : "ami-ea26ce85", "HVMG2" : "ami-a16ba4ce"},&#13;
+      "ap-northeast-1"   : {"PV64" : "ami-3e42b65f", "HVM64" : "ami-374db956", "HVMG2" : "ami-6b443f0c"},&#13;
+      "ap-northeast-2"   : {"PV64" : "NOT_SUPPORTED", "HVM64" : "ami-2b408b45", "HVMG2" : "NOT_SUPPORTED"},&#13;
+      "ap-southeast-1"   : {"PV64" : "ami-df9e4cbc", "HVM64" : "ami-a59b49c6", "HVMG2" : "ami-1c0ba17f"},&#13;
+      "ap-southeast-2"   : {"PV64" : "ami-63351d00", "HVM64" : "ami-dc361ebf", "HVMG2" : "ami-bf0d0adc"},&#13;
+      "ap-south-1"       : {"PV64" : "NOT_SUPPORTED", "HVM64" : "ami-ffbdd790", "HVMG2" : "ami-6135440e"},&#13;
+      "us-east-2"        : {"PV64" : "NOT_SUPPORTED", "HVM64" : "ami-f6035893", "HVMG2" : "NOT_SUPPORTED"},&#13;
+      "ca-central-1"     : {"PV64" : "NOT_SUPPORTED", "HVM64" : "ami-730ebd17", "HVMG2" : "NOT_SUPPORTED"},&#13;
+      "sa-east-1"        : {"PV64" : "ami-1ad34676", "HVM64" : "ami-6dd04501", "HVMG2" : "NOT_SUPPORTED"},&#13;
+      "cn-north-1"       : {"PV64" : "ami-77559f1a", "HVM64" : "ami-8e6aa0e3", "HVMG2" : "NOT_SUPPORTED"}&#13;
+    }&#13;
+&#13;
+  },&#13;
+    &#13;
+  "Resources" : {     &#13;
+      &#13;
+    "WebServerInstance": {  &#13;
+      "Type": "AWS::EC2::Instance",&#13;
+      "Metadata" : {&#13;
+        "AWS::CloudFormation::Init" : {&#13;
+          "configSets" : {&#13;
+            "InstallAndRun" : [ "Install", "Configure" ]&#13;
+          },&#13;
+&#13;
+          "Install" : {&#13;
+            "packages" : {&#13;
+              "yum" : {&#13;
+                "mysql"        : [],&#13;
+                "mysql-server" : [],&#13;
+                "mysql-libs"   : [],&#13;
+                "httpd"        : [],&#13;
+                "php"          : [],&#13;
+                "php-mysql"    : []&#13;
+              }&#13;
+            },&#13;
+&#13;
+            "files" : {&#13;
+              "/var/www/html/index.php" : {&#13;
+                "content" : { "Fn::Join" : [ "", [&#13;
+                  "&lt;html&gt;\n",&#13;
+                  "  &lt;head&gt;\n",&#13;
+                  "    &lt;title&gt;AWS CloudFormation PHP Sample&lt;/title&gt;\n",&#13;
+                  "    &lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"&gt;\n",&#13;
+                  "  &lt;/head&gt;\n",&#13;
+                  "  &lt;body&gt;\n",&#13;
+                  "    &lt;h1&gt;Welcome to the AWS CloudFormation PHP Sample&lt;/h1&gt;\n",&#13;
+                  "    &lt;p/&gt;\n",&#13;
+                  "    &lt;?php\n",&#13;
+                  "      // Print out the current data and time\n",&#13;
+                  "      print \"The Current Date and Time is: &lt;br/&gt;\";\n",&#13;
+                  "      print date(\"g:i A l, F j Y.\");\n",&#13;
+                  "    ?&gt;\n",&#13;
+                  "    &lt;p/&gt;\n",&#13;
+                  "    &lt;?php\n",&#13;
+                  "      // Setup a handle for CURL\n",&#13;
+                  "      $curl_handle=curl_init();\n",&#13;
+                  "      curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);\n",&#13;
+                  "      curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);\n",&#13;
+                  "      // Get the hostname of the intance from the instance metadata\n",&#13;
+                  "      curl_setopt($curl_handle,CURLOPT_URL,'http://169.254.169.254/latest/meta-data/public-hostname');\n",&#13;
+                  "      $hostname = curl_exec($curl_handle);\n",&#13;
+                  "      if (empty($hostname))\n",&#13;
+                  "      {\n",&#13;
+                  "        print \"Sorry, for some reason, we got no hostname back &lt;br /&gt;\";\n",&#13;
+                  "      }\n",&#13;
+                  "      else\n",&#13;
+                  "      {\n",&#13;
+                  "        print \"Server = \" . $hostname . \"&lt;br /&gt;\";\n",&#13;
+                  "      }\n",&#13;
+                  "      // Get the instance-id of the intance from the instance metadata\n",&#13;
+                  "      curl_setopt($curl_handle,CURLOPT_URL,'http://169.254.169.254/latest/meta-data/instance-id');\n",&#13;
+                  "      $instanceid = curl_exec($curl_handle);\n",&#13;
+                  "      if (empty($instanceid))\n",&#13;
+                  "      {\n",&#13;
+                  "        print \"Sorry, for some reason, we got no instance id back &lt;br /&gt;\";\n",&#13;
+                  "      }\n",&#13;
+                  "      else\n",&#13;
+                  "      {\n",&#13;
+                  "        print \"EC2 instance-id = \" . $instanceid . \"&lt;br /&gt;\";\n",&#13;
+                  "      }\n",&#13;
+                  "      $Database   = \"localhost\";\n",&#13;
+                  "      $DBUser     = \"", {"Ref" : "DBUser"}, "\";\n",&#13;
+                  "      $DBPassword = \"", {"Ref" : "DBPassword"}, "\";\n",&#13;
+                  "      print \"Database = \" . $Database . \"&lt;br /&gt;\";\n",&#13;
+                  "      $dbconnection = mysql_connect($Database, $DBUser, $DBPassword)\n",&#13;
+                  "                      or die(\"Could not connect: \" . mysql_error());\n",&#13;
+                  "      print (\"Connected to $Database successfully\");\n",&#13;
+                  "      mysql_close($dbconnection);\n",&#13;
+                  "    ?&gt;\n",&#13;
+                  "    &lt;h2&gt;PHP Information&lt;/h2&gt;\n",&#13;
+                  "    &lt;p/&gt;\n",&#13;
+                  "    &lt;?php\n",&#13;
+                  "      phpinfo();\n",&#13;
+                  "    ?&gt;\n",&#13;
+                  "  &lt;/body&gt;\n",&#13;
+                  "&lt;/html&gt;\n"&#13;
+                ]]},&#13;
+                "mode"  : "000600",&#13;
+                "owner" : "apache",&#13;
+                "group" : "apache"&#13;
+              },&#13;
+&#13;
+              "/tmp/setup.mysql" : {&#13;
+                "content" : { "Fn::Join" : ["", [&#13;
+                  "CREATE DATABASE ", { "Ref" : "DBName" }, ";\n",&#13;
+                  "GRANT ALL ON ", { "Ref" : "DBName" }, ".* TO '", { "Ref" : "DBUser" }, "'@localhost IDENTIFIED BY '", { "Ref" : "DBPassword" }, "';\n"&#13;
+                  ]]},&#13;
+                "mode"  : "000400",&#13;
+                "owner" : "root",&#13;
+                "group" : "root"&#13;
+              },&#13;
+              "/etc/cfn/cfn-hup.conf" : {&#13;
+                "content" : { "Fn::Join" : ["", [&#13;
+                  "[main]\n",&#13;
+                  "stack=", { "Ref" : "AWS::StackId" }, "\n",&#13;
+                  "region=", { "Ref" : "AWS::Region" }, "\n"&#13;
+                ]]},&#13;
+                "mode"    : "000400",&#13;
+                "owner"   : "root",&#13;
+                "group"   : "root"&#13;
+              },&#13;
+&#13;
+              "/etc/cfn/hooks.d/cfn-auto-reloader.conf" : {&#13;
+                "content": { "Fn::Join" : ["", [&#13;
+                  "[cfn-auto-reloader-hook]\n",&#13;
+                  "triggers=post.update\n",&#13;
+                  "path=Resources.WebServerInstance.Metadata.AWS::CloudFormation::Init\n",&#13;
+                  "action=/opt/aws/bin/cfn-init -v ",&#13;
+                  "         --stack ", { "Ref" : "AWS::StackName" },&#13;
+                  "         --resource WebServerInstance ",&#13;
+                  "         --configsets InstallAndRun ",&#13;
+                  "         --region ", { "Ref" : "AWS::Region" }, "\n",&#13;
+                  "runas=root\n"&#13;
+                ]]}&#13;
+              }&#13;
+            },&#13;
+&#13;
+            "services" : {&#13;
+              "sysvinit" : {  &#13;
+                "mysqld"  : { "enabled" : "true", "ensureRunning" : "true" },&#13;
+                "httpd"   : { "enabled" : "true", "ensureRunning" : "true" },&#13;
+                "cfn-hup" : { "enabled" : "true", "ensureRunning" : "true",&#13;
+                              "files" : ["/etc/cfn/cfn-hup.conf", "/etc/cfn/hooks.d/cfn-auto-reloader.conf"]}&#13;
+              }&#13;
+            }&#13;
+          },&#13;
+&#13;
+          "Configure" : {&#13;
+            "commands" : {&#13;
+              "01_set_mysql_root_password" : {&#13;
+                "command" : { "Fn::Join" : ["", ["mysqladmin -u root password '", { "Ref" : "DBRootPassword" }, "'"]]},&#13;
+                "test" : { "Fn::Join" : ["", ["$(mysql ", { "Ref" : "DBName" }, " -u root --password='", { "Ref" : "DBRootPassword" }, "' &gt;/dev/null 2&gt;&amp;1 &lt;/dev/null); (( $? != 0 ))"]]}&#13;
+              },&#13;
+              "02_create_database" : {&#13;
+                "command" : { "Fn::Join" : ["", ["mysql -u root --password='", { "Ref" : "DBRootPassword" }, "' &lt; /tmp/setup.mysql"]]},&#13;
+                "test" : { "Fn::Join" : ["", ["$(mysql ", { "Ref" : "DBName" }, " -u root --password='", { "Ref" : "DBRootPassword" }, "' &gt;/dev/null 2&gt;&amp;1 &lt;/dev/null); (( $? != 0 ))"]]}&#13;
+              }&#13;
+            }&#13;
+          }&#13;
+        }&#13;
+      },&#13;
+      "Properties": {&#13;
+        "ImageId" : { "Fn::FindInMap" : [ "AWSRegionArch2AMI", { "Ref" : "AWS::Region" },&#13;
+                          { "Fn::FindInMap" : [ "AWSInstanceType2Arch", { "Ref" : "InstanceType" }, "Arch" ] } ] },&#13;
+        "InstanceType"   : { "Ref" : "InstanceType" },&#13;
+        "SecurityGroups" : [ {"Ref" : "WebServerSecurityGroup"} ],&#13;
+        "KeyName"        : { "Ref" : "KeyName" },&#13;
+        "UserData"       : { "Fn::Base64" : { "Fn::Join" : ["", [&#13;
+             "#!/bin/bash -xe\n",&#13;
+             "yum update -y aws-cfn-bootstrap\n",&#13;
+&#13;
+             "# Install the files and packages from the metadata\n",&#13;
+             "/opt/aws/bin/cfn-init -v ",&#13;
+             "         --stack ", { "Ref" : "AWS::StackName" },&#13;
+             "         --resource WebServerInstance ",&#13;
+             "         --configsets InstallAndRun ",&#13;
+             "         --region ", { "Ref" : "AWS::Region" }, "\n",&#13;
+&#13;
+             "# Signal the status from cfn-init\n",&#13;
+             "/opt/aws/bin/cfn-signal -e $? ",&#13;
+             "         --stack ", { "Ref" : "AWS::StackName" },&#13;
+             "         --resource WebServerInstance ",&#13;
+             "         --region ", { "Ref" : "AWS::Region" }, "\n"&#13;
+        ]]}}        &#13;
+      },&#13;
+      "CreationPolicy" : {&#13;
+        "ResourceSignal" : {&#13;
+          "Timeout" : "PT5M"&#13;
+        }&#13;
+      }&#13;
+    },&#13;
+    &#13;
+    "WebServerSecurityGroup" : {&#13;
+      "Type" : "AWS::EC2::SecurityGroup",&#13;
+      "Properties" : {&#13;
+        "GroupDescription" : "Enable HTTP access via port 80",&#13;
+        "SecurityGroupIngress" : [&#13;
+          {"IpProtocol" : "tcp", "FromPort" : "80", "ToPort" : "80", "CidrIp" : "0.0.0.0/0"},&#13;
+          {"IpProtocol" : "tcp", "FromPort" : "22", "ToPort" : "22", "CidrIp" : { "Ref" : "SSHLocation"}}&#13;
+        ]&#13;
+      }      &#13;
+    }          &#13;
+  },&#13;
+  &#13;
+  "Outputs" : {&#13;
+    "WebsiteURL" : {&#13;
+      "Description" : "URL for newly created LAMP stack",&#13;
+      "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [ "WebServerInstance", "PublicDnsName" ]}]] }&#13;
+    }&#13;
+  }&#13;
+}</body><name>CloudFormation Lamp</name><short_description/><sys_class_name>sn_cmp_cloud_template</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-20 14:16:15</sys_created_on><sys_domain>global</sys_domain><sys_id>91ce158edb080b00b28b7bfdae961900</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CloudFormation Lamp</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_cmp_cloud_template_91ce158edb080b00b28b7bfdae961900</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-20 14:16:15</sys_updated_on><type display_value="CloudFormation Template">932f81e49f00320048111f80a57fcf6e</type></sn_cmp_cloud_template></record_update>]]></payload>
+<payload_hash>2101318429</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>ec0733dbdb2817c0aaa8f9361d96196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a66db90000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>CloudFormation Lamp</target_name>
+<type>ServiceNow Cloud Templates</type>
+<update_domain>global</update_domain>
+<update_guid>dcb13b574f2817c0f7ad88e05fa1a4e9</update_guid>
+<update_guid_history>dcb13b574f2817c0f7ad88e05fa1a4e9:2101318429,78ee158ef7080b00c79c0803bdf42cd8:2101318429</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_os_profile_7c769a71db400b00b28b7bfdae961940</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile"><sn_cmp_os_profile action="INSERT_OR_UPDATE"><description/><name>HTTP LINUX</name><sys_created_by>admin</sys_created_by><sys_created_on>2017-07-19 23:40:37</sys_created_on><sys_id>7c769a71db400b00b28b7bfdae961940</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-19 23:40:37</sys_updated_on></sn_cmp_os_profile></record_update>]]></payload>
+<payload_hash>-785195415</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>ec0733dbdb2817c0aaa8f9361d961970</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6a5c5cd0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>HTTP LINUX</target_name>
+<type>OS Profile</type>
+<update_domain>global</update_domain>
+<update_guid>7581f357892817c04011014decd95c99</update_guid>
+<update_guid_history>7581f357892817c04011014decd95c99:-785195415</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</application>
+<category>customer</category>
+<comments/>
+<name>sn_cmp_rp_filter_6acfa178dbc5c700704df9b61d9619c2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rp_filter"><sn_cmp_rp_filter action="INSERT_OR_UPDATE"><name>All</name><resource_pool display_value="SubnetPool-TB">ea9f2178dbc5c700704df9b61d961933</resource_pool><script/><sys_class_name>sn_cmp_rp_filter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-09-04 11:20:35</sys_created_on><sys_id>6acfa178dbc5c700704df9b61d9619c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>All</sys_name><sys_package display_value="Cloud Management Platform" source="sn_cmp">80d50579eb203200979aa5115206fedd</sys_package><sys_policy/><sys_scope display_value="Cloud Management Platform">80d50579eb203200979aa5115206fedd</sys_scope><sys_update_name>sn_cmp_rp_filter_6acfa178dbc5c700704df9b61d9619c2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-09-04 11:20:35</sys_updated_on><type>query</type></sn_cmp_rp_filter></record_update>]]></payload>
+<payload_hash>1433886523</payload_hash>
+<remote_update_set display_value="AnC-Cloud Configuration">680733dbdb2817c0aaa8f9361d96196c</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2018-03-05 15:15:51</sys_created_on>
+<sys_id>ec0733dbdb2817c0aaa8f9361d961973</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161f6acdfaf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2018-03-05 15:15:51</sys_updated_on>
+<table/>
+<target_name>All</target_name>
+<type>Resource Pool Filter</type>
+<update_domain>global</update_domain>
+<update_guid>ef4337d7262817c05ea4cf93d3ff845c</update_guid>
+<update_guid_history>ef4337d7262817c05ea4cf93d3ff845c:1433886523,3fcf2178b0c5c70095dd440311ae962f:1433886523</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
