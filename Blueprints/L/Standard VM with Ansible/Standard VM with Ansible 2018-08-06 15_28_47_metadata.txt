@@ -1,0 +1,4 @@
+Generated Update Sets should be imported in the following order:
+
+1.Standard VM with Ansible0 2018-08-06 15:28:05 FileName:sys_remote_update_set_cdce7c49dbbf1300786ff1351d9619f1.xml
+2.Standard VM with Ansible1 2018-08-06 15:28:40 FileName:sys_remote_update_set_e3ce3089dbbf1300786ff1351d961955.xml

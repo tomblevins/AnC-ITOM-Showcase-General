@@ -1,0 +1,4 @@
+Generated Update Sets should be imported in the following order:
+
+1.Standard VM0 2018-08-06 15:21:51 FileName:sys_remote_update_set_c86df8c5dbbf1300786ff1351d961924.xml
+2.Standard VM1 2018-08-06 15:22:38 FileName:sys_remote_update_set_476dbcc5dbbf1300786ff1351d961928.xml

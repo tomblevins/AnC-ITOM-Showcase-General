@@ -1,0 +1,4 @@
+Generated Update Sets should be imported in the following order:
+
+1.AWS Router0 2018-08-06 12:58:33 FileName:sys_remote_update_set_788c1089db3f1300786ff1351d961956.xml
+2.AWS Router1 2018-08-06 12:59:00 FileName:sys_remote_update_set_0f8c9089db3f1300786ff1351d9619a9.xml
