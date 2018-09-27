@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-09-27 14:05:16">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-09-27 14:31:11">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -20,11 +20,11 @@
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-27 14:05:16</sys_created_on>
-<sys_id>cf5e5cf9dbb46b002c87f1771d9619cf</sys_id>
+<sys_created_on>2018-09-27 14:31:11</sys_created_on>
+<sys_id>3a44ac71dbf46b002c87f1771d9619f5</sys_id>
 <sys_mod_count>0</sys_mod_count>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-27 14:05:16</sys_updated_on>
+<sys_updated_on>2018-09-27 14:31:11</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -88,23 +88,23 @@ $navpage-nav-border: #8686bc&#13;
 /* Default button/icon colors */&#13;
 $navpage-button-color:  #fff&#13;
 /* Hover color for ^^^ */&#13;
-$navpage-button-color-hover: #8686bc</css><device>concourse</device><name>NewNOW</name><sys_class_name>sys_ui_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-27 13:53:44</sys_created_on><sys_id>8fabd0f5dbb46b002c87f1771d9619a1</sys_id><sys_mod_count>4</sys_mod_count><sys_name>NewNOW</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_theme_8fabd0f5dbb46b002c87f1771d9619a1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-27 14:00:25</sys_updated_on></sys_ui_theme></record_update>]]></payload>
+$navpage-button-color-hover: #8686bc</css><device>concourse</device><name>NewNOW</name><sys_class_name>sys_ui_theme</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-27 13:53:44</sys_created_on><sys_id>8fabd0f5dbb46b002c87f1771d9619a1</sys_id><sys_mod_count>9</sys_mod_count><sys_name>NewNOW</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_theme_8fabd0f5dbb46b002c87f1771d9619a1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-27 14:28:58</sys_updated_on></sys_ui_theme></record_update>]]></payload>
 <payload_hash>-927719657</payload_hash>
-<remote_update_set display_value="AnC-NewNOW_Theme">cf5e5cf9dbb46b002c87f1771d9619cf</remote_update_set>
+<remote_update_set display_value="AnC-NewNOW_Theme">3a44ac71dbf46b002c87f1771d9619f5</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
 <sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-09-27 14:05:16</sys_created_on>
-<sys_id>075e5cf9dbb46b002c87f1771d9619d0</sys_id>
+<sys_created_on>2018-09-27 14:31:11</sys_created_on>
+<sys_id>3e44ac71dbf46b002c87f1771d9619f5</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>1661b578b050000001</sys_recorded_at>
+<sys_recorded_at>1661b707e5b0000001</sys_recorded_at>
 <sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-09-27 14:05:16</sys_updated_on>
+<sys_updated_on>2018-09-27 14:31:11</sys_updated_on>
 <table/>
 <target_name>NewNOW</target_name>
 <type>Theme</type>
 <update_domain>global</update_domain>
-<update_guid>16fdd8f99db46b00fe8dcd0904ba8cda</update_guid>
-<update_guid_history>16fdd8f99db46b00fe8dcd0904ba8cda:-927719657,9c4d547940b46b0068718fa17b7f1d3c:-927719657,231dd83952b46b00c42595e9229a8b75:-1227249091,15acd43931b46b00bac17120132d5db3:-1336023413,5b5cd03971b46b001046825206cba46c:-1079957125,16bb18f5f2b46b006f33621aaebcd11c:2064511564</update_guid_history>
+<update_guid>25346c717ef46b0040b0d399cb160e14</update_guid>
+<update_guid_history>25346c717ef46b0040b0d399cb160e14:-927719657,eec32431b5f46b009dbeed6c275f222e:-927719657,1b23a03188f46b00b50c33e2906deb3a:-1336023413,e0d22cfde1b46b00e8585bf6c3e3acd8:245269803,a5a228fdd1b46b00095c81b2df18b119:-1227249091,3b722c7d1eb46b00df3202e6aef9ef5e:-1336023413,9c4d547940b46b0068718fa17b7f1d3c:-927719657,231dd83952b46b00c42595e9229a8b75:-1227249091,15acd43931b46b00bac17120132d5db3:-1336023413,5b5cd03971b46b001046825206cba46c:-1079957125,16bb18f5f2b46b006f33621aaebcd11c:2064511564</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
