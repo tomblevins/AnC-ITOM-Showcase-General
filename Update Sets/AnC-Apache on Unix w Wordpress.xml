@@ -1,0 +1,1935 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-05 15:33:06">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>AnC-Apache on Unix w Wordpress</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>14a6237cdb0c330015e3dd18f49619ee</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>4047677cdb0c330015e3dd18f496196d</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>AnC-Apache on Unix w Wordpress</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>14a6237cdb0c330015e3dd18f49619ee</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>4047677cdb0c330015e3dd18f496196d</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sa_pattern_118e7a04e4d4441ba0e64e4d0e3338d7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_pattern"><sa_pattern action="INSERT_OR_UPDATE"><active>true</active><ci_type>cmdb_ci_appl_generic</ci_type><cpattern_type>2</cpattern_type><description/><directory>false</directory><enforce_proc_classy>false</enforce_proc_classy><metadata_id/><name>Apache Enrich Attributes</name><ndl>library {&#13;
+	name = "Apache Enrich Attributes"&#13;
+	id = "118e7a04e4d4441ba0e64e4d0e3338d7"&#13;
+	description = ""&#13;
+	step {&#13;
+		name = "set fs windows"&#13;
+		if {&#13;
+			condition = eq {&#13;
+				get_attr {"computer_system.osFamily"}&#13;
+				"WINDOWS"&#13;
+			}&#13;
+			on_true = set_attr {&#13;
+				"fs"&#13;
+				"\\"&#13;
+			}&#13;
+			on_false = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "set fs unix"&#13;
+		if {&#13;
+			condition = neq {&#13;
+				get_attr {"computer_system.osFamily"}&#13;
+				"WINDOWS"&#13;
+			}&#13;
+			on_true = set_attr {&#13;
+				"fs"&#13;
+				"/"&#13;
+			}&#13;
+			on_false = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "load config file to string table"&#13;
+		if {&#13;
+			condition = is_not_empty {get_attr {"config_file"}}&#13;
+			on_true = parse_text_file_to_var {&#13;
+				file_path = get_files_by_filter {&#13;
+					expression = get_attr {"config_file"}&#13;
+					foreach_attribute_name = "forEach"&#13;
+				}&#13;
+				var_names = table {&#13;
+					name = "config_file_1"&#13;
+					col_names = "string"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					exclude_lines_pattern = "^#","    ^$","    ServerRoot","    ^&lt;","    Listen","    PidFile","    DocumentRoot","    Options","    Allow","    allow","    UserDir","    DirectoryIndex","    Deny","    TypesConfig","    LogFormat","    ErrorLog","    MIMEMagic","    CustomLog","    Alias","    Icon","    Readme","    Header","    IndexIgnore","    AddEncoding","    AddType","    BrowserMatch","    WebSpherePluginConfig"&#13;
+					selected_positions = 1&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+			on_false = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "set admin.conf file"&#13;
+		set_attr {&#13;
+			"admin_conf"&#13;
+			concat {&#13;
+				get_attr {"install_directory"}&#13;
+				get_attr {"fs"}&#13;
+				"conf"&#13;
+				get_attr {"fs"}&#13;
+				"admin.conf"&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "load admin config file to string table"&#13;
+		parse_text_file_to_var {&#13;
+			file_path = get_files_by_filter {&#13;
+				expression = get_attr {"admin_conf"}&#13;
+				foreach_attribute_name = "forEach"&#13;
+			}&#13;
+			var_names = table {&#13;
+				name = "extended_attr"&#13;
+				col_names = "string"&#13;
+			}&#13;
+			parsing_strategy = delimited_parsing {&#13;
+				include_lines_pattern = "="&#13;
+				exclude_lines_pattern = "^#","      ^$","  ^&lt;","  LogFormat"&#13;
+				selected_positions = 1&#13;
+			}&#13;
+			if_not_found_do = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "transform admin conf array to xml variable"&#13;
+		if {&#13;
+			condition = is_not_empty {get_attr {"extended_attr"}}&#13;
+			on_true = set_attr {&#13;
+				"string"&#13;
+				concat {eval {" String [] Arry = ${extended_attr[*].string}&#13;
+String str = \"\"&#13;
+&#13;
+for (i=0;i&lt;Arry.size();i++)&#13;
+    {&#13;
+    try {&#13;
+    Arry[i] = Arry[i].replace(\"LoadModule \",\"LoadModule_\")&#13;
+    Arry[i] = Arry[i].replaceAll(/^\\s+/,\"\")&#13;
+    (var,val) = Arry[i].replaceFirst(/\\s+/,\"=\").split('=')&#13;
+    str = str + var + \"=\"+ val +\"\\n\"&#13;
+    }  catch (Exception e) {}&#13;
+&#13;
+    }&#13;
+return str&#13;
+"}}&#13;
+			}&#13;
+			on_false = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "parse admin config xml variable"&#13;
+		if {&#13;
+			condition = is_not_empty {get_attr {"extended_attr"}}&#13;
+			on_true = parse_var_to_var {&#13;
+				from_var_name = "string"&#13;
+				to_var_names = table {&#13;
+					name = "extended_attr"&#13;
+					col_names = "key","value"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					delimiters = "="&#13;
+					selected_positions = 1,2&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+			on_false = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "add source field to extended_attr table"&#13;
+		transform {&#13;
+			src_table_name = "extended_attr"&#13;
+			target_table_name = "extended_attr"&#13;
+			operation {set_field {&#13;
+					field_name = "source"&#13;
+					value = "Apache_Conf_File"&#13;
+				}}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "transform config file array to xml variable"&#13;
+		if {&#13;
+			condition = is_not_empty {get_attr {"config_file_1"}}&#13;
+			on_true = set_attr {&#13;
+				"string1"&#13;
+				concat {eval {" def Arry = ${config_file_1[*].string}&#13;
+    String str = \"\"&#13;
+&#13;
+    String var = null;&#13;
+    String val = null;&#13;
+&#13;
+    for (String line : Arry)&#13;
+        {&#13;
+        try {&#13;
+           line = line.trim();&#13;
+           line = line.replace(\"LoadModule \",\"LoadModule_\")&#13;
+           line = line.trim();&#13;
+           (var,val) = line.split(/\\s+/)&#13;
+            str = str + var + \"=\" +val+\"\\n\"&#13;
+           } catch (Exception e) {&#13;
+                return \"Exception in line: \" + line + \".\\n\" + e.toString();&#13;
+           }&#13;
+        }&#13;
+    return str&#13;
+    "}}&#13;
+			}&#13;
+			on_false = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "parse config file xml variable"&#13;
+		if {&#13;
+			condition = is_not_empty {get_attr {"string1"}}&#13;
+			on_true = parse_var_to_var {&#13;
+				from_var_name = "string1"&#13;
+				to_var_names = table {&#13;
+					name = "extended_attr1"&#13;
+					col_names = "key","value"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					include_lines_pattern = "="&#13;
+					delimiters = "="&#13;
+					selected_positions = 1,2&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+			on_false = nop {}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "add source field to extended_attr table"&#13;
+		transform {&#13;
+			src_table_name = "extended_attr1"&#13;
+			target_table_name = "extended_attr1"&#13;
+			operation {set_field {&#13;
+					field_name = "source"&#13;
+					value = "Apache_Conf_File"&#13;
+				}}&#13;
+		}&#13;
+	}&#13;
+	step {&#13;
+		name = "merge extended_attr tables"&#13;
+		merge {&#13;
+			table1_name = "extended_attr1"&#13;
+			key1_name = "key"&#13;
+			table2_name = "extended_attr"&#13;
+			key2_name = "key"&#13;
+			result_table_name = "extended_attr"&#13;
+			unmatched_lines = keep&#13;
+		}&#13;
+	}&#13;
+}&#13;
+</ndl><parent/><serverless>false</serverless><source/><sys_class_name>sa_pattern</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-05-06 11:16:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>118e7a04e4d4441ba0e64e4d0e3338d7</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Apache Enrich Attributes</sys_name><sys_overrides/><sys_package display_value="Pattern Designer" source="com.snc.pattern.designer">acdccc45dbb31300e243b6d1ba961948</sys_package><sys_policy/><sys_replace/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sa_pattern_118e7a04e4d4441ba0e64e4d0e3338d7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-01-17 14:06:00</sys_updated_on><version/></sa_pattern></record_update>]]></payload>
+<payload_hash>-24605714</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>0847677cdb0c330015e3dd18f496196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e7565310000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>Apache Enrich Attributes</target_name>
+<type>Discovery Patterns</type>
+<update_domain>global</update_domain>
+<update_guid>7365233cbe0c33006a2e54f4e76ef246</update_guid>
+<update_guid_history>7365233cbe0c33006a2e54f4e76ef246:-24605714,7365233cbe0c33006a2e54f4e76ef246:-24605714</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sa_tracked_file_definition_32a7f0260b103200c71e259335673a89</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_tracked_file_definition"><sa_tracked_file_definition action="INSERT_OR_UPDATE"><active>true</active><ci_type>cmdb_ci_apache_web_server</ci_type><file_path>get_attr {"config_file"}&#13;
+</file_path><pattern display_value="Apache On Unix Pattern">28d607dbfead4be3887c843814455100</pattern><save_content>true</save_content><sys_created_by>admin</sys_created_by><sys_created_on>2017-01-16 14:46:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>32a7f0260b103200c71e259335673a89</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-01-16 14:46:24</sys_updated_on></sa_tracked_file_definition></record_update>]]></payload>
+<payload_hash>-1197537741</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>4047677cdb0c330015e3dd18f496196f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e7564880000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>32a7f0260b103200c71e259335673a89</target_name>
+<type>Tracked File Definition</type>
+<update_domain>global</update_domain>
+<update_guid>f365233c140c330044c1cb5dd0cb0643</update_guid>
+<update_guid_history>f365233c140c330044c1cb5dd0cb0643:-1197537741,f365233c140c330044c1cb5dd0cb0643:-1197537741,5a91440f9770ef009a39081dd77c5ec5:1229687034</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sa_ci_to_pattern_a58bbc260b113200783b8e4335673adc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_ci_to_pattern"><sa_ci_to_pattern action="INSERT_OR_UPDATE"><ci_type>cmdb_ci_lb_appl</ci_type><deletion_strategy>1</deletion_strategy><is_main_ci>false</is_main_ci><pattern display_value="Apache On Unix Pattern">28d607dbfead4be3887c843814455100</pattern><sys_created_by>admin</sys_created_by><sys_created_on>2017-03-07 08:06:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>a58bbc260b113200783b8e4335673adc</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-03-07 08:06:03</sys_updated_on></sa_ci_to_pattern></record_update>]]></payload>
+<payload_hash>-135649673</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>4447677cdb0c330015e3dd18f496196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e7564080000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>a58bbc260b113200783b8e4335673adc</target_name>
+<type>Related CI Types</type>
+<update_domain>global</update_domain>
+<update_guid>bf65233c4d0c3300710b5921f4a8c201</update_guid>
+<update_guid_history>bf65233c4d0c3300710b5921f4a8c201:-135649673,bf65233c4d0c3300710b5921f4a8c201:-135649673,9813106b4ea817c002e069d47e15a230:-1873200935,de91444bcd70ef009bf1820fd37cb177:-1044962893,9813106b4ea817c002e069d47e15a230:-1873200935</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sa_ci_to_pattern_76a7f0260b103200c71e259335673a89</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_ci_to_pattern"><sa_ci_to_pattern action="INSERT_OR_UPDATE"><ci_type>cmdb_ci_config_file_tracked</ci_type><deletion_strategy>1</deletion_strategy><is_main_ci>false</is_main_ci><pattern display_value="Apache On Unix Pattern">28d607dbfead4be3887c843814455100</pattern><sys_created_by>admin</sys_created_by><sys_created_on>2017-01-16 14:46:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>76a7f0260b103200c71e259335673a89</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-01-16 14:46:24</sys_updated_on></sa_ci_to_pattern></record_update>]]></payload>
+<payload_hash>1649390375</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>8047677cdb0c330015e3dd18f496196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e7563f40000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>76a7f0260b103200c71e259335673a89</target_name>
+<type>Related CI Types</type>
+<update_domain>global</update_domain>
+<update_guid>bb65233ce20c3300b9476e89dabfb100</update_guid>
+<update_guid_history>bb65233ce20c3300b9476e89dabfb100:1649390375,bb65233ce20c3300b9476e89dabfb100:1649390375,d813106b54a817c0b4fa38f9f4493f2f:1412274729,de91444b0770ef00c352ebfdae6b0e76:1806792451,d813106b54a817c0b4fa38f9f4493f2f:1412274729</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sa_pattern_prepost_script_e4bf096967210300e0162dbd2685effe</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sa_pattern_prepost_script"&gt;&lt;sa_pattern_prepost_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;execution_type&gt;1&lt;/execution_type&gt;&lt;name&gt;Lightweight Process Info&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;pattern&gt;a2e52652ef79449cb7a62c6ff6398beb,2a8af6d626294d35b3000c31b0236f8d,28d607dbfead4be3887c843814455100,28d607dbfead4be3887c843814455300,28d607dbfead4be3887c843814455701,5f900f78d72f443bb69999a61b104271,96d12746b31a463bb5db66f0456a0d19,aa1d4f2094f14055883c7d75cd34d9eb,86539426261e49f9bb17ecca80d228db,28d607dbfead4be3887c843814455500,28d607dbfead4be3887c843814451030,27cfaea6050c4260bd198dc48b56e096,28d607dbfead4be3887c843814455105,28d607dbfead4be3887c843814455106,be9ad0641f534836899867fba55622ab,28d607dbfead4be3887c843814455111,3dc4657e56864f9786ec37dd564495b1,28d607dbfead4be3887c843814455301,28d607dbfead4be3887c843814455400,28d607dbfead4be3887c843814455401,28d607dbfead4be3887c843814455700&lt;/pattern&gt;&lt;script&gt;&lt;![CDATA[var data;
+if (typeof(pre_exe_computer) !== 'undefined' &amp;&amp; typeof(pre_exe_pid) !== 'undefined')
+	data = getRunningProcess(pre_exe_computer, -1, pre_exe_pid);
+else
+	data = new SNC.PrePatternExecutionData();
+rtrn = data;
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sa_pattern_prepost_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ola.shaked&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2017-10-01 13:29:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;e4bf096967210300e0162dbd2685effe&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Lightweight Process Info&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Service Mapping" source="com.snc.service-mapping"&gt;e0dccc45dbb31300e243b6d1ba961948&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sa_pattern_prepost_script_e4bf096967210300e0162dbd2685effe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ola.shaked&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-10-09 05:50:43&lt;/sys_updated_on&gt;&lt;when_to_exec&gt;3&lt;/when_to_exec&gt;&lt;/sa_pattern_prepost_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1047922752</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>8c47677cdb0c330015e3dd18f496196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e7563a30000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>Lightweight Process Info</target_name>
+<type>Pattern Pre/Post Script</type>
+<update_domain>global</update_domain>
+<update_guid>f765eff8220c3300e302526df076aafd</update_guid>
+<update_guid_history>f765eff8220c3300e302526df076aafd:-1047922752,f765eff8220c3300e302526df076aafd:-1047922752</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>discovery_classifier_probe_796770260b103200c71e259335673a14</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="discovery_classifier_probe"><discovery_classifier_probe action="INSERT_OR_UPDATE"><active>true</active><child display_value="Horizontal Pattern">4f64c6389f230200fe2ab0aec32e7068</child><classy display_value="Apache Server">7b91ce17c0a80fd000d79dadac118963</classy><condition_script>type == 'unix'</condition_script><name>HorizontalDiscoveryProbe-Horizontal Patt</name><pattern display_value="Apache On Unix Pattern">28d607dbfead4be3887c843814455100</pattern><phase>exploration</phase><sys_class_name>discovery_classifier_probe</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-01-16 14:45:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>796770260b103200c71e259335673a14</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Apache Server.Horizontal Pattern</sys_name><sys_overrides/><sys_package display_value="Discovery" source="com.snc.discovery">f82d8009dbb31300e243b6d1ba9619a2</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>discovery_classifier_probe_796770260b103200c71e259335673a14</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-07-11 14:35:49</sys_updated_on></discovery_classifier_probe></record_update>]]></payload>
+<payload_hash>-148043577</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>c447677cdb0c330015e3dd18f496196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e75646a0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>HorizontalDiscoveryProbe-Horizontal Patt</target_name>
+<type>Classifier Probe</type>
+<update_domain>global</update_domain>
+<update_guid>7f65233cd00c33001655ffd4d4b3d403</update_guid>
+<update_guid_history>7f65233cd00c33001655ffd4d4b3d403:-148043577,7f65233cd00c33001655ffd4d4b3d403:-148043577</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sa_pattern_28d607dbfead4be3887c843814455100</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_pattern"><sa_pattern action="INSERT_OR_UPDATE"><active>true</active><ci_type>cmdb_ci_apache_web_server</ci_type><cpattern_type>1</cpattern_type><description/><directory>false</directory><enforce_proc_classy>false</enforce_proc_classy><metadata_id>28d607dbfead4be3887c843814455100</metadata_id><name>Apache On Unix Pattern</name><ndl>pattern {&#13;
+	metadata {&#13;
+		id = "28d607dbfead4be3887c843814455100"&#13;
+		name = "Apache On Unix Pattern"&#13;
+		description = ""&#13;
+		citype = "cmdb_ci_apache_web_server"&#13;
+		apply_to_os_families = "cmdb_ci_unix_server","cmdb_ci_solaris_server","cmdb_ci_hpux_server","cmdb_ci_linux_server","cmdb_ci_aix_server"&#13;
+	}&#13;
+	identification {&#13;
+		name = "Identification for HTTP(S) entry point type(s)"&#13;
+		entry_point {type = "cmdb_ci_endpoint_http,cmdb_ci_endpoint_tcp"}&#13;
+		find_process_strategy {strategy = LISTENING_PORT}&#13;
+		step {&#13;
+			name = "Check process name to match Apache"&#13;
+			match {&#13;
+				any {&#13;
+					contains {&#13;
+						get_attr {"process.executable"}&#13;
+						"httpd"&#13;
+					}&#13;
+					contains {&#13;
+						get_attr {"process.executable"}&#13;
+						"apache"&#13;
+					}&#13;
+				}&#13;
+				terminate_op = terminate&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Get home dir"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "process.commandLine"&#13;
+				to_var_names = "install_directory"&#13;
+				parsing_strategy = cmdline_linux_parsing {after_option = "-d"}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Get config file"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "process.commandLine"&#13;
+				to_var_names = "config_file"&#13;
+				parsing_strategy = cmdline_linux_parsing {after_option = "-f"}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Condition - check that conf_file was set if not extract it from httpd -V"&#13;
+			if {&#13;
+				condition = is_empty {get_attr {"config_file"}}&#13;
+				on_true = runcmd_to_var {&#13;
+					cmd = concat {&#13;
+						". /etc/apache2/envvars; "&#13;
+						get_attr {"process.executablePath"}&#13;
+						" -V "&#13;
+					}&#13;
+					var_names = "config_file"&#13;
+					parsing_strategy = delimited_parsing {&#13;
+						include_lines_pattern = "SERVER_CONFIG_FILE"&#13;
+						delimiters = "=","\""&#13;
+						selected_positions = 2&#13;
+					}&#13;
+					if_not_found_do = nop {}&#13;
+					cache_flag = 0&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "If install dir empty extract it from httpd -V"&#13;
+			if {&#13;
+				condition = is_empty {get_attr {"install_directory"}}&#13;
+				on_true = runcmd_to_var {&#13;
+					cmd = concat {&#13;
+						get_attr {"process.executablePath"}&#13;
+						" -V "&#13;
+					}&#13;
+					var_names = "install_directory"&#13;
+					parsing_strategy = delimited_parsing {&#13;
+						include_lines_pattern = "HTTPD_ROOT"&#13;
+						delimiters = "=","\""&#13;
+						selected_positions = 2&#13;
+					}&#13;
+					if_not_found_do = nop {}&#13;
+					cache_flag = 0&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "If install dir empty extract from config_file path"&#13;
+			if {&#13;
+				condition = is_empty {get_attr {"install_directory"}}&#13;
+				on_true = parse_var_to_var {&#13;
+					from_var_name = "config_file"&#13;
+					to_var_names = "install_directory"&#13;
+					parsing_strategy = delimited_parsing {&#13;
+						delimiters = "/conf"&#13;
+						selected_positions = 1&#13;
+					}&#13;
+					if_not_found_do = nop {}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "default location of conf file"&#13;
+			if {&#13;
+				condition = is_empty {get_attr {"config_file"}}&#13;
+				on_true = set_attr {&#13;
+					"config_file"&#13;
+					concat {&#13;
+						get_attr {"install_directory"}&#13;
+						"/conf/httpd.conf"&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "check if the SERVER_CONFIG_FILE is relative or not"&#13;
+			if {&#13;
+				condition = starts_with {&#13;
+					"/"&#13;
+					get_attr {"config_file"}&#13;
+				}&#13;
+				on_true = nop {}&#13;
+				on_false = set_attr {&#13;
+					"config_file"&#13;
+					concat {&#13;
+						get_attr {"install_directory"}&#13;
+						"/"&#13;
+						get_attr {"config_file"}&#13;
+					}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Get Version from httpd -V"&#13;
+			runcmd_to_var {&#13;
+				cmd = concat {&#13;
+					get_attr {"process.executablePath"}&#13;
+					" -V "&#13;
+				}&#13;
+				var_names = "version"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					include_lines_pattern = "version"&#13;
+					delimiters = " version: "&#13;
+					selected_positions = 2&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "sets the display label"&#13;
+			set_attr {&#13;
+				"name"&#13;
+				concat {&#13;
+					"Apache server@"&#13;
+					get_attr {"computer_system.primaryHostname"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "sets the display label with hostname"&#13;
+			if {&#13;
+				condition = contains {&#13;
+					get_attr {"name"}&#13;
+					"@"&#13;
+				}&#13;
+				on_true = set_attr {&#13;
+					"name"&#13;
+					concat {&#13;
+						"Apache server@"&#13;
+						get_attr {"computer_system.primaryHostname"}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "get version from version.signature (IBM HTTPSERVER) "&#13;
+			if {&#13;
+				condition = is_empty {get_attr {"version"}}&#13;
+				on_true = parse_text_file_to_var {&#13;
+					file_path = get_files_by_filter {&#13;
+						expression = concat {&#13;
+							get_attr {"install_directory"}&#13;
+							"/version.signature"&#13;
+						}&#13;
+						foreach_attribute_name = "forEach"&#13;
+					}&#13;
+					var_names = "version"&#13;
+					parsing_strategy = position_from_end {&#13;
+						tokens_from_end = 1&#13;
+						delimiter = " "&#13;
+					}&#13;
+					if_not_found_do = nop {}&#13;
+					cache_flag = 0&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Condition - check that version was set if not extract it from httpd -v"&#13;
+			if {&#13;
+				condition = any {&#13;
+					is_empty {get_attr {"version"}}&#13;
+					contains {&#13;
+						get_attr {"version"}&#13;
+						"directory"&#13;
+					}&#13;
+				}&#13;
+				on_true = runcmd_to_var {&#13;
+					cmd = concat {&#13;
+						get_attr {"process.executablePath"}&#13;
+						" -V | grep 'Server version' | cut -d '/' -f 2 | cut -d ' ' -f 1"&#13;
+					}&#13;
+					var_names = "version"&#13;
+					parsing_strategy = position_from_end {&#13;
+						tokens_from_end = 1&#13;
+						delimiter = " "&#13;
+					}&#13;
+					if_not_found_do = nop {}&#13;
+					cache_flag = 0&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "set version if still empty"&#13;
+			if {&#13;
+				condition = any {&#13;
+					contains {&#13;
+						get_attr {"version"}&#13;
+						"directory"&#13;
+					}&#13;
+					is_empty {get_attr {"version"}}&#13;
+				}&#13;
+				on_true = parse_text_file_to_var {&#13;
+					file_path = get_files_by_filter {&#13;
+						expression = concat {&#13;
+							get_attr {"install_directory"}&#13;
+							"/properties/version/IHS.product"&#13;
+						}&#13;
+						foreach_attribute_name = "forEach"&#13;
+					}&#13;
+					var_names = "version"&#13;
+					parsing_strategy = xml_parsing_strategy {&#13;
+						rootXpath = "/product"&#13;
+						fields {&#13;
+							field {&#13;
+								col_name = "version"&#13;
+								xpath = "/product/version/text()"&#13;
+								delimiters = ""&#13;
+								position = 1&#13;
+							}&#13;
+							field {&#13;
+								col_name = "forEach"&#13;
+								for_each = "forEach"&#13;
+								delimiters = ""&#13;
+								position = 1&#13;
+							}&#13;
+						}&#13;
+					}&#13;
+					if_not_found_do = nop {}&#13;
+					cache_flag = 0&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Remove .bin from httpd executable"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "process.executablePath"&#13;
+				to_var_names = "httpd_command"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					delimiters = ".bin"&#13;
+					selected_positions = 1&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "ser version if still empty 2"&#13;
+			if {&#13;
+				condition = any {&#13;
+					contains {&#13;
+						get_attr {"version"}&#13;
+						"directory"&#13;
+					}&#13;
+					is_empty {get_attr {"version"}}&#13;
+				}&#13;
+				on_true = runcmd_to_var {&#13;
+					cmd = concat {&#13;
+						get_attr {"httpd_command"}&#13;
+						" -v | grep 'Server version' | cut -d '/' -f 2 | cut -d ' ' -f 1"&#13;
+					}&#13;
+					var_names = "version"&#13;
+					parsing_strategy = delimited_parsing {&#13;
+						selected_positions = 1&#13;
+					}&#13;
+					if_not_found_do = nop {}&#13;
+					cache_flag = 0&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "slim version"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "version"&#13;
+				to_var_names = "version"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					delimiters = "/"&#13;
+					selected_positions = 2&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "change slim version for suse linux"&#13;
+			if {&#13;
+				condition = all {&#13;
+					not_ends_with {&#13;
+						")"&#13;
+						get_attr {"version"}&#13;
+					}&#13;
+					contains {&#13;
+						get_attr {"version"}&#13;
+						"("&#13;
+					}&#13;
+				}&#13;
+				on_true = set_attr {&#13;
+					"version"&#13;
+					concat {&#13;
+						get_attr {"version"}&#13;
+						")"&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "get short_description"&#13;
+			runcmd_to_var {&#13;
+				cmd = concat {&#13;
+					". /etc/apache2/envvars; "&#13;
+					get_attr {"process.executablePath"}&#13;
+					" -V "&#13;
+				}&#13;
+				var_names = "temp_description"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					exclude_lines_pattern = "sh:"&#13;
+					selected_positions = 1&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "clean short_description"&#13;
+			set_attr {&#13;
+				"short_description"&#13;
+				eval {"javascript:
+var rtrn = \"\";
+var array = ${temp_description};
+var i;
+for (i=0; i&lt;array.size() ; i++)	
+	rtrn = rtrn  + \" \\n\" + array.get(i); "}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "reference to enrich library"&#13;
+			ref {refid = "118e7a04e4d4441ba0e64e4d0e3338d7"}&#13;
+		}&#13;
+		step {&#13;
+			name = "set process_ids"&#13;
+			set_attr {&#13;
+				"process_ids"&#13;
+				get_attr {"process.pid"}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "set type"&#13;
+			set_attr {&#13;
+				"type"&#13;
+				"Apache"&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+	connection {&#13;
+		name = "create Proxy Connections"&#13;
+		step {&#13;
+			name = "verify Proxy entries"&#13;
+			parse_text_file_to_var {&#13;
+				file_path = get_files_by_filter {&#13;
+					expression = get_attr {"config_file"}&#13;
+					foreach_attribute_name = "forEach"&#13;
+				}&#13;
+				var_names = "dummy"&#13;
+				parsing_strategy = regex_parsing {regex = "^LoadModule (proxy.*)"}&#13;
+				if_not_found_do = terminate {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "build include tables"&#13;
+			parse_text_file_to_var {&#13;
+				file_path = get_files_by_filter {&#13;
+					expression = get_attr {"config_file"}&#13;
+					foreach_attribute_name = "forEach"&#13;
+				}&#13;
+				var_names = table {&#13;
+					name = "inc_tbl"&#13;
+					col_names = "files"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					include_lines_pattern = "Include"&#13;
+					exclude_lines_pattern = "^#|^$"&#13;
+					delimiters = " "&#13;
+					selected_positions = 2&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter relative paths"&#13;
+			filter {&#13;
+				src_table_name = "inc_tbl"&#13;
+				target_table_name = "inc_tbl_temp"&#13;
+				condition = not_starts_with {&#13;
+					"/"&#13;
+					get_attr {"inc_tbl[].files"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "keep fixed entries"&#13;
+			filter {&#13;
+				src_table_name = "inc_tbl"&#13;
+				target_table_name = "inc_tbl"&#13;
+				condition = starts_with {&#13;
+					"/"&#13;
+					get_attr {"inc_tbl[].files"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "rebuild entries in temp folder"&#13;
+			transform {&#13;
+				src_table_name = "inc_tbl_temp"&#13;
+				target_table_name = "inc_tbl_temp"&#13;
+				operation {set_field {&#13;
+						field_name = "files"&#13;
+						value = concat {&#13;
+							get_attr {"install_directory"}&#13;
+							"/"&#13;
+							get_attr {"inc_tbl_temp[].files"}&#13;
+						}&#13;
+					}}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "union tables"&#13;
+			union {&#13;
+				table1_name = "inc_tbl"&#13;
+				table2_name = "inc_tbl_temp"&#13;
+				result_table_name = "inc_tbl"&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create conf_file table"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "config_file"&#13;
+				to_var_names = table {&#13;
+					name = "inc_tbl_temp"&#13;
+					col_names = "files"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					selected_positions = 1&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "union tables"&#13;
+			union {&#13;
+				table1_name = "inc_tbl"&#13;
+				table2_name = "inc_tbl_temp"&#13;
+				result_table_name = "inc_tbl"&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "get proxy entries"&#13;
+			parse_text_file_to_var {&#13;
+				file_path = get_files_by_filter {&#13;
+					expression = get_attr {"inc_tbl[*].files"}&#13;
+					foreach_attribute_name = "forEach"&#13;
+				}&#13;
+				var_names = table {&#13;
+					name = "proxy_cluster"&#13;
+					col_names = "str"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					include_lines_pattern = "&lt;Proxy balancer|BalancerMember|ProxyPass|ProxyPassReverse|RewriteRule|&lt;Virtual|Listen"&#13;
+					exclude_lines_pattern = "^#|^$|Instance|ProxyPassReverseCookieDomain"&#13;
+					selected_positions = 1&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "get server name"&#13;
+			parse_text_file_to_var {&#13;
+				file_path = get_files_by_filter {&#13;
+					expression = get_attr {"inc_tbl[*].files"}&#13;
+					foreach_attribute_name = "forEach"&#13;
+				}&#13;
+				var_names = table {&#13;
+					name = "server_names"&#13;
+					col_names = "server"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					include_lines_pattern = "ServerName"&#13;
+					delimiters = " "&#13;
+					selected_positions = 2&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter table server name"&#13;
+			filter {&#13;
+				src_table_name = "server_names"&#13;
+				target_table_name = "server_names"&#13;
+				condition = any {&#13;
+					eq {&#13;
+						get_attr {"server_names[].server"}&#13;
+						get_attr {"entry_point.host_name"}&#13;
+					}&#13;
+					contains {&#13;
+						get_attr {"server_names[].server"}&#13;
+						"usdo2.ihsenergy.com"&#13;
+					}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter table server name needed"&#13;
+			filter {&#13;
+				src_table_name = "inc_tbl"&#13;
+				target_table_name = "inc_tbl"&#13;
+				condition = any {&#13;
+					ends_with {&#13;
+						"httpd.conf"&#13;
+						get_attr {"inc_tbl[].files"}&#13;
+					}&#13;
+					contains {&#13;
+						get_attr {"inc_tbl[].files"}&#13;
+						get_attr {"server_names[].forEach"}&#13;
+					}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create proxy entries"&#13;
+			filter {&#13;
+				src_table_name = "proxy_cluster"&#13;
+				target_table_name = "proxy_entries"&#13;
+				condition = any {&#13;
+					starts_with {&#13;
+						"Proxy"&#13;
+						get_attr {"proxy_cluster[].str"}&#13;
+					}&#13;
+					starts_with {&#13;
+						"Listen"&#13;
+						get_attr {"proxy_cluster[].str"}&#13;
+					}&#13;
+					starts_with {&#13;
+						"&lt;Virtual"&#13;
+						get_attr {"proxy_cluster[].str"}&#13;
+					}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Filter Proxy Entries"&#13;
+			filter {&#13;
+				src_table_name = "proxy_entries"&#13;
+				target_table_name = "proxy_entries"&#13;
+				condition = not_contains {&#13;
+					get_attr {"proxy_entries[].str"}&#13;
+					"Default"&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create rules entries"&#13;
+			filter {&#13;
+				src_table_name = "proxy_cluster"&#13;
+				target_table_name = "proxy_rules"&#13;
+				condition = starts_with {&#13;
+					"RewriteRule"&#13;
+					get_attr {"proxy_cluster[].str"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "keep cluster entries"&#13;
+			filter {&#13;
+				src_table_name = "proxy_cluster"&#13;
+				target_table_name = "proxy_cluster"&#13;
+				condition = any {&#13;
+					starts_with {&#13;
+						"&lt;Proxy balancer"&#13;
+						get_attr {"proxy_cluster[].str"}&#13;
+					}&#13;
+					starts_with {&#13;
+						"BalancerMember"&#13;
+						get_attr {"proxy_cluster[].str"}&#13;
+					}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse cluster info"&#13;
+			set_attr {&#13;
+				"proxy_cluster"&#13;
+				concat {eval {"
+ def array = ${proxy_cluster[*].str}
+ def str=\"\"
+ def cluster=\"\"
+ def mem=\"\"
+ 
+ for (i=0;i&lt;array.size();i++)
+ {
+ if(array[i].contains('&lt;Proxy'))
+ {
+ cluster=(array[i].replaceAll('&lt;Proxy ','')).replaceAll('&gt;','')
+ }
+ if(array[i].contains('BalancerMember'))
+ {
+ mem=(array[i].replaceAll('BalancerMember ','')).split(' ')[0]
+ }
+ str=str+cluster+\"###\"+mem+\"\\n\"
+ }
+ return str
+ "}}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "build cluster and members"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "proxy_cluster"&#13;
+				to_var_names = table {&#13;
+					name = "proxy_cluster"&#13;
+					col_names = "cluster","member"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					delimiters = "###"&#13;
+					selected_positions = 1,2&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "build ref proxy table"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "proxy_entries[*].str"&#13;
+				to_var_names = table {&#13;
+					name = "proxy_cluster_ref"&#13;
+					col_names = "source_uri","target_uri"&#13;
+				}&#13;
+				parsing_strategy = regex_parsing {regex = "^Proxy[^\\s]* ([^\\s]*) (balancer.*)"}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "merge cluster tables"&#13;
+			if {&#13;
+				condition = all {&#13;
+					is_not_empty {get_attr {"proxy_cluster"}}&#13;
+					is_not_empty {get_attr {"proxy_cluster_ref"}}&#13;
+				}&#13;
+				on_true = merge {&#13;
+					table1_name = "proxy_cluster"&#13;
+					table2_name = "proxy_cluster_ref"&#13;
+					result_table_name = "proxy_cluster"&#13;
+					unmatched_lines = remove&#13;
+					condition = contains {&#13;
+						get_attr {"proxy_cluster_ref[].target_uri"}&#13;
+						get_attr {"proxy_cluster[].cluster"}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse ep url"&#13;
+			parse_url_to_var {&#13;
+				from_var_name = "entry_point.url"&#13;
+				to_var_name = "url"&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "set empty path to \"/\""&#13;
+			transform {&#13;
+				src_table_name = "url"&#13;
+				target_table_name = "url"&#13;
+				operation {set_field {&#13;
+						field_name = "path"&#13;
+						value = eval {"
+ if (${url[].path}==null || ${url[].path}==\"\") 
+ return \"/\";
+ else
+ return ${url[].path};
+ "}&#13;
+					}}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter our entries"&#13;
+			if {&#13;
+				condition = all {&#13;
+					is_not_empty {get_attr {"proxy_cluster"}}&#13;
+					is_not_empty {get_attr {"url[1].path"}}&#13;
+				}&#13;
+				on_true = filter {&#13;
+					src_table_name = "proxy_cluster"&#13;
+					target_table_name = "proxy_cluster_ref_filtered"&#13;
+					condition = contains {&#13;
+						get_attr {"proxy_cluster[].source_uri"}&#13;
+						get_attr {"url[1].path"}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse filtered urls"&#13;
+			parse_url_to_var {&#13;
+				from_var_name = "proxy_cluster_ref_filtered[*].member"&#13;
+				to_var_name = "http_conn"&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "merge tables"&#13;
+			merge {&#13;
+				table1_name = "http_conn"&#13;
+				key1_name = "url"&#13;
+				table2_name = "proxy_cluster_ref_filtered"&#13;
+				key2_name = "member"&#13;
+				result_table_name = "http_conn"&#13;
+				unmatched_lines = remove&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create cluster connections"&#13;
+			if {&#13;
+				condition = is_not_empty {get_attr {"http_conn"}}&#13;
+				on_true = create_connection {&#13;
+					connection_type = CLUSTER&#13;
+					cluster_name = get_attr {"http_conn[*].cluster"}&#13;
+					entry_point_type = "cmdb_ci_endpoint_http"&#13;
+					attributes {&#13;
+						attribute {&#13;
+							name = "host"&#13;
+							value = get_attr {"http_conn[*].host"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "port"&#13;
+							value = get_attr {"http_conn[*].port"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "protocol"&#13;
+							value = get_attr {"http_conn[*].protocol"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "url"&#13;
+							value = get_attr {"http_conn[*].target_uri"}&#13;
+						}&#13;
+					}&#13;
+					is_artificial = "false"&#13;
+					traffic_based = "false"&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "verify no http connections"&#13;
+			if {&#13;
+				condition = contains {&#13;
+					"1"&#13;
+					"2"&#13;
+				}&#13;
+				on_true = match {&#13;
+					is_empty {get_attr {"http_conn"}}&#13;
+					terminate_op = terminate&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create rule table"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "proxy_rules[*].str"&#13;
+				to_var_names = table {&#13;
+					name = "proxy_rules"&#13;
+					col_names = "source","target"&#13;
+				}&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					delimiters = " "&#13;
+					selected_positions = 2,3&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "clean rule table"&#13;
+			transform {&#13;
+				src_table_name = "proxy_rules"&#13;
+				target_table_name = "proxy_rules"&#13;
+				operation {&#13;
+					set_field {&#13;
+						field_name = "source"&#13;
+						value = eval {"
+ return ${proxy_rules[].source}.replaceFirst('\\\\^','').replaceFirst('\\\\.\\\\*\\\\$','').replaceFirst('\\\\$','').replaceAll('\\\\.\\\\*','').replaceAll('\\\\(','').replaceAll('\\\\)','').replaceAll('\\\\\\\\d','').replaceAll('\\\\\\\\','')
+ "}&#13;
+					}&#13;
+					set_field {&#13;
+						field_name = "target"&#13;
+						value = eval {"
+ return ${proxy_rules[].target}.replaceFirst('\\\\$1',${proxy_rules[].source})
+ 
+ "}&#13;
+					}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter entries to best_match"&#13;
+			filter {&#13;
+				src_table_name = "proxy_rules"&#13;
+				target_table_name = "proxy_rules"&#13;
+				condition = contains {&#13;
+					get_attr {"proxy_rules[].source"}&#13;
+					get_attr {"url[1].path"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter start with \"/\""&#13;
+			filter {&#13;
+				src_table_name = "proxy_rules"&#13;
+				target_table_name = "proxy_rules_temp"&#13;
+				condition = starts_with {&#13;
+					"/"&#13;
+					get_attr {"proxy_rules[].target"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "build url if start with /"&#13;
+			if {&#13;
+				condition = is_not_empty {get_attr {"proxy_rules_temp"}}&#13;
+				on_true = transform {&#13;
+					src_table_name = "proxy_rules_temp"&#13;
+					target_table_name = "proxy_rules_temp"&#13;
+					operation {set_field {&#13;
+							field_name = "target"&#13;
+							value = concat {&#13;
+								get_attr {"entry_point.protocol"}&#13;
+								"://"&#13;
+								get_attr {"entry_point.host"}&#13;
+								":"&#13;
+								get_attr {"entry_point.port"}&#13;
+								get_attr {"proxy_rules_temp[].target"}&#13;
+							}&#13;
+						}}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "union tables"&#13;
+			union {&#13;
+				table1_name = "proxy_rules"&#13;
+				table2_name = "proxy_rules_temp"&#13;
+				result_table_name = "proxy_rules"&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter balancer entries"&#13;
+			filter {&#13;
+				src_table_name = "proxy_rules"&#13;
+				target_table_name = "proxy_rules_temp"&#13;
+				condition = starts_with {&#13;
+					"balancer"&#13;
+					get_attr {"proxy_rules[].target"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "remove balancer entries"&#13;
+			filter {&#13;
+				src_table_name = "proxy_rules"&#13;
+				target_table_name = "proxy_rules"&#13;
+				condition = not_starts_with {&#13;
+					"balancer"&#13;
+					get_attr {"proxy_rules[].target"}&#13;
+				}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse urls"&#13;
+			parse_url_to_var {&#13;
+				from_var_name = "proxy_rules[*].target"&#13;
+				to_var_name = "http_conn"&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create http connections"&#13;
+			create_connection {&#13;
+				connection_type = APPLICATION_FLOW&#13;
+				entry_point_type = "cmdb_ci_endpoint_http"&#13;
+				attributes {&#13;
+					attribute {&#13;
+						name = "host"&#13;
+						value = get_attr {"http_conn[*].host"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "port"&#13;
+						value = get_attr {"http_conn[*].port"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "protocol"&#13;
+						value = get_attr {"http_conn[*].protocol"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "url"&#13;
+						value = get_attr {"http_conn[*].url"}&#13;
+					}&#13;
+				}&#13;
+				is_artificial = "false"&#13;
+				traffic_based = "false"&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "merge cluster tables"&#13;
+			if {&#13;
+				condition = all {&#13;
+					is_not_empty {get_attr {"proxy_cluster"}}&#13;
+					is_not_empty {get_attr {"proxy_rules_temp"}}&#13;
+				}&#13;
+				on_true = merge {&#13;
+					table1_name = "proxy_cluster"&#13;
+					table2_name = "proxy_rules_temp"&#13;
+					result_table_name = "proxy_rules_temp"&#13;
+					unmatched_lines = remove&#13;
+					condition = contains {&#13;
+						get_attr {"proxy_rules_temp[].target"}&#13;
+						get_attr {"proxy_cluster[].cluster"}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse members"&#13;
+			parse_url_to_var {&#13;
+				from_var_name = "proxy_rules_temp[*].member"&#13;
+				to_var_name = "http_conn"&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create cluster connections"&#13;
+			if {&#13;
+				condition = is_not_empty {get_attr {"proxy_rules_temp"}}&#13;
+				on_true = create_connection {&#13;
+					connection_type = CLUSTER&#13;
+					cluster_name = get_attr {"proxy_rules_temp[*].cluster"}&#13;
+					entry_point_type = "cmdb_ci_endpoint_http"&#13;
+					attributes {&#13;
+						attribute {&#13;
+							name = "host"&#13;
+							value = get_attr {"http_conn[*].host"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "port"&#13;
+							value = get_attr {"http_conn[*].port"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "protocol"&#13;
+							value = get_attr {"http_conn[*].protocol"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "url"&#13;
+							value = get_attr {"proxy_rules_temp[*].target"}&#13;
+						}&#13;
+					}&#13;
+					is_artificial = "false"&#13;
+					traffic_based = "false"&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "verify http conn is empty"&#13;
+			match {&#13;
+				is_empty {get_attr {"http_conn"}}&#13;
+				terminate_op = terminate&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse urls"&#13;
+			parse_url_to_var {&#13;
+				from_var_name = "proxy_targets_uri_2[*].target_uri"&#13;
+				to_var_name = "http_conn"&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create http connections"&#13;
+			create_connection {&#13;
+				connection_type = APPLICATION_FLOW&#13;
+				entry_point_type = "cmdb_ci_endpoint_http"&#13;
+				attributes {&#13;
+					attribute {&#13;
+						name = "host"&#13;
+						value = get_attr {"http_conn[*].host"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "port"&#13;
+						value = get_attr {"http_conn[*].port"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "protocol"&#13;
+						value = get_attr {"http_conn[*].protocol"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "url"&#13;
+						value = get_attr {"entry_point.url"}&#13;
+					}&#13;
+				}&#13;
+				is_artificial = "false"&#13;
+				traffic_based = "false"&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "verify http conn is empoty"&#13;
+			match {&#13;
+				is_empty {get_attr {"http_conn"}}&#13;
+				terminate_op = terminate&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse entries info"&#13;
+			set_attr {&#13;
+				"proxy_entries"&#13;
+				concat {eval {"
+ def arry= ${proxy_entries[*].str}
+ def portArry =[];
+ def srcArry = [];
+ def str = \"\"
+ for (i=0;i&lt;arry.size();i++) {
+ if(arry[i].contains('Listen'))
+ portArry.push(arry[i].split(' ')[1].replaceAll('&gt;','').replaceAll('\\\\*:',''));
+ if(arry[i].contains('Virtual'))
+ portArry.push(arry[i].split(':')[1].replaceAll('&gt;','').replaceAll('\\\\*:',''));
+ if(arry[i].contains('Proxy'))
+ srcArry.push(arry[i]);
+ }
+ for (String port:portArry)
+ for (String src:srcArry)
+ str+=port+\"###\"+src+\"\\n\"
+ return str
+ "}}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "build proxy entries"&#13;
+			parse_var_to_var {&#13;
+				from_var_name = "proxy_entries"&#13;
+				to_var_names = table {&#13;
+					name = "proxy_entries"&#13;
+					col_names = "port","src","tar"&#13;
+				}&#13;
+				parsing_strategy = regex_parsing {regex = "(\\d+)###Proxy\\S*\\s+(\\S*)\\s+(\\S*)"}&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter entries for our ep port"&#13;
+			if {&#13;
+				condition = all {&#13;
+					is_not_empty {get_attr {"proxy_entries"}}&#13;
+					is_not_empty {get_attr {"url[1].path"}}&#13;
+				}&#13;
+				on_true = filter {&#13;
+					src_table_name = "proxy_entries"&#13;
+					target_table_name = "proxy_entries"&#13;
+					condition = all {&#13;
+						eq {&#13;
+							get_attr {"proxy_entries[].port"}&#13;
+							get_attr {"entry_point.port"}&#13;
+						}&#13;
+						eq {&#13;
+							get_attr {"url[1].path"}&#13;
+							get_attr {"proxy_entries[].src"}&#13;
+						}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter out hhtp connections\\"&#13;
+			if {&#13;
+				condition = is_not_empty {get_attr {"proxy_entries"}}&#13;
+				on_true = filter {&#13;
+					src_table_name = "proxy_entries"&#13;
+					target_table_name = "http_conn"&#13;
+					condition = starts_with {&#13;
+						"http"&#13;
+						get_attr {"proxy_entries[].tar"}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "filter out hhtp connections\\"&#13;
+			if {&#13;
+				condition = is_not_empty {get_attr {"proxy_entries"}}&#13;
+				on_true = filter {&#13;
+					src_table_name = "proxy_entries"&#13;
+					target_table_name = "proxy_entries"&#13;
+					condition = starts_with {&#13;
+						"balancer"&#13;
+						get_attr {"proxy_entries[].tar"}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse http connections"&#13;
+			parse_url_to_var {&#13;
+				from_var_name = "http_conn[*].tar"&#13;
+				to_var_name = "http_conn"&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create http connections"&#13;
+			create_connection {&#13;
+				connection_type = APPLICATION_FLOW&#13;
+				entry_point_type = "cmdb_ci_endpoint_http"&#13;
+				attributes {&#13;
+					attribute {&#13;
+						name = "host"&#13;
+						value = get_attr {"http_conn[*].host"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "port"&#13;
+						value = get_attr {"http_conn[*].port"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "protocol"&#13;
+						value = get_attr {"http_conn[*].protocol"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "url"&#13;
+						value = get_attr {"entry_point.url"}&#13;
+					}&#13;
+				}&#13;
+				is_artificial = "false"&#13;
+				traffic_based = "false"&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "add uri and clean tar"&#13;
+			if {&#13;
+				condition = is_not_empty {get_attr {"proxy_entries"}}&#13;
+				on_true = transform {&#13;
+					src_table_name = "proxy_entries"&#13;
+					target_table_name = "proxy_entries"&#13;
+					operation {&#13;
+						set_field {&#13;
+							field_name = "uri"&#13;
+							value = eval {"
+ return ${proxy_entries[].tar}.replaceAll('.*/','/')
+ "}&#13;
+						}&#13;
+						set_field {&#13;
+							field_name = "tar"&#13;
+							value = eval {"
+ return ${proxy_entries[].tar}.replaceFirst(${proxy_entries[].uri},'')
+ "}&#13;
+						}&#13;
+					}&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "merge tables"&#13;
+			if {&#13;
+				condition = all {&#13;
+					is_not_empty {get_attr {"proxy_entries"}}&#13;
+					is_not_empty {get_attr {"proxy_cluster"}}&#13;
+				}&#13;
+				on_true = merge {&#13;
+					table1_name = "proxy_entries"&#13;
+					key1_name = "tar"&#13;
+					table2_name = "proxy_cluster"&#13;
+					key2_name = "cluster"&#13;
+					result_table_name = "proxy_entries"&#13;
+					unmatched_lines = remove&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "parse urls"&#13;
+			parse_url_to_var {&#13;
+				from_var_name = "proxy_entries[*].member"&#13;
+				to_var_name = "http_conn"&#13;
+				if_not_found_do = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "create cluster connections"&#13;
+			if {&#13;
+				condition = is_not_empty {get_attr {"http_conn"}}&#13;
+				on_true = create_connection {&#13;
+					connection_type = CLUSTER&#13;
+					cluster_name = get_attr {"proxy_entries[*].tar"}&#13;
+					entry_point_type = "cmdb_ci_endpoint_http"&#13;
+					attributes {&#13;
+						attribute {&#13;
+							name = "host"&#13;
+							value = get_attr {"http_conn[*].host"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "port"&#13;
+							value = get_attr {"http_conn[*].port"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "protocol"&#13;
+							value = get_attr {"http_conn[*].protocol"}&#13;
+						}&#13;
+						attribute {&#13;
+							name = "url"&#13;
+							value = get_attr {"proxy_entries[*].uri"}&#13;
+						}&#13;
+					}&#13;
+					is_artificial = "false"&#13;
+					traffic_based = "false"&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+	connection {&#13;
+		name = "WordPress DB Connection"&#13;
+		step {&#13;
+			name = "Get PHPVer"&#13;
+			runcmd_to_var {&#13;
+				cmd = "php -v"&#13;
+				var_names = "PHPVer"&#13;
+				parsing_strategy = regex_parsing {regex = "(PHP 5)"}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Get DocRoot"&#13;
+			if {&#13;
+				condition = contains {&#13;
+					get_attr {"PHPVer"}&#13;
+					"PHP"&#13;
+				}&#13;
+				on_true = runcmd_to_var {&#13;
+					cmd = concat {&#13;
+						"grep -i 'DocumentRoot ' "&#13;
+						get_attr {"config_file"}&#13;
+					}&#13;
+					var_names = "DocRoot"&#13;
+					parsing_strategy = cmdline_linux_parsing {after_option = "DocumentRoot"}&#13;
+					if_not_found_do = nop {}&#13;
+					cache_flag = 0&#13;
+				}&#13;
+				on_false = nop {}&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Find WPConfig"&#13;
+			runcmd_to_var {&#13;
+				cmd = concat {&#13;
+					"ls "&#13;
+					get_attr {"DocRoot"}&#13;
+					"|grep wp-config.php"&#13;
+				}&#13;
+				var_names = "wp_config"&#13;
+				parsing_strategy = regex_parsing {regex = "(wp-config.php)"}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "get DB_HOST"&#13;
+			runcmd_to_var {&#13;
+				cmd = concat {&#13;
+					"grep -I "&#13;
+					"'DB_HOST' "&#13;
+					get_attr {"DocRoot"}&#13;
+					"/"&#13;
+					get_attr {"wp_config"}&#13;
+				}&#13;
+				var_names = "db_host"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					delimiters = "'"&#13;
+					selected_positions = 4&#13;
+				}&#13;
+				if_not_found_do = nop {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Add Connection"&#13;
+			create_connection {&#13;
+				connection_type = APPLICATION_FLOW&#13;
+				target_ci_type = "cmdb_ci_db_mysql_instance"&#13;
+				entry_point_type = "cmdb_ci_endpoint_mysql_server"&#13;
+				attributes {&#13;
+					attribute {&#13;
+						name = "host"&#13;
+						value = get_attr {"db_host"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "port"&#13;
+						value = "3306"&#13;
+					}&#13;
+				}&#13;
+				is_artificial = "false"&#13;
+				traffic_based = "false"&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+	connection {&#13;
+		name = "Temp for parse file creation"&#13;
+		step {&#13;
+			name = "Untitled Step"&#13;
+			set_attr {&#13;
+				"tmp"&#13;
+				""&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+	connection {&#13;
+		name = "CSM Config"&#13;
+		step {&#13;
+			name = "set conf dir"&#13;
+			set_attr {&#13;
+				"confInclude"&#13;
+				"/etc/httpd/conf.d/"&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Find Config File"&#13;
+			runcmd_to_var {&#13;
+				cmd = concat {&#13;
+					"ls "&#13;
+					get_attr {"confInclude"}&#13;
+					"| grep cms.conf"&#13;
+				}&#13;
+				var_names = "cms_config_file"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					selected_positions = 1&#13;
+				}&#13;
+				if_not_found_do = terminate {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Get Member"&#13;
+			runcmd_to_var {&#13;
+				cmd = concat {&#13;
+					"grep -i 'BalancerMember' "&#13;
+					get_attr {"confInclude"}&#13;
+					get_attr {"cms_config_file"}&#13;
+				}&#13;
+				var_names = "BalMem"&#13;
+				parsing_strategy = delimited_parsing {&#13;
+					delimiters = "//",":"&#13;
+					selected_positions = 2&#13;
+				}&#13;
+				if_not_found_do = terminate {}&#13;
+				cache_flag = 0&#13;
+			}&#13;
+		}&#13;
+		step {&#13;
+			name = "Create Connection"&#13;
+			create_connection {&#13;
+				connection_type = APPLICATION_FLOW&#13;
+				target_ci_type = "cmdb_ci_apache_web_server"&#13;
+				entry_point_type = "cmdb_ci_endpoint_http"&#13;
+				attributes {&#13;
+					attribute {&#13;
+						name = "host"&#13;
+						value = get_attr {"BalMem"}&#13;
+					}&#13;
+					attribute {&#13;
+						name = "port"&#13;
+						value = "80"&#13;
+					}&#13;
+					attribute {&#13;
+						name = "protocol"&#13;
+						value = "http"&#13;
+					}&#13;
+					attribute {&#13;
+						name = "url"&#13;
+						value = concat {&#13;
+							"http://"&#13;
+							get_attr {"BalMem"}&#13;
+						}&#13;
+					}&#13;
+				}&#13;
+				is_artificial = "false"&#13;
+				traffic_based = "false"&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+}&#13;
+</ndl><parent/><serverless>false</serverless><source/><sys_class_name>sa_pattern</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-09-24 10:49:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>28d607dbfead4be3887c843814455100</sys_id><sys_mod_count>124</sys_mod_count><sys_name>Apache On Unix Pattern</sys_name><sys_overrides/><sys_package display_value="Pattern Designer" source="com.snc.pattern.designer">acdccc45dbb31300e243b6d1ba961948</sys_package><sys_policy/><sys_replace/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sa_pattern_28d607dbfead4be3887c843814455100</sys_update_name><sys_updated_by>john.depot</sys_updated_by><sys_updated_on>2018-10-29 12:11:42</sys_updated_on><version/></sa_pattern></record_update>]]></payload>
+<payload_hash>-1653807035</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>c847677cdb0c330015e3dd18f496196e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e7563610000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>Apache On Unix Pattern</target_name>
+<type>Discovery Patterns</type>
+<update_domain>global</update_domain>
+<update_guid>b365eff8100c330030d302fb9fadbbfc</update_guid>
+<update_guid_history>b365eff8100c330030d302fb9fadbbfc:-1653807035,b337f8c0482527004b6f513a782d8115:-1653807035,c975913a1391e3c04c4cdcfac9b18259:1264586781,fad2d82b08a817c078720f4510a27105:253260810,104ec40b41f8e340f5aed13b9e1bb534:-617329240,9e91444bc770ef00a1983098c3239873:-541731707,f97ca70786e46300ca014f77810907f8:-507402748,e34e43c7c3246300eec92964a7d90d06:1413982210,5e2cf424d2ccef006d3ff46b5560d9f8:-43998992,be4258909588af00b8f185fef5a04969:1787305465,0291148b90735b002d656c89a8fbf55a:-974674238,6977c48f9c335b00b9b82eb6848c5dcf:1500617939,3eb1db294a37d300050189d110ce1dea:1264586781,fad2d82b08a817c078720f4510a27105:253260810,7a3122c591890b0068f7720f70d1cc3d:253260810,c24dd2cd0f490b00527b07ce1d911988:-1046029324,a7c14454dd0d87000cb0f9588a2e67a5:1739454093,f770d57b4f640f40af050ff7ec38dd9e:-844980657,2948cdfbd0240f4098d12a76b7e7b6dc:-151867888,4f51f131a068074038ec990aa243e3ea:-232475574,736ca97934280740d2c67f3090840e2f:-265651912,3f6ca9794028074025a8906cee9df62c:1075712228,dfb44854fb8547002596135c8773c9a3:-970957489,992dc50537bb130032a50154292c273b:1500617939</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sa_ci_to_pattern_4f002cfedb9da3c0c71f6583ca96191c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sa_ci_to_pattern"><sa_ci_to_pattern action="INSERT_OR_UPDATE"><ci_type>cmdb_ci_appl_dot_net</ci_type><deletion_strategy>1</deletion_strategy><is_main_ci>false</is_main_ci><pattern display_value="Apache On Unix Pattern">28d607dbfead4be3887c843814455100</pattern><sys_created_by>john.depot</sys_created_by><sys_created_on>2018-10-25 13:18:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4f002cfedb9da3c0c71f6583ca96191c</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_updated_by>john.depot</sys_updated_by><sys_updated_on>2018-10-25 13:18:05</sys_updated_on></sa_ci_to_pattern></record_update>]]></payload>
+<payload_hash>807028261</payload_hash>
+<remote_update_set display_value="AnC-Apache on Unix w Wordpress">4047677cdb0c330015e3dd18f496196d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 15:33:05</sys_created_on>
+<sys_id>cc47677cdb0c330015e3dd18f496196d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694e7563d50000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 15:33:05</sys_updated_on>
+<table/>
+<target_name>4f002cfedb9da3c0c71f6583ca96191c</target_name>
+<type>Related CI Types</type>
+<update_domain>global</update_domain>
+<update_guid>3765eff8e10c3300f16ee857a5e266ff</update_guid>
+<update_guid_history>3765eff8e10c3300f16ee857a5e266ff:807028261,3765eff8e10c3300f16ee857a5e266ff:807028261,8110e8fee29da3c0fa5a66fd4654458e:1332416746</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2018-07-11 20:13:59">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-05 19:06:53">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -16,16 +15,16 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>5af584fcdbdf1b8083e477421f9619d1</remote_sys_id>
+<remote_sys_id>d66dc905dbbb1300c71f6583ca9619fd</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-07-11 20:13:58</sys_created_on>
-<sys_id>7bb6c030db135b8083e477421f96199b</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:06:30</sys_created_on>
+<sys_id>1e18184ddbcc330015e3dd18f4961950</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-07-11 20:13:58</sys_updated_on>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:06:30</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -55,15 +54,15 @@
 
 })(request, response);]]&gt;&lt;/operation_script&gt;&lt;operation_uri&gt;/api/snc/restfulworkflow/{workflow}&lt;/operation_uri&gt;&lt;produces&gt;application/json,application/xml,text/xml&lt;/produces&gt;&lt;produces_customized&gt;false&lt;/produces_customized&gt;&lt;relative_path&gt;/{workflow}&lt;/relative_path&gt;&lt;request_example/&gt;&lt;requires_acl_authorization&gt;true&lt;/requires_acl_authorization&gt;&lt;requires_authentication&gt;true&lt;/requires_authentication&gt;&lt;short_description&gt;Execute a workflow&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ws_operation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-16 23:48:54&lt;/sys_created_on&gt;&lt;sys_id&gt;9bb51e07dbf493808015f1351d96191f&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Execute&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ws_operation_9bb51e07dbf493808015f1351d96191f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-05-23 19:52:40&lt;/sys_updated_on&gt;&lt;web_service_definition display_value="RestfulWorkflow"&gt;5ef4d207dbf493808015f1351d9619b3&lt;/web_service_definition&gt;&lt;web_service_version/&gt;&lt;/sys_ws_operation&gt;&lt;/record_update&gt;</payload>
 <payload_hash>-372840688</payload_hash>
-<remote_update_set display_value="RestfulWorkflow">7bb6c030db135b8083e477421f96199b</remote_update_set>
+<remote_update_set display_value="RestfulWorkflow">1e18184ddbcc330015e3dd18f4961950</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-07-11 20:13:58</sys_created_on>
-<sys_id>3bb6c030db135b8083e477421f96199c</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:06:30</sys_created_on>
+<sys_id>5618184ddbcc330015e3dd18f4961951</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>1648af911460000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-07-11 20:13:58</sys_updated_on>
+<sys_recorded_at>16510154bd30000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:06:30</sys_updated_on>
 <table/>
 <target_name>Execute</target_name>
 <type>Scripted REST Resource</type>
@@ -81,15 +80,15 @@
 <name>sys_ws_definition_5ef4d207dbf493808015f1351d9619b3</name>
 <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/snc/restfulworkflow</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>RestfulWorkflow</name><namespace>snc</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>restfulworkflow</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-03-16 23:44:53</sys_created_on><sys_id>5ef4d207dbf493808015f1351d9619b3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>RestfulWorkflow</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ws_definition_5ef4d207dbf493808015f1351d9619b3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-03-16 23:44:53</sys_updated_on></sys_ws_definition></record_update>]]></payload>
 <payload_hash>-827434234</payload_hash>
-<remote_update_set display_value="RestfulWorkflow">7bb6c030db135b8083e477421f96199b</remote_update_set>
+<remote_update_set display_value="RestfulWorkflow">1e18184ddbcc330015e3dd18f4961950</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-07-11 20:13:58</sys_created_on>
-<sys_id>ffb6c030db135b8083e477421f96199b</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:06:30</sys_created_on>
+<sys_id>9218184ddbcc330015e3dd18f4961951</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>1648af8e74d0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-07-11 20:13:58</sys_updated_on>
+<sys_recorded_at>16510154bb60000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:06:30</sys_updated_on>
 <table/>
 <target_name>RestfulWorkflow</target_name>
 <type>Scripted REST API</type>

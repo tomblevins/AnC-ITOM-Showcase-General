@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<unload unload_date="2018-08-05 11:52:04">
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-05 19:12:05">
 <sys_remote_update_set action="INSERT_OR_UPDATE">
 <application display_value="Global">global</application>
 <application_name>Global</application_name>
@@ -16,16 +15,16 @@
 <release_date/>
 <remote_base_update_set display_value=""/>
 <remote_parent_id/>
-<remote_sys_id>dd238724db7b1f40caea3400ad96193c</remote_sys_id>
+<remote_sys_id>6b6981cddb7b1300c71f6583ca96192d</remote_sys_id>
 <state>loaded</state>
 <summary/>
 <sys_class_name>sys_remote_update_set</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-08-05 11:52:04</sys_created_on>
-<sys_id>1b938f24db7b1f40caea3400ad96190d</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>f75910cddbcc330015e3dd18f4961917</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-08-05 11:52:04</sys_updated_on>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
 <update_set display_value=""/>
 <update_source display_value=""/>
 <updated/>
@@ -35,24 +34,24 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_process_flow_c15a433a1315d2001e0057b32244b068</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">active=true^caller_idISNOTEMPTY^stateIN2,3^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="2,3"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Investigate and Diagnose</label><name>Investigate and Diagnose</name><order>30</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 20:46:09</sys_created_on><sys_id>c15a433a1315d2001e0057b32244b068</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Investigate and Diagnose</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_c15a433a1315d2001e0057b32244b068</sys_update_name><sys_updated_by>hpfeiler</sys_updated_by><sys_updated_on>2017-11-12 09:33:33</sys_updated_on><table>incident</table><u_view_condition/></sys_process_flow></record_update>]]></payload>
-<payload_hash>329350160</payload_hash>
-<remote_update_set display_value="AnC Showcase-IncidentProcess">1b938f24db7b1f40caea3400ad96190d</remote_update_set>
+<name>cxs_searcher_config_35abb504eb53210070a9666cd206fef7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_searcher_config"><cxs_searcher_config action="INSERT_OR_UPDATE"><active>true</active><interleave>true</interleave><name>Knowledge, Social Q&amp;A and pinned</name><short_description>Provides search results from knowledge articles, pinned knowledge articles and Social Q&amp;A</short_description><sys_class_name>cxs_searcher_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-09-16 23:31:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>35abb504eb53210070a9666cd206fef7</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Knowledge and pinned knowledge</sys_name><sys_package display_value="Contextual Search" source="com.snc.contextual_search">8f21d4f4dbb31300c71f6583ca9619b8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>cxs_searcher_config_35abb504eb53210070a9666cd206fef7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-04-24 18:19:26</sys_updated_on></cxs_searcher_config></record_update>]]></payload>
+<payload_hash>-437674730</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-08-05 11:52:04</sys_created_on>
-<sys_id>1b938f24db7b1f40caea3400ad96190e</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>335910cddbcc330015e3dd18f4961918</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16509ed79750000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-08-05 11:52:04</sys_updated_on>
-<table>incident</table>
-<target_name>Investigate and Diagnose</target_name>
-<type>Flow Formatter</type>
+<sys_recorded_at>1694f38e97d0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table/>
+<target_name>Knowledge, Social Q&amp;A and pinned</target_name>
+<type>Searcher</type>
 <update_domain>global</update_domain>
-<update_guid>0573cb241d7b1f4051905803bdf7b337</update_guid>
-<update_guid_history>0573cb241d7b1f4051905803bdf7b337:329350160,0bedd84289e0970083d882d748e61165:1354629212</update_guid_history>
+<update_guid>0c56580d9fcc33000b116c6646624432</update_guid>
+<update_guid_history>0c56580d9fcc33000b116c6646624432:-437674730</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -61,50 +60,24 @@
 <application display_value="Global">global</application>
 <category>customer</category>
 <comments/>
-<name>sys_process_flow_f4ed202213a9d6001e0057b32244b03b</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">incident_state=7^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="false" value="7"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Closure</label><name>Closure</name><order>50</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser</sys_created_by><sys_created_on>2016-02-16 00:59:52</sys_created_on><sys_id>f4ed202213a9d6001e0057b32244b03b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Closure</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_f4ed202213a9d6001e0057b32244b03b</sys_update_name><sys_updated_by>ryan.fraser</sys_updated_by><sys_updated_on>2016-02-16 00:59:52</sys_updated_on><table>incident</table><u_view_condition/></sys_process_flow></record_update>]]></payload>
-<payload_hash>-2139695945</payload_hash>
-<remote_update_set display_value="AnC Showcase-IncidentProcess">1b938f24db7b1f40caea3400ad96190d</remote_update_set>
+<name>sys_process_flow_9be91b33cb100200d71cb9c0c24c9cf4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=4^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="4"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Canceled</label><name>Normal Change - Canceled state</name><order>1000</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:14:17</sys_created_on><sys_id>9be91b33cb100200d71cb9c0c24c9cf4</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Normal Change - Canceled state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_9be91b33cb100200d71cb9c0c24c9cf4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-16 13:43:14</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1381135455</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-08-05 11:52:04</sys_created_on>
-<sys_id>53934364db7b1f40caea3400ad961969</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>335910cddbcc330015e3dd18f496191b</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16509ed79a20000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-08-05 11:52:04</sys_updated_on>
-<table>incident</table>
-<target_name>Closure</target_name>
+<sys_recorded_at>1694f34eb940000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - Canceled state</target_name>
 <type>Flow Formatter</type>
 <update_domain>global</update_domain>
-<update_guid>8973cb24977b1f4035cd0a7b153ea639</update_guid>
-<update_guid_history>8973cb24977b1f4035cd0a7b153ea639:-2139695945,c7edd84251e09700299476b23abaad69:696408821</update_guid_history>
-<update_set display_value=""/>
-<view/>
-</sys_update_xml>
-<sys_update_xml action="INSERT_OR_UPDATE">
-<action>INSERT_OR_UPDATE</action>
-<application display_value="Global">global</application>
-<category>customer</category>
-<comments/>
-<name>sys_process_flow_b66d437a1315d2001e0057b32244b0f2</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">incident_state=6^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="false" value="6"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Resolution and Recovery</label><name>Resolution and Recovery</name><order>40</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 21:00:14</sys_created_on><sys_id>b66d437a1315d2001e0057b32244b0f2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Resolution and Recovery</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_b66d437a1315d2001e0057b32244b0f2</sys_update_name><sys_updated_by>ryan.fraser@snc</sys_updated_by><sys_updated_on>2016-02-04 21:00:14</sys_updated_on><table>incident</table><u_view_condition/></sys_process_flow></record_update>]]></payload>
-<payload_hash>-596344257</payload_hash>
-<remote_update_set display_value="AnC Showcase-IncidentProcess">1b938f24db7b1f40caea3400ad96190d</remote_update_set>
-<replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-08-05 11:52:04</sys_created_on>
-<sys_id>57938f24db7b1f40caea3400ad96190e</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16509ed795a0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-08-05 11:52:04</sys_updated_on>
-<table>incident</table>
-<target_name>Resolution and Recovery</target_name>
-<type>Flow Formatter</type>
-<update_domain>global</update_domain>
-<update_guid>4173cb240d7b1f409a5f8ccd09ebee36</update_guid>
-<update_guid_history>4173cb240d7b1f409a5f8ccd09ebee36:-596344257,c3edd842c5e09700672b0784f1f30364:521371757</update_guid_history>
+<update_guid>9855d8c938cc330052b6ce47639b8b1e</update_guid>
+<update_guid_history>9855d8c938cc330052b6ce47639b8b1e:-1381135455</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -114,23 +87,517 @@
 <category>customer</category>
 <comments/>
 <name>sys_process_flow_4f4a4bf61315d2001e0057b32244b058</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">active=true^caller_idISNOTEMPTY^state=1^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Classification and Prioritization</label><name>Classification and Prioritization</name><order>20</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 20:46:01</sys_created_on><sys_id>4f4a4bf61315d2001e0057b32244b058</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Classification and Prioritization</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_4f4a4bf61315d2001e0057b32244b058</sys_update_name><sys_updated_by>hpfeiler</sys_updated_by><sys_updated_on>2017-11-12 09:32:28</sys_updated_on><table>incident</table><u_view_condition/></sys_process_flow></record_update>]]></payload>
-<payload_hash>1354695735</payload_hash>
-<remote_update_set display_value="AnC Showcase-IncidentProcess">1b938f24db7b1f40caea3400ad96190d</remote_update_set>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">active=true^caller_idISNOTEMPTY^state=1^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Classification and Prioritization</label><name>Classification and Prioritization</name><order>20</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 20:46:01</sys_created_on><sys_id>4f4a4bf61315d2001e0057b32244b058</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Classification and Prioritization</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_4f4a4bf61315d2001e0057b32244b058</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-05 12:00:43</sys_updated_on><table>incident</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>1200814909</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-08-05 11:52:04</sys_created_on>
-<sys_id>5f938f24db7b1f40caea3400ad96190d</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>375910cddbcc330015e3dd18f496191a</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16509ed79290000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-08-05 11:52:04</sys_updated_on>
+<sys_recorded_at>1694f34ea460000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
 <table>incident</table>
 <target_name>Classification and Prioritization</target_name>
 <type>Flow Formatter</type>
 <update_domain>global</update_domain>
-<update_guid>0973cb24697b1f403274b5c351807034</update_guid>
-<update_guid_history>0973cb24697b1f403274b5c351807034:1354695735,07edd84255e0970082b9a1608363303c:998414703</update_guid_history>
+<update_guid>d45598c998cc3300926964ce5d145d51</update_guid>
+<update_guid_history>d45598c998cc3300926964ce5d145d51:1200814909,4e9503a0d37b9f00ce876530565e36e2:1200814909,0d85cba0947b9f000d9537bf67b3597a:1260815670,0973cb24697b1f403274b5c351807034:1354695735,07edd84255e0970082b9a1608363303c:998414703</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_f4ed202213a9d6001e0057b32244b03b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">incident_state=7^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="false" value="7"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Closure</label><name>Closure</name><order>50</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser</sys_created_by><sys_created_on>2016-02-16 00:59:52</sys_created_on><sys_id>f4ed202213a9d6001e0057b32244b03b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Closure</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_f4ed202213a9d6001e0057b32244b03b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-05 12:00:44</sys_updated_on><table>incident</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-607126851</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>375910cddbcc330015e3dd18f496191d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eabf0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>incident</table>
+<target_name>Closure</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>5c5598c924cc330082a3a91ed0418f57</update_guid>
+<update_guid_history>5c5598c924cc330082a3a91ed0418f57:-607126851,02954fa0657b9f0083dc3266781bb573:-607126851,0d850fa0ab7b9f00edef78f7ecd1aa61:1475339190,8973cb24977b1f4035cd0a7b153ea639:-2139695945,c7edd84251e09700299476b23abaad69:696408821</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_12bb736e93760300404c74aff67ffb70</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition/><description/><label>Actions</label><name>actions</name><order>60</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-12-06 07:51:46</sys_created_on><sys_id>12bb736e93760300404c74aff67ffb70</sys_id><sys_mod_count>0</sys_mod_count><sys_name>actions</sys_name><sys_package display_value="Event Management" source="com.glideapp.itom.snac">ab87c44ddb331300e243b6d1ba961959</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_12bb736e93760300404c74aff67ffb70</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-12-06 07:51:46</sys_updated_on><table>em_alert_management_rule</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-971962202</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>3b5910cddbcc330015e3dd18f4961919</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eacb0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>em_alert_management_rule</table>
+<target_name>actions</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>d85598c908cc33006d3746ee08f82658</update_guid>
+<update_guid_history>d85598c908cc33006d3746ee08f82658:-971962202</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_e4f9e080c3321200ab8f9624a1d3ae71</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="sa_dw_business_service">status=3^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="3"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>In Review</label><name>In Review</name><order>300</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-10 09:36:39</sys_created_on><sys_id>e4f9e080c3321200ab8f9624a1d3ae71</sys_id><sys_mod_count>0</sys_mod_count><sys_name>In Review</sys_name><sys_package display_value="Service Mapping" source="com.snc.service-mapping">e0dccc45dbb31300e243b6d1ba961948</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_e4f9e080c3321200ab8f9624a1d3ae71</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-10 09:36:39</sys_updated_on><table>sa_dw_business_service</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-401021995</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>3b5910cddbcc330015e3dd18f496191c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb180000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>sa_dw_business_service</table>
+<target_name>In Review</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>5055d8c98bcc330019a6007ff00a0e18</update_guid>
+<update_guid_history>5055d8c98bcc330019a6007ff00a0e18:-401021995</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cxs_table_config_b3ca5632c32121005655107698ba8fba</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_table_config"><cxs_table_config action="INSERT_OR_UPDATE"><active>true</active><allow_expand_collapse>false</allow_expand_collapse><cxs_context_config display_value="Knowledge Base Search">03ddb541c31121005655107698ba8f7f</cxs_context_config><kb_attachment>embed_article</kb_attachment><limit>5</limit><match_condition table="incident">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></match_condition><name>Incident [incident]</name><preview_button_active>false</preview_button_active><related_search_active>true</related_search_active><result_action_label>This helped</result_action_label><result_action_value>This helped</result_action_value><results_header_text>Related Search Results</results_header_text><results_per_page>5</results_per_page><search_as_active>false</search_as_active><search_as_condition/><search_as_field>assigned_to</search_as_field><search_as_results_msg>Some results may not be displayed due to security constraints</search_as_results_msg><search_as_script/><sys_class_name>cxs_table_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-06-30 15:01:00</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b3ca5632c32121005655107698ba8fba</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Incident [incident]</sys_name><sys_package display_value="Contextual Search" source="com.snc.contextual_search">8f21d4f4dbb31300c71f6583ca9619b8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>cxs_table_config_b3ca5632c32121005655107698ba8fba</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-11-01 12:45:29</sys_updated_on><table>incident</table><ui_type>platform</ui_type></cxs_table_config><sys_translated_text action="delete_multiple" query="documentkey=b3ca5632c32121005655107698ba8fba"/></record_update>]]></payload>
+<payload_hash>-708649130</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>3f5910cddbcc330015e3dd18f4961918</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f3708440000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>incident</table>
+<target_name>Incident [incident]</target_name>
+<type>Table Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>4ed5dcc9b6cc3300839f60fef04a91a4</update_guid>
+<update_guid_history>4ed5dcc9b6cc3300839f60fef04a91a4:-708649130,00cbd04960292300f5126b30cccd38b9:-708649130,88c983244e7b9f00acaab3498d16e1f6:1976931742,40c98324327b9f004fe4a5c4091fa8f5:1156441214,a778818d517b13004ceb148d6361b298:682177535</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_c15a433a1315d2001e0057b32244b068</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">active=true^caller_idISNOTEMPTY^stateIN2,3^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="2,3"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Investigate and Diagnose</label><name>Investigate and Diagnose</name><order>30</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 20:46:09</sys_created_on><sys_id>c15a433a1315d2001e0057b32244b068</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Investigate and Diagnose</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_c15a433a1315d2001e0057b32244b068</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-05 12:00:43</sys_updated_on><table>incident</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1733908476</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>3f5910cddbcc330015e3dd18f496191b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34ea650000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>incident</table>
+<target_name>Investigate and Diagnose</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>145598c9ffcc3300df1e7c4a86c05c53</update_guid>
+<update_guid_history>145598c9ffcc3300df1e7c4a86c05c53:-1733908476,069503a0317b9f002c284d72d74f2de5:-1733908476,8185cba0d77b9f006426c27fbe544d7d:-505367445,0573cb241d7b1f4051905803bdf7b337:329350160,0bedd84289e0970083d882d748e61165:1354629212</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_4bd9e080c3321200ab8f9624a1d3ae42</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="sa_dw_business_service">status=2^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="2"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>In Discovery</label><name>In Discovery</name><order>200</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-10 09:36:17</sys_created_on><sys_id>4bd9e080c3321200ab8f9624a1d3ae42</sys_id><sys_mod_count>0</sys_mod_count><sys_name>In Discovery</sys_name><sys_package display_value="Service Mapping" source="com.snc.service-mapping">e0dccc45dbb31300e243b6d1ba961948</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_4bd9e080c3321200ab8f9624a1d3ae42</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-10 09:36:17</sys_updated_on><table>sa_dw_business_service</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>1041673874</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>735910cddbcc330015e3dd18f496191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb090000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>sa_dw_business_service</table>
+<target_name>In Discovery</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>9055d8c997cc3300e84e8c00cb5c6c17</update_guid>
+<update_guid_history>9055d8c997cc3300e84e8c00cb5c6c17:1041673874</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_f1b95333cb100200d71cb9c0c24c9c8c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=-3^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-3"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Authorize</label><name>Normal Change - Authorize state</name><order>300</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:13:21</sys_created_on><sys_id>f1b95333cb100200d71cb9c0c24c9c8c</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Normal Change - Authorize state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_f1b95333cb100200d71cb9c0c24c9c8c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-14 11:36:09</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1980587393</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>735910cddbcc330015e3dd18f496191d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb280000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - Authorize state</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>1055d8c94acc33009eae4034faa8ab19</update_guid>
+<update_guid_history>1055d8c94acc33009eae4034faa8ab19:-1980587393</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_11e91b33cb100200d71cb9c0c24c9c4d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=3^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Closed</label><name>Normal Change - Closed state</name><order>700</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:14:08</sys_created_on><sys_id>11e91b33cb100200d71cb9c0c24c9c4d</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Normal Change - Closed state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_11e91b33cb100200d71cb9c0c24c9c4d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-14 11:36:11</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>2023835280</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>775910cddbcc330015e3dd18f4961919</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb800000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - Closed state</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>d855d8c90acc33007c29c4e834e1241d</update_guid>
+<update_guid_history>d855d8c90acc33007c29c4e834e1241d:2023835280</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_ded91b33cb100200d71cb9c0c24c9cfe</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=0^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="0"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Review</label><name>Normal Change - Review state</name><order>600</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:13:56</sys_created_on><sys_id>ded91b33cb100200d71cb9c0c24c9cfe</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Normal Change - Review state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_ded91b33cb100200d71cb9c0c24c9cfe</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-14 11:36:11</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-2026340805</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>775910cddbcc330015e3dd18f496191c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb720000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - Review state</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>1c55d8c90dcc3300cc1e50c0b1d96f1c</update_guid>
+<update_guid_history>1c55d8c90dcc3300cc1e50c0b1d96f1c:-2026340805</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Social Knowledge">11722b01473231007f47563dbb9a7154</application>
+<category>customer</category>
+<comments/>
+<name>cxs_search_res_config_9093db329f33310009ca7e50d67fcfb4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_search_res_config"><cxs_search_res_config action="INSERT_OR_UPDATE"><active>true</active><condition/><cxs_searcher_config display_value="Knowledge, Social Q&amp;A and pinned">35abb504eb53210070a9666cd206fef7</cxs_searcher_config><description>Search the SocialQ&amp;A</description><grsr_script/><name>social</name><order>300</order><search_resource_id display_value="">com.snc.contextual_search.search_resource.SocialQASearchResource</search_resource_id><sys_class_name>cxs_search_res_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-05-07 11:52:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9093db329f33310009ca7e50d67fcfb4</sys_id><sys_mod_count>1</sys_mod_count><sys_name>social</sys_name><sys_package display_value="Social Knowledge" source="sn_kb_social_qa">11722b01473231007f47563dbb9a7154</sys_package><sys_policy/><sys_scope display_value="Social Knowledge">11722b01473231007f47563dbb9a7154</sys_scope><sys_update_name>cxs_search_res_config_9093db329f33310009ca7e50d67fcfb4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-05-07 11:53:13</sys_updated_on><table>kb_social_qa_question</table></cxs_search_res_config></record_update>]]></payload>
+<payload_hash>-1228296656</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>7b5910cddbcc330015e3dd18f4961918</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f390be50000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>kb_social_qa_question</table>
+<target_name>social</target_name>
+<type>Search Resource</type>
+<update_domain>global</update_domain>
+<update_guid>1256580d1acc330061f55a401c9a6ff9</update_guid>
+<update_guid_history>1256580d1acc330061f55a401c9a6ff9:-1228296656</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_bd0ae080c3321200ab8f9624a1d3ae9c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="sa_dw_business_service">status=4^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="4"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Approved</label><name>Approved</name><order>400</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-10 09:37:02</sys_created_on><sys_id>bd0ae080c3321200ab8f9624a1d3ae9c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Approved</sys_name><sys_package display_value="Service Mapping" source="com.snc.service-mapping">e0dccc45dbb31300e243b6d1ba961948</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_bd0ae080c3321200ab8f9624a1d3ae9c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-10 09:37:02</sys_updated_on><table>sa_dw_business_service</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>720993718</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>7b5910cddbcc330015e3dd18f496191b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb3b0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>sa_dw_business_service</table>
+<target_name>Approved</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>dc55d8c9e0cc3300895bb55dc4459019</update_guid>
+<update_guid_history>dc55d8c9e0cc3300895bb55dc4459019:720993718</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cxs_context_config_03ddb541c31121005655107698ba8f7f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_context_config"><cxs_context_config action="INSERT_OR_UPDATE"><active>true</active><cxs_searcher_config display_value="Knowledge, Social Q&amp;A and pinned">35abb504eb53210070a9666cd206fef7</cxs_searcher_config><default_config>true</default_config><name>Knowledge Base Search</name><short_description>Knowledge search context to search entire knowledge base (no filtering)</short_description><sys_class_name>cxs_context_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-06-12 16:10:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>03ddb541c31121005655107698ba8f7f</sys_id><sys_mod_count>18</sys_mod_count><sys_name>Knowledge Base Search</sys_name><sys_package display_value="Contextual Search" source="com.snc.contextual_search">8f21d4f4dbb31300c71f6583ca9619b8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>cxs_context_config_03ddb541c31121005655107698ba8f7f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-11-01 12:39:09</sys_updated_on><wildcard_search_active>true</wildcard_search_active></cxs_context_config></record_update>]]></payload>
+<payload_hash>-1805954055</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>7f5910cddbcc330015e3dd18f4961917</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f36ecb60000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table/>
+<target_name>Knowledge Base Search</target_name>
+<type>Search Context</type>
+<update_domain>global</update_domain>
+<update_guid>d4d5dcc996cc3300227eb05ca165d7a0</update_guid>
+<update_guid_history>d4d5dcc996cc3300227eb05ca165d7a0:-1805954055,4f4a9cc54c2923000dff2bdafb1fb71b:-1805954055,c34a9cc572292300ec267430e6ff9e1a:1322383544</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_80d91b33cb100200d71cb9c0c24c9cb2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=-1^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-1"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Implement</label><name>Normal Change - Implement state</name><order>500</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:13:46</sys_created_on><sys_id>80d91b33cb100200d71cb9c0c24c9cb2</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Normal Change - Implement state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_80d91b33cb100200d71cb9c0c24c9cb2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-14 11:36:10</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1767422789</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>7f5910cddbcc330015e3dd18f496191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb610000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - Implement state</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>5c55d8c954cc3300cd4aa18f84670c1b</update_guid>
+<update_guid_history>5c55d8c954cc3300cd4aa18f84670c1b:-1767422789</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cxs_table_field_config_43fa9632c32121005655107698ba8f39</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_table_field_config"><cxs_table_field_config action="INSERT_OR_UPDATE"><cxs_table_config display_value="Incident [incident]">b3ca5632c32121005655107698ba8fba</cxs_table_config><default_config>true</default_config><field>short_description</field><name>Short description [short_description]</name><order>100</order><sys_class_name>cxs_table_field_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-06-30 15:01:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>43fa9632c32121005655107698ba8f39</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Short description [short_description]</sys_name><sys_package display_value="Contextual Search" source="com.snc.contextual_search">8f21d4f4dbb31300c71f6583ca9619b8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>cxs_table_field_config_43fa9632c32121005655107698ba8f39</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2014-06-30 15:01:36</sys_updated_on></cxs_table_field_config></record_update>]]></payload>
+<payload_hash>2039834088</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>b35910cddbcc330015e3dd18f4961919</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f3791fa0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table/>
+<target_name>Short description [short_description]</target_name>
+<type>Search Field</type>
+<update_domain>global</update_domain>
+<update_guid>baf5900d47cc33001b4054b0d51223c7</update_guid>
+<update_guid_history>baf5900d47cc33001b4054b0d51223c7:2039834088</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_da4aa02f93e20300404c74aff67ffbaa</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition/><description/><label>Alert Info</label><name>alert_info_pf</name><order>10</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-26 08:56:23</sys_created_on><sys_id>da4aa02f93e20300404c74aff67ffbaa</sys_id><sys_mod_count>8</sys_mod_count><sys_name>alert_info_pf</sys_name><sys_package display_value="Event Management" source="com.glideapp.itom.snac">ab87c44ddb331300e243b6d1ba961959</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_da4aa02f93e20300404c74aff67ffbaa</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-12-20 15:39:14</sys_updated_on><table>em_alert_management_rule</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1389801646</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>b35910cddbcc330015e3dd18f496191c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34ea1d0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>em_alert_management_rule</table>
+<target_name>alert_info_pf</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>185598c9aacc3300b44d0a0ec8aeb84f</update_guid>
+<update_guid_history>185598c9aacc3300b44d0a0ec8aeb84f:-1389801646</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cxs_search_res_config_61e0ca04eb53210070a9666cd206fef5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_search_res_config"><cxs_search_res_config action="INSERT_OR_UPDATE"><active>true</active><condition/><cxs_searcher_config display_value="Knowledge, Social Q&amp;A and pinned">35abb504eb53210070a9666cd206fef7</cxs_searcher_config><description>Search the pinned knowledge articles</description><grsr_script/><name>pinned</name><order>100</order><search_resource_id display_value="">com.snc.contextual_search.search_resource.PinnedArticleSearchResource</search_resource_id><sys_class_name>cxs_search_res_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-09-16 23:54:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>61e0ca04eb53210070a9666cd206fef5</sys_id><sys_mod_count>1</sys_mod_count><sys_name>pinned</sys_name><sys_package display_value="Contextual Search" source="com.snc.contextual_search">8f21d4f4dbb31300c71f6583ca9619b8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>cxs_search_res_config_61e0ca04eb53210070a9666cd206fef5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-22 10:49:41</sys_updated_on><table>kb_knowledge</table></cxs_search_res_config></record_update>]]></payload>
+<payload_hash>-1647715391</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>b75910cddbcc330015e3dd18f4961918</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f390bb80000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>kb_knowledge</table>
+<target_name>pinned</target_name>
+<type>Search Resource</type>
+<update_domain>global</update_domain>
+<update_guid>1e56580d02cc3300f41e4c9dc57d7ff6</update_guid>
+<update_guid_history>1e56580d02cc3300f41e4c9dc57d7ff6:-1647715391</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_b66d437a1315d2001e0057b32244b0f2</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">incident_state=6^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="false" value="6"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Resolution and Recovery</label><name>Resolution and Recovery</name><order>40</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 21:00:14</sys_created_on><sys_id>b66d437a1315d2001e0057b32244b0f2</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Resolution and Recovery</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_b66d437a1315d2001e0057b32244b0f2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-05 12:00:44</sys_updated_on><table>incident</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1033737675</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>b75910cddbcc330015e3dd18f496191b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34ea930000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>incident</table>
+<target_name>Resolution and Recovery</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>105598c96ccc330077cfeb19225b1856</update_guid>
+<update_guid_history>105598c96ccc330077cfeb19225b1856:-1033737675,ca9503a0a37b9f00a91a679d5c32f4e7:-1033737675,85850fa0657b9f00bfe2c8bbad3bf45f:619257134,4173cb240d7b1f409a5f8ccd09ebee36:-596344257,c3edd842c5e09700672b0784f1f30364:521371757</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_6369ac40c3321200ab8f9624a1d3ae46</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="sa_dw_business_service">status=1^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="1"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Data Collection</label><name>Data Collection</name><order>100</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-04-10 09:35:00</sys_created_on><sys_id>6369ac40c3321200ab8f9624a1d3ae46</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Data Collection</sys_name><sys_package display_value="Service Mapping" source="com.snc.service-mapping">e0dccc45dbb31300e243b6d1ba961948</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_6369ac40c3321200ab8f9624a1d3ae46</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-04-10 09:35:44</sys_updated_on><table>sa_dw_business_service</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-256899116</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>bb5910cddbcc330015e3dd18f496191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eaee0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>sa_dw_business_service</table>
+<target_name>Data Collection</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>1455d8c919cc3300bc27e01252fbd515</update_guid>
+<update_guid_history>1455d8c919cc3300bc27e01252fbd515:-256899116</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_3ea91b33cb100200d71cb9c0c24c9cac</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=-4^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-4"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Assess</label><name>Normal Change - Assess state</name><order>200</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:13:09</sys_created_on><sys_id>3ea91b33cb100200d71cb9c0c24c9cac</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Normal Change - Assess state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_3ea91b33cb100200d71cb9c0c24c9cac</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-14 11:36:08</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1198902653</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>bf5910cddbcc330015e3dd18f4961919</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eafb0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - Assess state</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>d055d8c986cc3300f9547340cf3f9416</update_guid>
+<update_guid_history>d055d8c986cc3300f9547340cf3f9416:-1198902653</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>
@@ -140,23 +607,231 @@
 <category>customer</category>
 <comments/>
 <name>sys_process_flow_eee747f61315d2001e0057b32244b0f9</name>
-<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">active=true^caller_idISEMPTY^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Incident Logging</label><name>Incident Logging</name><order>10</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 20:36:24</sys_created_on><sys_id>eee747f61315d2001e0057b32244b0f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Incident Logging</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_eee747f61315d2001e0057b32244b0f9</sys_update_name><sys_updated_by>ryan.fraser@snc</sys_updated_by><sys_updated_on>2016-02-04 20:36:24</sys_updated_on><table>incident</table><u_view_condition/></sys_process_flow></record_update>]]></payload>
-<payload_hash>-44079780</payload_hash>
-<remote_update_set display_value="AnC Showcase-IncidentProcess">1b938f24db7b1f40caea3400ad96190d</remote_update_set>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">active=true^caller_idISEMPTY^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Incident Logging</label><name>Incident Logging</name><order>10</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>ryan.fraser@snc</sys_created_by><sys_created_on>2016-02-04 20:36:24</sys_created_on><sys_id>eee747f61315d2001e0057b32244b0f9</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Incident Logging</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_eee747f61315d2001e0057b32244b0f9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-08-05 12:00:43</sys_updated_on><table>incident</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>915999288</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
 <replace_on_upgrade>false</replace_on_upgrade>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2018-08-05 11:52:04</sys_created_on>
-<sys_id>db938f24db7b1f40caea3400ad96190e</sys_id>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>bf5910cddbcc330015e3dd18f496191c</sys_id>
 <sys_mod_count>0</sys_mod_count>
-<sys_recorded_at>16509ed798b0000001</sys_recorded_at>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2018-08-05 11:52:04</sys_updated_on>
+<sys_recorded_at>1694f34ea340000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
 <table>incident</table>
 <target_name>Incident Logging</target_name>
 <type>Flow Formatter</type>
 <update_domain>global</update_domain>
-<update_guid>c573cb24557b1f402b4267539f360f38</update_guid>
-<update_guid_history>c573cb24557b1f402b4267539f360f38:-44079780,83edd84229e0970069086a1e350ded68:-1072750544</update_guid_history>
+<update_guid>585598c915cc330073eda1c66ba13750</update_guid>
+<update_guid_history>585598c915cc330073eda1c66ba13750:915999288,469503a04e7b9f007c90baa1c2cdf7e0:915999288,c185cba0277b9f00d12281e06d8ca578:-1933467041,c573cb24557b1f402b4267539f360f38:-44079780,83edd84229e0970069086a1e350ded68:-1072750544</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cxs_search_res_config_0790ca04eb53210070a9666cd206fe4d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_search_res_config"><cxs_search_res_config action="INSERT_OR_UPDATE"><active>true</active><condition/><cxs_searcher_config display_value="Knowledge, Social Q&amp;A and pinned">35abb504eb53210070a9666cd206fef7</cxs_searcher_config><description>Search the knowledge articles</description><grsr_script/><name>knowledge</name><order>200</order><search_resource_id display_value="">com.snc.contextual_search.search_resource.KnowledgeSearchResource</search_resource_id><sys_class_name>cxs_search_res_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-09-16 23:52:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0790ca04eb53210070a9666cd206fe4d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>knowledge</sys_name><sys_package display_value="Contextual Search" source="com.snc.contextual_search">8f21d4f4dbb31300c71f6583ca9619b8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>cxs_search_res_config_0790ca04eb53210070a9666cd206fe4d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-22 10:50:57</sys_updated_on><table>kb_knowledge</table></cxs_search_res_config></record_update>]]></payload>
+<payload_hash>609199288</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>f35910cddbcc330015e3dd18f4961918</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f390bd10000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>kb_knowledge</table>
+<target_name>knowledge</target_name>
+<type>Search Resource</type>
+<update_domain>global</update_domain>
+<update_guid>5e56580da8cc3300c76a2a337c914af7</update_guid>
+<update_guid_history>5e56580da8cc3300c76a2a337c914af7:609199288</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_a78b75b7932a0300404c74aff67ffb6d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>false</active><condition/><description/><label>Time Condition</label><name>alert_time_condition_pf</name><order>50</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-27 09:28:39</sys_created_on><sys_id>a78b75b7932a0300404c74aff67ffb6d</sys_id><sys_mod_count>5</sys_mod_count><sys_name>alert_time_condition_pf</sys_name><sys_package display_value="Event Management" source="com.glideapp.itom.snac">ab87c44ddb331300e243b6d1ba961959</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_a78b75b7932a0300404c74aff67ffb6d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-02-25 15:58:51</sys_updated_on><table>em_alert_management_rule</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-510656773</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>f35910cddbcc330015e3dd18f496191b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eaa90000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>em_alert_management_rule</table>
+<target_name>alert_time_condition_pf</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>9c5598c981cc3300a65efd67c24cbc56</update_guid>
+<update_guid_history>9c5598c981cc3300a65efd67c24cbc56:-510656773</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_614b642f93e20300404c74aff67ffbf6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>false</active><condition/><description/><label>CI Filter</label><name>alert_ci_filter</name><order>40</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-26 08:59:04</sys_created_on><sys_id>614b642f93e20300404c74aff67ffbf6</sys_id><sys_mod_count>7</sys_mod_count><sys_name>alert_ci_filter</sys_name><sys_package display_value="Event Management" source="com.glideapp.itom.snac">ab87c44ddb331300e243b6d1ba961959</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_614b642f93e20300404c74aff67ffbf6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-02-25 15:58:08</sys_updated_on><table>em_alert_management_rule</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>1447962396</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>f75910cddbcc330015e3dd18f496191a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34ea860000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>em_alert_management_rule</table>
+<target_name>alert_ci_filter</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>505598c928cc3300030f4374a9708955</update_guid>
+<update_guid_history>505598c928cc3300030f4374a9708955:1447962396</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_f80b602f93e20300404c74aff67ffb07</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>false</active><condition/><description/><label>Advanced Conditions</label><name>alert_advanced_conditions</name><order>30</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-26 08:58:19</sys_created_on><sys_id>f80b602f93e20300404c74aff67ffb07</sys_id><sys_mod_count>8</sys_mod_count><sys_name>alert_advanced_conditions</sys_name><sys_package display_value="Event Management" source="com.glideapp.itom.snac">ab87c44ddb331300e243b6d1ba961959</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_f80b602f93e20300404c74aff67ffb07</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-02-25 15:56:35</sys_updated_on><table>em_alert_management_rule</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1909818335</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>f75910cddbcc330015e3dd18f496191d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34ea760000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>em_alert_management_rule</table>
+<target_name>alert_advanced_conditions</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>905598c9c8cc3300ab54124ae6ba1a54</update_guid>
+<update_guid_history>905598c9c8cc3300ab54124ae6ba1a54:-1909818335</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_1909d733cb100200d71cb9c0c24c9c91</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=-5^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-5"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>New</label><name>Normal Change - New state</name><order>100</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:12:37</sys_created_on><sys_id>1909d733cb100200d71cb9c0c24c9c91</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Normal Change - New state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_1909d733cb100200d71cb9c0c24c9c91</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-14 11:36:08</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>-1143520236</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>fb5910cddbcc330015e3dd18f4961919</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eadd0000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - New state</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>1455d8c903cc33009d41f6a6f41e7814</update_guid>
+<update_guid_history>1455d8c903cc33009d41f6a6f41e7814:-1143520236</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_e5caa02f93e20300404c74aff67ffb9f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition/><description/><label>Alert Filter</label><name>alert_filter_pf</name><order>20</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2017-11-26 08:57:16</sys_created_on><sys_id>e5caa02f93e20300404c74aff67ffb9f</sys_id><sys_mod_count>6</sys_mod_count><sys_name>alert_filter_pf</sys_name><sys_package display_value="Event Management" source="com.glideapp.itom.snac">ab87c44ddb331300e243b6d1ba961959</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_e5caa02f93e20300404c74aff67ffb9f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2017-12-20 15:39:17</sys_updated_on><table>em_alert_management_rule</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>886715027</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>fb5910cddbcc330015e3dd18f496191c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34ea550000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>em_alert_management_rule</table>
+<target_name>alert_filter_pf</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>545598c9bbcc33007256f4cbfeacb352</update_guid>
+<update_guid_history>545598c9bbcc33007256f4cbfeacb352:886715027</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>cxs_table_email_config_b61d6f13eb2121003623666cd206fe35</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_table_email_config"><cxs_table_email_config action="INSERT_OR_UPDATE"><cxs_table_config display_value="Incident [incident]">b3ca5632c32121005655107698ba8fba</cxs_table_config><limit>5</limit><name>Email Configuration for email notification "Incident opened for me"</name><sys_class_name>cxs_table_email_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2014-07-02 10:18:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b61d6f13eb2121003623666cd206fe35</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Email Configuration for email notification "Incident opened for me"</sys_name><sys_package display_value="Contextual Search" source="com.snc.contextual_search">8f21d4f4dbb31300c71f6583ca9619b8</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>cxs_table_email_config_b61d6f13eb2121003623666cd206fe35</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2014-07-02 10:43:03</sys_updated_on><sysevent_email_action display_value="Incident opened for me">8f9389b5c0a8016401715c208ff9bf48</sysevent_email_action><user_field>caller_id</user_field></cxs_table_email_config></record_update>]]></payload>
+<payload_hash>1103518564</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>ff5910cddbcc330015e3dd18f4961918</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f3821680000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table/>
+<target_name>Email Configuration for email notification "Incident opened for me"</target_name>
+<type>Email Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>2316540d0acc33003d65d9e2365c8bc2</update_guid>
+<update_guid_history>2316540d0acc33003d65d9e2365c8bc2:1103518564</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_process_flow_c5c91b33cb100200d71cb9c0c24c9c4a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow"><sys_process_flow action="INSERT_OR_UPDATE"><active>true</active><condition table="change_request">state=-2^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="-2"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><label>Scheduled</label><name>Normal Change - Scheduled state</name><order>400</order><sys_class_name>sys_process_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2015-06-04 11:13:35</sys_created_on><sys_id>c5c91b33cb100200d71cb9c0c24c9c4a</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Normal Change - Scheduled state</sys_name><sys_package display_value="Change Management - State Model" source="com.snc.change_management.state_model">9de1943cdbb31300c71f6583ca96191a</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_process_flow_c5c91b33cb100200d71cb9c0c24c9c4a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2015-06-14 11:36:10</sys_updated_on><table>change_request</table></sys_process_flow></record_update>]]></payload>
+<payload_hash>942890980</payload_hash>
+<remote_update_set display_value="AnC Showcase-IncidentProcess">f75910cddbcc330015e3dd18f4961917</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:12:04</sys_created_on>
+<sys_id>ff5910cddbcc330015e3dd18f496191b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1694f34eb520000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:12:04</sys_updated_on>
+<table>change_request</table>
+<target_name>Normal Change - Scheduled state</target_name>
+<type>Flow Formatter</type>
+<update_domain>global</update_domain>
+<update_guid>9c55d8c9d7cc33005eba27bd85ba591a</update_guid>
+<update_guid_history>9c55d8c9d7cc33005eba27bd85ba591a:942890980</update_guid_history>
 <update_set display_value=""/>
 <view/>
 </sys_update_xml>

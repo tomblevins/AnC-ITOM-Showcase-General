@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-05 19:04:20">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Force_to_Update_Set</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>e17fe29cdb182380c71f6583ca9619a5</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:04:02</sys_created_on>
+<sys_id>4e87184ddbcc330015e3dd18f4961931</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:04:02</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_744f25a2dbfe130059595f135e9619b8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;force_update&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2/&gt;&lt;comments/&gt;&lt;condition&gt;gs.hasRole('admin')&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;name&gt;Force to Update Set&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[//Push the update into the current update set
+var um = new GlideUpdateManager2();
+um.saveRecord(current);
+
+//Query for the current update set to display info message
+var setID = gs.getPreference('sys_update_set');
+var us = new GlideRecord('sys_update_set');
+us.get(setID);
+
+//Display info message and reload the form
+gs.addInfoMessage('Record included in &lt;a href="sys_update_set.do?sys_id=' + setID + '"&gt;' + us.name + '&lt;/a&gt; update set.');
+action.setRedirectURL(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;tom.blevins@snc&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-06-22 17:51:02&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;744f25a2dbfe130059595f135e9619b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Force to Update Set&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_744f25a2dbfe130059595f135e9619b8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;tom.blevins@snc&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-06-22 17:51:02&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-350205931</payload_hash>
+<remote_update_set display_value="Force_to_Update_Set">4e87184ddbcc330015e3dd18f4961931</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>john.depot</sys_created_by>
+<sys_created_on>2019-03-05 19:04:02</sys_created_on>
+<sys_id>c287184ddbcc330015e3dd18f4961932</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>165859e7ec20000001</sys_recorded_at>
+<sys_updated_by>john.depot</sys_updated_by>
+<sys_updated_on>2019-03-05 19:04:02</sys_updated_on>
+<table>global</table>
+<target_name>Force to Update Set</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>11bf669cca18238030294153419d5d9d</update_guid>
+<update_guid_history>11bf669cca18238030294153419d5d9d:-350205931,34dfe1a26bfe1300ac26f856fac8f414:-2144785045</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
