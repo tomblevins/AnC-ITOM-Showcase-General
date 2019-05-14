@@ -1,0 +1,156 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template ACE-Initial-MSP-Lab-VMs: A Template for
+  provisioning the VMs for the MSP Stack used in the ACE ITOM End To End Demo.
+  **WARNING** This template creates 3 Amazon EC2 instances. You will be billed
+  for the AWS resources used if you create a stack from this template.
+Metadata:
+  'AWS::CloudFormation::Designer':
+    96ddedfe-6e9f-425f-bf4b-9849f8b29032:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -10
+        'y': 90
+      z: 1
+      embeds: []
+    3deeb2f4-8c1d-4426-8e92-de4fbb8352a2:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 150
+        'y': 90
+      z: 1
+      embeds: []
+    65d46d62-da3a-4151-9dca-a387b4eb1768:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 70
+        'y': 90
+      z: 1
+      embeds: []
+    23c0a74a-ca0e-44c5-8268-40f1798cd2ec:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 230
+        'y': 90
+      z: 0
+      embeds: []
+    b094e0ea-e4d7-40fe-b9c5-5b33c562c1cd:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -130
+        'y': 90
+      z: 0
+      embeds: []
+    64526e66-f1c9-4d7e-9b45-8c0fbee8645d:
+      source:
+        id: b094e0ea-e4d7-40fe-b9c5-5b33c562c1cd
+      target:
+        id: 96ddedfe-6e9f-425f-bf4b-9849f8b29032
+      z: 0
+Resources:
+  LoadBalancer:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: ami-0f3339b63c7af30b9
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-MSP-LB-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 96ddedfe-6e9f-425f-bf4b-9849f8b29032
+  Nagios:
+    Type: 'AWS::EC2::Instance'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 65d46d62-da3a-4151-9dca-a387b4eb1768
+    Properties:
+      InstanceType: t2.small
+      ImageId: ami-0fb0b3991072a2cab
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-MSP-Nagios-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+  Zabbix:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: ami-027c9e4293f869f2f
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-MSP-Zabbix-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 3deeb2f4-8c1d-4426-8e92-de4fbb8352a2
+  MID:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.medium
+      ImageId: ami-05d8fb9bb68aba87f
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      IamInstanceProfile: AllAccess
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-MSP-MID-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Windows
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 23c0a74a-ca0e-44c5-8268-40f1798cd2ec
+  EC2EIPATJ0B:
+    Type: 'AWS::EC2::EIPAssociation'
+    Properties:
+      AllocationId: !GetAtt ElasticIP.AllocationId
+      InstanceId: !Ref LoadBalancer
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 64526e66-f1c9-4d7e-9b45-8c0fbee8645d
+  ElasticIP:
+    Type: 'AWS::EC2::EIP'
+    Properties:
+      Domain: vpc
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: b094e0ea-e4d7-40fe-b9c5-5b33c562c1cd
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
+  SubNet:
+    Description: VPC Subnet
+    Type: String
+    Default: subnet-496e6113

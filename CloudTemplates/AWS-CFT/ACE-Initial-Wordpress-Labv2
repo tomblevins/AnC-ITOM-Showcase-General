@@ -1,0 +1,158 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation Template ACE-Initial-Wordpress-Lab: A Template for provisioning the Wordpress Stack used in the ACE ITOM End To End Demo. **WARNING** This template creates 3 Amazon EC2 instances. You will be billed for the AWS resources used if you create a stack from this template.",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "96ddedfe-6e9f-425f-bf4b-9849f8b29032": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -80,
+                    "y": 90
+                },
+                "z": 1,
+                "embeds": []
+            },
+            "3deeb2f4-8c1d-4426-8e92-de4fbb8352a2": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 180,
+                    "y": 90
+                },
+                "z": 1,
+                "embeds": []
+            },
+            "65d46d62-da3a-4151-9dca-a387b4eb1768": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 60,
+                    "y": 90
+                },
+                "z": 1,
+                "embeds": []
+            }
+        }
+    },
+    "Resources": {
+        "LoadBalancer": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": "t2.small",
+                "ImageId": "ami-c8ef6cb0",
+                "SubnetId": {
+                    "Ref": "SubNet"
+                },
+                "KeyName": "sn-63239c01db771300e243b6d1ba9619bf-mgt",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": {
+                            "Ref": "LBNameTag"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "96ddedfe-6e9f-425f-bf4b-9849f8b29032"
+                }
+            }
+        },
+        "Wordpress": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": "t2.small",
+                "ImageId": "ami-5bcc7323",
+                "SubnetId": {
+                    "Ref": "SubNet"
+                },
+                "KeyName": "sn-63239c01db771300e243b6d1ba9619bf-mgt",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": {
+                            "Ref": "WPNameTag"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "3deeb2f4-8c1d-4426-8e92-de4fbb8352a2"
+                }
+            }
+        },
+        "MySQL": {
+            "Type": "AWS::EC2::Instance",
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "65d46d62-da3a-4151-9dca-a387b4eb1768"
+                }
+            },
+            "Properties": {
+                "InstanceType": "t2.small",
+                "ImageId": "ami-01e88140ac1aa1b4b",
+                "SubnetId": {
+                    "Ref": "SubNet"
+                },
+                "KeyName": "sn-63239c01db771300e243b6d1ba9619bf-mgt",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": {
+                            "Ref": "DBNameTag"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "Parameters": {
+        "LBNameTag": {
+            "Description": "Loadbalancer Instance Name",
+            "Type": "String"
+        },
+        "WPNameTag": {
+            "Description": "Wordpress Instance Name",
+            "Type": "String"
+        },
+        "DBNameTag": {
+            "Description": "MySQL Instance Name",
+            "Type": "String"
+        },
+        "SubNet": {
+            "Description": "VPC Subnet",
+            "Type": "String",
+            "Default": "subnet-9022cfe9",
+            "AllowedValues": [
+                "subnet-9e348ed6",
+                "subnet-0064871e06e76c370",
+                "subnet-04fdfcdb06226dae7",
+                "subnet-091f7b63cfea73ad8",
+                "subnet-d47ced9f",
+                "subnet-9022cfe9",
+                "subnet-03499935215c1081c",
+                "subnet-c58b32bc",
+                "subnet-dfec70a6",
+                "subnet-d8995093",
+                "subnet-7cad2305",
+                "subnet-70eb7709",
+                "subnet-001ac679",
+                "subnet-8863c1d2",
+                "subnet-f310cc8a",
+                "subnet-c6ad23bf",
+                "subnet-5d2a9015",
+                "subnet-7528923d",
+                "subnet-07e2ab5f785ac2d60"
+            ]
+        }
+    }
+}

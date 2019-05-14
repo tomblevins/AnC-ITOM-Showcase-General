@@ -1,0 +1,92 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation Template ACE-MidServer: A Template for provisioning a Windows Server for the use of the ACE ITOM End To End Demo. **WARNING** This template creates an Amazon EC2 instance. You will be billed for the AWS resources used if you create a stack from this template.",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "3b211016-a63f-4704-a56d-9dee145003c9": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -430,
+                    "y": 20
+                },
+                "z": 0,
+                "embeds": []
+            }
+        }
+    },
+    "Resources": {
+        "EC2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": {
+                    "Ref": "InstanceType"
+                },
+                "ImageId": "ami-0fe4b087848eee0b2",
+                "SubnetId": "subnet-9022cfe9",
+                "IamInstanceProfile": "allAllowed",
+                "KeyName": "sn-63239c01db771300e243b6d1ba9619bf-mgt",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": {
+                            "Ref": "NameTag"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "3b211016-a63f-4704-a56d-9dee145003c9"
+                }
+            }
+        }
+    },
+    "Parameters": {
+        "InstanceType": {
+            "Description": "WebServer EC2 instance type",
+            "Type": "String",
+            "Default": "t2.medium",
+            "AllowedValues": [
+                "t1.micro",
+                "t2.nano",
+                "t2.micro",
+                "t2.small",
+                "t2.medium",
+                "t2.large"
+            ]
+        },
+        "NameTag": {
+            "Description": "Instance Name",
+            "Type": "String"
+        },
+        "SubNet": {
+            "Description": "VPC Subnet",
+            "Type": "String",
+            "Default": "subnet-9022cfe9",
+            "AllowedValues": [
+                "subnet-9e348ed6",
+                "subnet-0064871e06e76c370",
+                "subnet-04fdfcdb06226dae7",
+                "subnet-091f7b63cfea73ad8",
+                "subnet-d47ced9f",
+                "subnet-9022cfe9",
+                "subnet-03499935215c1081c",
+                "subnet-c58b32bc",
+                "subnet-dfec70a6",
+                "subnet-d8995093",
+                "subnet-7cad2305",
+                "subnet-70eb7709",
+                "subnet-001ac679",
+                "subnet-8863c1d2",
+                "subnet-f310cc8a",
+                "subnet-c6ad23bf",
+                "subnet-5d2a9015",
+                "subnet-7528923d",
+                "subnet-07e2ab5f785ac2d60"
+            ]
+        }
+    }
+}
