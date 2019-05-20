@@ -1,0 +1,70 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template ACE-Initial-Wordpress-Lab: A Template for
+  provisioning the Wordpress Stack used in the ACE ITOM End To End Demo.
+  **WARNING** This template creates 3 Amazon EC2 instances. You will be billed
+  for the AWS resources used if you create a stack from this template.
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
+  SubNet:
+    Description: VPC Subnet
+    Type: String
+Metadata:
+  'AWS::CloudFormation::Designer':
+    e558651c-5002-4645-a166-ea870f7c602f:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -120
+        'y': 90
+      z: 0
+      embeds: []
+    671cc695-57f0-4496-9641-0a20c6bf8a42:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -40
+        'y': 90
+      z: 0
+      embeds: []
+Resources:
+  Wordpress:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: ami-0092d6a99a2167204
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-SD-WWW-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: e558651c-5002-4645-a166-ea870f7c602f
+  MySQL:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: ami-0d26697a47ed29087
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-SD-MYSQL-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 671cc695-57f0-4496-9641-0a20c6bf8a42

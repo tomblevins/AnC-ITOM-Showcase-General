@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template ACE-Apache-Proxy: A Template for provisioning the
+  Apache Proxy Server used in the ACE ITOM End To End Demo. **WARNING** This
+  template creates 3 Amazon EC2 instances. You will be billed for the AWS
+  resources used if you create a stack from this template.
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
+  SubNet:
+    Description: VPC Subnet
+    Type: String
+Metadata:
+  'AWS::CloudFormation::Designer':
+    7747812d-9490-4007-aa73-f3109454b202:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 425.0104064941406
+        'y': 204.01388549804688
+      z: 0
+      embeds: []
+Resources:
+  LoadBalancer:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: ami-0c79066ea26c1b5b2
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-SD-LB-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 7747812d-9490-4007-aa73-f3109454b202
