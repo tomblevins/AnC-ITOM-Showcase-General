@@ -18,26 +18,75 @@ Metadata:
         width: 60
         height: 60
       position:
-        x: 473.0104064941406
-        'y': 144.01388549804688
+        x: 470
+        'y': 140
       z: 0
       embeds: []
+    3356499e-0c65-465e-aece-a311602d5905:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 350
+        'y': 140
+      z: 0
+      embeds: []
+    0a63e578-6541-4022-ad7f-8e3844a2791a:
+      source:
+        id: 3356499e-0c65-465e-aece-a311602d5905
+      target:
+        id: bffa8a4d-9aef-46a4-badd-b8191933138e
+      z: 1
+    6e458158-a6c5-429d-874a-739f064ac653:
+      source:
+        id: 3356499e-0c65-465e-aece-a311602d5905
+      target:
+        id: bffa8a4d-9aef-46a4-badd-b8191933138e
+      z: 1
+    4efccfc3-3961-4940-9c23-2de97404ad3e:
+      source:
+        id: 3356499e-0c65-465e-aece-a311602d5905
+      target:
+        id: bffa8a4d-9aef-46a4-badd-b8191933138e
+      z: 1
+    4ecbcfb0-bd2c-4413-af4b-9b255a5ee020:
+      source:
+        id: 3356499e-0c65-465e-aece-a311602d5905
+      target:
+        id: bffa8a4d-9aef-46a4-badd-b8191933138e
+      z: 0
 Resources:
   AnsibleTower:
     Type: 'AWS::EC2::Instance'
     Properties:
-      InstanceType: t2.medium
-      ImageId: ami-003151520cd92c801
+      InstanceType: t2.xlarge
+      ImageId: ami-0c0202bb3de1771b9
       SubnetId: !Ref SubNet
       KeyName: ACE-Linux-SSH
+      IamInstanceProfile: AllAccess
       Tags:
         - Key: Name
           Value: !Join 
             - ''
-            - - ACE-SD-LB-
+            - - ACE-MSP-Tower-
               - !Ref LABCODE
         - Key: OSType
           Value: Linux
     Metadata:
       'AWS::CloudFormation::Designer':
         id: bffa8a4d-9aef-46a4-badd-b8191933138e
+  ElasticIP:
+    Type: 'AWS::EC2::EIP'
+    Properties:
+      Domain: vpc
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 3356499e-0c65-465e-aece-a311602d5905
+  EC2EIPAO1UK:
+    Type: 'AWS::EC2::EIPAssociation'
+    Properties:
+      AllocationId: !GetAtt ElasticIP.AllocationId
+      InstanceId: !Ref AnsibleTower
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 4ecbcfb0-bd2c-4413-af4b-9b255a5ee020

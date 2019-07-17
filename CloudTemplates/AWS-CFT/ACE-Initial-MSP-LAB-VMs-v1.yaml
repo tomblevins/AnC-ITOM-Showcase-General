@@ -115,7 +115,7 @@ Resources:
   MID:
     Type: 'AWS::EC2::Instance'
     Properties:
-      InstanceType: t2.medium
+      InstanceType: t2.xlarge
       ImageId: ami-05d8fb9bb68aba87f
       SubnetId: !Ref SubNet
       KeyName: ACE-Linux-SSH

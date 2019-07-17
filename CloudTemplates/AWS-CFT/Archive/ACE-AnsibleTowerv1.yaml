@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template ACE-AnsibleTower: A Template for provisioning the
+  Ansible Tower Server used in the ACE ITOM End To End Demo. **WARNING** This
+  template creates 3 Amazon EC2 instances. You will be billed for the AWS
+  resources used if you create a stack from this template.
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
+  SubNet:
+    Description: VPC Subnet
+    Type: String
+Metadata:
+  'AWS::CloudFormation::Designer':
+    bffa8a4d-9aef-46a4-badd-b8191933138e:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 473.0104064941406
+        'y': 144.01388549804688
+      z: 0
+      embeds: []
+Resources:
+  AnsibleTower:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.medium
+      ImageId: ami-003151520cd92c801
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-SD-LB-
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: bffa8a4d-9aef-46a4-badd-b8191933138e
