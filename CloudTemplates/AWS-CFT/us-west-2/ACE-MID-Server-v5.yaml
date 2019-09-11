@@ -1,0 +1,52 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template Windows MID Server: A Template for provisioning a
+  Windows MID Server for ITOM End To End Demo. **WARNING** This template creates
+  1 Amazon EC2 instances. You will be billed for the AWS resources used if you
+  create a stack from this template.
+Metadata:
+  'AWS::CloudFormation::Designer':
+    23c0a74a-ca0e-44c5-8268-40f1798cd2ec:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: -60
+        'y': 90
+      z: 0
+      embeds: []
+Resources:
+  MID:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.xlarge
+      ImageId: !Ref AMI
+      SubnetId: !Ref SubNet
+      KeyName: ACE-Linux-SSH
+      IamInstanceProfile: AllAccess
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - !Ref midServerName
+              - '-'
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Windows
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 23c0a74a-ca0e-44c5-8268-40f1798cd2ec
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
+  SubNet:
+    Description: VPC Subnet
+    Type: String
+    Default: subnet-496e6113
+  midServerName:
+    Description: MID Server Name
+    Type: String
+  AMI:
+    Description: AMI Object ID
+    Type: String
