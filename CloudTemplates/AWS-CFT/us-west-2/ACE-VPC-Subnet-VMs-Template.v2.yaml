@@ -1,0 +1,250 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template used to stage the VPC, Subnets, Security Groups and VMs for the ACE ITOM E2E Demo. **WARNING** This template creates
+  3 Amazon EC2 instances. You will be billed for the AWS resources used if you
+  create a stack from this template.
+Resources:
+  InternetGateway:
+    Type: 'AWS::EC2::InternetGateway'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 3d1b082e-d87e-4eb3-9dc5-68c90896c9e3
+  VPCGatewayAttachment:
+    Type: 'AWS::EC2::VPCGatewayAttachment'
+    Properties:
+      InternetGatewayId: !Ref InternetGateway
+      VpcId: !Ref VPC
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: da825ebd-5abe-4d1b-a160-e7057336d8bb
+  SubnetA:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      AvailabilityZone: us-west-2a
+      VpcId: !Ref VPC
+      CidrBlock: 172.25.1.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - MSPHosting
+              - '-'
+              - !Ref LABCODE
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: d0953705-9702-4594-bbd9-6c81a69da836
+  SubnetB:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      AvailabilityZone: us-west-2b
+      VpcId: !Ref VPC
+      CidrBlock: 172.25.2.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - SiteDepot
+              - '-'
+              - !Ref LABCODE
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 9c2eab43-fc63-45f4-b95d-100f09218026
+  SubnetC:
+    Type: 'AWS::EC2::Subnet'
+    Properties:
+      AvailabilityZone: us-west-2c
+      VpcId: !Ref VPC
+      CidrBlock: 172.25.3.0/24
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - WebStore
+              - '-'
+              - !Ref LABCODE
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 1ca0a882-0482-45ed-9437-e423f75cd07d
+  RouteTable:
+    Type: 'AWS::EC2::RouteTable'
+    Properties:
+      VpcId: !Ref VPC
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: d475117d-437b-42d8-a9c5-516dbca6a53c
+  InternetRoute:
+    Type: 'AWS::EC2::Route'
+    Properties:
+      RouteTableId: !Ref RouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 9def4a67-9ef7-465b-bf5f-72c7a28d93a9
+    DependsOn:
+      - VPCGatewayAttachment
+  SubnetARouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      SubnetId: !Ref SubnetA
+      RouteTableId: !Ref RouteTable
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 086d2cb8-822a-47d8-9aef-61bf4ba6df8b
+  SubnetBRouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      RouteTableId: !Ref RouteTable
+      SubnetId: !Ref SubnetB
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 0232983b-1576-4a34-afc8-36b9cb98160f
+  SubnetCRouteTableAssociation:
+    Type: 'AWS::EC2::SubnetRouteTableAssociation'
+    Properties:
+      RouteTableId: !Ref RouteTable
+      SubnetId: !Ref SubnetC
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 8c31c02c-a2d9-4e51-9b2c-0306ac4b626a
+  SecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: e07d019d-8259-439d-9944-f25d86797b8c
+    Properties:
+      GroupName: ACEGroup
+      GroupDescription: ACE Security Group
+      VpcId: !Ref VPC
+      SecurityGroupIngress:
+        - IpProtocol: -1
+          CidrIp: 172.25.0.0/16
+        - IpProtocol: tcp
+          FromPort: '22'
+          ToPort: '22'
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: '3389'
+          ToPort: '3389'
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: '80'
+          ToPort: '80'
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: '443'
+          ToPort: '443'
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: ACEGroup
+  VPC:
+    Type: 'AWS::EC2::VPC'
+    Properties:
+      CidrBlock: 172.25.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      InstanceTenancy: default
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-ITOM-Showcase
+              - '-'
+              - !Ref LABCODE
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 6dd8dc67-7cd0-4124-b688-a6d4fbce4922
+  JUMPHOST:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      SubnetId: !Ref SubnetA
+      InstanceType: t2.small
+      ImageId: ami-05a65e437c041575b
+      KeyName: ACE-Linux-SSH
+      IamInstanceProfile: AllAccess
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-MSP-JUMPHOST
+              - '-'
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Windows
+      SecurityGroupIds:
+        - !Ref SecurityGroup
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 9e136d63-3914-41ff-ba6e-1f4e8faa05da
+  MID:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      SubnetId: !Ref SubnetA
+      InstanceType: t2.xlarge
+      ImageId: ami-02d40c3e83c760312
+      KeyName: ACE-Linux-SSH
+      IamInstanceProfile: AllAccess
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-MSP-MID
+              - '-'
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Windows
+      SecurityGroupIds:
+        - !Ref SecurityGroup
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: b13b4274-3b87-4eb7-aed0-dbce51724abf
+  AnsibleTower:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      SubnetId: !Ref SubnetA
+      InstanceType: t2.xlarge
+      ImageId: ami-07696ed534349e0fa
+      KeyName: ACE-Linux-SSH
+      IamInstanceProfile: AllAccess
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - ACE-MSP-TOWER
+              - '-'
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+      SecurityGroupIds:
+        - !Ref SecurityGroup
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 8b382698-7795-4598-85e6-06f5534fb7a1
+  ElasticIP:
+    Type: 'AWS::EC2::EIP'
+    Properties:
+      Domain: vpc
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 3344fde8-388b-4368-b614-f90a7275d0dd
+  EC2EIPA21E7L:
+    Type: 'AWS::EC2::EIPAssociation'
+    Properties:
+      InstanceId: !Ref AnsibleTower
+      AllocationId: !GetAtt 
+        - ElasticIP
+        - AllocationId
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 4691e2de-2185-4e9a-9c13-6c863622a6cb
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
