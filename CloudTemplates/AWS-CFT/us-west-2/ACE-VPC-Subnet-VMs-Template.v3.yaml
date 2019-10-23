@@ -210,7 +210,7 @@ Resources:
     Properties:
       SubnetId: !Ref SubnetA
       InstanceType: t2.xlarge
-      ImageId: ami-07696ed534349e0fa
+      ImageId: ami-0ff597b79f3588ad6
       KeyName: ACE-Linux-SSH
       IamInstanceProfile: AllAccess
       Tags:

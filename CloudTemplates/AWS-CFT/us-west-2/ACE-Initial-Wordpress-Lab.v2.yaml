@@ -1,0 +1,132 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template ACE-Initial-Wordpress-Lab: A Template for
+  provisioning the Apache Proxy Server, Web Server and MySQL Server used in the
+  ACE ITOM End To End Demo. **WARNING** This template creates 3 Amazon EC2
+  instances. You will be billed for the AWS resources used if you create a stack
+  from this template.
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
+  SubNet:
+    Description: VPC Subnet
+    Type: String
+  SecGroup:
+    Description: Security Group
+    Type: String
+    Default: sg-0d93dcf2e42ac18a8
+  LBAMI:
+    Description: LB AMI
+    Type: String
+    Default: ami-0c79066ea26c1b5b2
+  LBNAME:
+    Description: LB VM Name
+    Type: String
+    Default: ACE-SD-LB-
+  WWWAMI:
+    Description: Word Press AMI
+    Type: String
+    Default: ami-0092d6a99a2167204
+  WWWNAME:
+    Description: Word Press VM Name
+    Type: String
+    Default: ACE-SD-WWW-
+  DBAMI:
+    Description: Word Press AMI
+    Type: String
+    Default: ami-0d26697a47ed29087
+  DBNAME:
+    Description: Word Press VM Name
+    Type: String
+    Default: ACE-SD-DB-
+Metadata:
+  'AWS::CloudFormation::Designer':
+    7747812d-9490-4007-aa73-f3109454b202:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 280
+        'y': 190
+      z: 0
+      embeds: []
+    dd65b9fa-6064-4d48-b03c-e012a61ba6c1:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 370
+        'y': 190
+      z: 0
+      embeds: []
+    8065f357-0075-4395-9107-7545b8bc8638:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 460
+        'y': 190
+      z: 0
+      embeds: []
+Resources:
+  LoadBalancer:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: !Ref LBAMI
+      SubnetId: !Ref SubNet
+      SecurityGroupIds:
+        - !Ref SecGroup
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - !Ref LBNAME
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 7747812d-9490-4007-aa73-f3109454b202
+  Wordpress:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: !Ref WWWAMI
+      SubnetId: !Ref SubNet
+      SecurityGroupIds:
+        - !Ref SecGroup
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - !Ref WWWNAME
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: dd65b9fa-6064-4d48-b03c-e012a61ba6c1
+  MySQL:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: !Ref DBAMI
+      SubnetId: !Ref SubNet
+      SecurityGroupIds:
+        - !Ref SecGroup
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - !Ref DBNAME
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 8065f357-0075-4395-9107-7545b8bc8638
