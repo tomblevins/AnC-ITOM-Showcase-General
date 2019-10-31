@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  AWS CloudFormation Template ACE-Initial-Wordpress-Lab: A Template for
+  provisioning the Web Server used in the ACE ITOM End To End Demo. **WARNING**
+  This template creates 3 Amazon EC2 instances. You will be billed for the AWS
+  resources used if you create a stack from this template.
+Parameters:
+  LABCODE:
+    Description: Users LAB Code
+    Type: String
+  SubNet:
+    Description: VPC Subnet
+    Type: String
+  SecGroup:
+    Description: Security Group
+    Type: String
+    Default: sg-0d93dcf2e42ac18a8
+  WWWAMI:
+    Description: Word Press AMI
+    Type: String
+    Default: ami-0092d6a99a2167204
+  WWWNAME:
+    Description: Word Press VM Name
+    Type: String
+    Default: ACE-SD-WWW-
+Metadata:
+  'AWS::CloudFormation::Designer':
+    dd65b9fa-6064-4d48-b03c-e012a61ba6c1:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 370
+        'y': 190
+      z: 0
+      embeds: []
+Resources:
+  Wordpress:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.small
+      ImageId: !Ref WWWAMI
+      SubnetId: !Ref SubNet
+      SecurityGroupIds:
+        - !Ref SecGroup
+      KeyName: ACE-Linux-SSH
+      Tags:
+        - Key: Name
+          Value: !Join 
+            - ''
+            - - !Ref WWWNAME
+              - !Ref LABCODE
+        - Key: OSType
+          Value: Linux
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: dd65b9fa-6064-4d48-b03c-e012a61ba6c1
