@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_ACNSDWWW_Test_name": {
+            "defaultValue": "ACNSDWWW-Test",
+            "type": "String"
+        },
+        "disks_ACNSDWWW_Test_OsDisk_1_744d2082dc3a49cd908fded945d25b98_externalid": {
+            "defaultValue": "/subscriptions/bd1e4012-8517-4e42-becb-f33de2ff0a53/resourceGroups/SITEDEPOT-MARKETING/providers/Microsoft.Compute/disks/ACNSDWWW-Test_OsDisk_1_744d2082dc3a49cd908fded945d25b98",
+            "type": "String"
+        },
+        "networkInterfaces_acnsdwww_test429_externalid": {
+            "defaultValue": "/subscriptions/bd1e4012-8517-4e42-becb-f33de2ff0a53/resourceGroups/SiteDepot-Marketing/providers/Microsoft.Network/networkInterfaces/acnsdwww-test429",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2019-07-01",
+            "name": "[parameters('virtualMachines_ACNSDWWW_Test_name')]",
+            "location": "westus2",
+            "plan": {
+                "name": "wordpress52-lamp72-centos76",
+                "product": "w9wordpress",
+                "publisher": "websoft9inc"
+            },
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_D2s_v3"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "websoft9inc",
+                        "offer": "w9wordpress",
+                        "sku": "wordpress52-lamp72-centos76",
+                        "version": "5.2.2000"
+                    },
+                    "osDisk": {
+                        "osType": "Linux",
+                        "name": "[concat(parameters('virtualMachines_ACNSDWWW_Test_name'), '_OsDisk_1_744d2082dc3a49cd908fded945d25b98')]",
+                        "createOption": "FromImage",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "storageAccountType": "StandardSSD_LRS",
+                            "id": "[parameters('disks_ACNSDWWW_Test_OsDisk_1_744d2082dc3a49cd908fded945d25b98_externalid')]"
+                        },
+                        "diskSizeGB": 30
+                    },
+                    "dataDisks": []
+                },
+                "osProfile": {
+                    "computerName": "[parameters('virtualMachines_ACNSDWWW_Test_name')]",
+                    "adminUsername": "acnadmin",
+                    "linuxConfiguration": {
+                        "disablePasswordAuthentication": false,
+                        "provisionVMAgent": true
+                    },
+                    "secrets": [],
+                    "allowExtensionOperations": true,
+                    "requireGuestProvisionSignal": true
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[parameters('networkInterfaces_acnsdwww_test429_externalid')]"
+                        }
+                    ]
+                },
+                "diagnosticsProfile": {
+                    "bootDiagnostics": {
+                        "enabled": true,
+                        "storageUri": "https://sitedepotmarketingdia132.blob.core.windows.net/"
+                    }
+                }
+            }
+        }
+    ]
+}

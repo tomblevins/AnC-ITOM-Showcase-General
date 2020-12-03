@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westus2"
+        },
+        "networkInterfaceName": {
+            "value": "acnsdwww-acn1482"
+        },
+        "networkSecurityGroupId": {
+            "value": "/subscriptions/175376b8-3243-4439-97fa-29a281961624/resourceGroups/SiteDepot-Marketing/providers/Microsoft.Network/networkSecurityGroups/ACNMSPMID-acn1-nsg"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/175376b8-3243-4439-97fa-29a281961624/resourceGroups/SiteDepot-Marketing/providers/Microsoft.Network/virtualNetworks/SiteDepot-Marketing-vnet"
+        },
+        "publicIpAddressName": {
+            "value": "acnsdwww-acn1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "acnsdwww-acn1"
+        },
+        "virtualMachineRG": {
+            "value": "SiteDepot-Marketing"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "acnadmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "sitedepotmarketingdiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/175376b8-3243-4439-97fa-29a281961624/resourceGroups/SiteDepot-Marketing/providers/Microsoft.Storage/storageAccounts/sitedepotmarketingdiag"
+        }
+    }
+}
